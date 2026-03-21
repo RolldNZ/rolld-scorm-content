@@ -124,6 +124,53 @@
         window.__fetchCourse = __fetchCourse
       })()
     </script>
+  
+  <script>
+    // SCORM API Stub - provides LMS functions to Articulate Rise
+    (function() {
+      var cmiData = {};
+      
+      // Standard SCORM 1.2 API on window for scormdriver
+      window.API = {
+        LMSInitialize: function() { return "true"; },
+        LMSFinish: function() { return "true"; },
+        LMSGetValue: function(e) { return cmiData[e] || ""; },
+        LMSSetValue: function(e, v) { 
+          cmiData[e] = v;
+          try { window.parent.postMessage({ type: "scorm_update", data: cmiData }, "*"); } catch(err) {}
+          return "true";
+        },
+        LMSCommit: function() { return "true"; },
+        LMSGetLastError: function() { return "0"; },
+        LMSGetErrorString: function() { return "No error"; },
+        LMSGetDiagnostic: function() { return ""; }
+      };
+
+      // Articulate Rise uses window.parent for its custom proxy functions
+      // Expose them on window itself so pick() finds them on same-origin load
+      var noop = function(name) { return function() { console.log("LMS:" + name); }; };
+      
+      window.CommitData = function() { try { window.parent.postMessage({ type: "scorm_update", data: cmiData }, "*"); } catch(e) {} };
+      window.ConcedeControl = noop("ConcedeControl");
+      window.CreateResponseIdentifier = function(a, b) { return a || b || ""; };
+      window.Finish = function() { window.CommitData(); };
+      window.GetDataChunk = function() { return JSON.stringify(cmiData); };
+      window.GetStatus = function() { return cmiData["cmi.core.lesson_status"] || "incomplete"; };
+      window.MatchingResponse = noop("MatchingResponse");
+      window.RecordFillInInteraction = noop("RecordFillInInteraction");
+      window.RecordMatchingInteraction = noop("RecordMatchingInteraction");
+      window.RecordMultipleChoiceInteraction = noop("RecordMultipleChoiceInteraction");
+      window.ResetStatus = function() { cmiData["cmi.core.lesson_status"] = "incomplete"; };
+      window.SetBookmark = function(url) { cmiData["cmi.core.lesson_location"] = url; };
+      window.SetDataChunk = function(data) { try { cmiData = Object.assign(cmiData, JSON.parse(data)); } catch(e) {} window.CommitData(); };
+      window.SetFailed = function() { cmiData["cmi.core.lesson_status"] = "failed"; window.CommitData(); };
+      window.SetPassed = function() { cmiData["cmi.core.lesson_status"] = "passed"; window.CommitData(); };
+      window.SetReachedEnd = function() { if (!cmiData["cmi.core.lesson_status"] || cmiData["cmi.core.lesson_status"] === "incomplete") { cmiData["cmi.core.lesson_status"] = "completed"; } window.CommitData(); };
+      window.SetScore = function(s) { cmiData["cmi.core.score.raw"] = s; window.CommitData(); };
+      window.WriteToDebug = function(msg) { console.log("SCORM:", msg); };
+    })();
+  </script>
+
   </head>
   <body>
     <div id="app"></div>
