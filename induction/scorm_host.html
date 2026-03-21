@@ -11,6 +11,7 @@
     .spinner { width: 48px; height: 48px; border: 4px solid rgba(255,255,255,0.2); border-top-color: #e63946; border-radius: 50%; animation: spin 0.8s linear infinite; margin-bottom: 20px; }
     @keyframes spin { to { transform: rotate(360deg); } }
     .logo { font-size: 24px; font-weight: bold; letter-spacing: 2px; margin-bottom: 8px; color: #e63946; }
+    #completion-banner { display:none; position:fixed; bottom:0; left:0; right:0; background:#10b981; color:white; text-align:center; padding:12px; font-family:sans-serif; font-size:15px; font-weight:600; z-index:100; }
   </style>
 </head>
 <body>
@@ -19,18 +20,29 @@
   <div class="spinner"></div>
   <p style="font-size:15px; opacity:0.8;">Loading induction course...</p>
 </div>
-<iframe id="courseFrame" 
+<div id="completion-banner">✅ Course completed! Your progress has been saved.</div>
+<iframe id="courseFrame"
   src="scormcontent/index.html"
-  allowfullscreen 
+  allowfullscreen
   allow="fullscreen"
   style="opacity:0; transition: opacity 0.5s;">
 </iframe>
 
 <script>
-// ---- SCORM 1.2 API (accessible by iframe as window.parent.API) ----
+// ---- Config (passed via URL params or defaults) ----
+var params = new URLSearchParams(window.location.search);
+var COURSE_ID   = params.get("courseId")   || "69bc7086d0a7ea36ce8fafbc";
+var COURSE_TITLE= params.get("courseTitle")|| "INDUCTION: Welcome to Roll'd";
+var USER_ID     = params.get("userId")     || "";
+var USER_EMAIL  = params.get("userEmail")  || "";
+var USER_NAME   = params.get("userName")   || "Staff Member";
+var ENROLLMENT_ID = params.get("enrollmentId") || "";
+var API_BASE    = "https://appman-f8012eeb.base44.app/functions";
+
+// ---- SCORM data store ----
 var scormData = {
-  "cmi.core.student_id": "learner_001",
-  "cmi.core.student_name": "Staff Member",
+  "cmi.core.student_id": USER_ID || "learner_001",
+  "cmi.core.student_name": USER_NAME,
   "cmi.core.lesson_location": "",
   "cmi.core.lesson_status": "not attempted",
   "cmi.core.score.raw": "",
@@ -47,55 +59,107 @@ var scormData = {
   "cmi.interactions._count": "0"
 };
 
-// Restore saved progress
+// Restore from localStorage
+var STORAGE_KEY = "scorm_" + COURSE_ID + "_" + (USER_ID || USER_EMAIL || "anon");
 try {
-  var saved = localStorage.getItem("scorm_rolld_induction");
+  var saved = localStorage.getItem(STORAGE_KEY);
   if (saved) {
     var parsed = JSON.parse(saved);
     Object.assign(scormData, parsed);
     scormData["cmi.core.entry"] = "resume";
-    console.log("[SCORM] Resuming from saved progress, status:", scormData["cmi.core.lesson_status"]);
   }
-} catch(e) { console.warn("[SCORM] Could not restore progress:", e); }
+} catch(e) {}
 
-function scormSave() {
-  try { localStorage.setItem("scorm_rolld_induction", JSON.stringify(scormData)); } catch(e) {}
-  try { window.parent.postMessage({ type: "scorm_update", data: scormData }, "*"); } catch(e) {}
+function saveLocal() {
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(scormData)); } catch(e) {}
 }
 
+// ---- Backend sync ----
+var syncTimeout = null;
+var lastSyncedStatus = null;
+
+function syncToBackend(force) {
+  clearTimeout(syncTimeout);
+  var delay = force ? 0 : 3000;
+  syncTimeout = setTimeout(function() {
+    var payload = {
+      enrollmentId: ENROLLMENT_ID || undefined,
+      courseId: COURSE_ID,
+      courseTitle: COURSE_TITLE,
+      userId: USER_ID || undefined,
+      userEmail: USER_EMAIL || undefined,
+      userName: USER_NAME,
+      lessonStatus: scormData["cmi.core.lesson_status"],
+      score: scormData["cmi.core.score.raw"],
+      suspendData: scormData["cmi.suspend_data"],
+      lessonLocation: scormData["cmi.core.lesson_location"]
+    };
+    // Remove undefined
+    Object.keys(payload).forEach(function(k) { if (payload[k] === undefined) delete payload[k]; });
+
+    fetch(API_BASE + "/updateEnrollment", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload)
+    }).then(function(r) { return r.json(); }).then(function(data) {
+      if (data.enrollmentId && !ENROLLMENT_ID) ENROLLMENT_ID = data.enrollmentId;
+      lastSyncedStatus = payload.lessonStatus;
+      // Notify parent frame about status
+      try { window.parent.postMessage({ type: "scorm_update", data: scormData, enrollmentId: ENROLLMENT_ID }, "*"); } catch(e) {}
+    }).catch(function(e) { console.warn("[SCORM] Sync failed:", e.message); });
+  }, delay);
+}
+
+// ---- UI ----
 function showCourse() {
-  document.getElementById("loading").style.opacity = "0";
-  document.getElementById("courseFrame").style.opacity = "1";
-  setTimeout(function() { document.getElementById("loading").style.display = "none"; }, 500);
+  var loading = document.getElementById("loading");
+  var frame = document.getElementById("courseFrame");
+  loading.style.opacity = "0";
+  frame.style.opacity = "1";
+  setTimeout(function() { loading.style.display = "none"; }, 500);
 }
 
+function showCompletion() {
+  document.getElementById("completion-banner").style.display = "block";
+  setTimeout(function() {
+    document.getElementById("completion-banner").style.display = "none";
+  }, 5000);
+}
+
+// ---- SCORM 1.2 API ----
 window.API = {
   LMSInitialize: function(param) {
-    console.log("[SCORM] LMSInitialize called");
+    console.log("[SCORM] LMSInitialize");
     showCourse();
+    syncToBackend(false);
     return "true";
   },
   LMSFinish: function(param) {
-    console.log("[SCORM] LMSFinish called");
-    scormSave();
+    console.log("[SCORM] LMSFinish");
+    saveLocal();
+    syncToBackend(true);
     return "true";
   },
   LMSGetValue: function(element) {
     var val = scormData[element] !== undefined ? String(scormData[element]) : "";
-    console.log("[SCORM] GetValue", element, "=", val);
     return val;
   },
   LMSSetValue: function(element, value) {
-    console.log("[SCORM] SetValue", element, "=", value);
     scormData[element] = value;
-    if (["cmi.core.lesson_status", "cmi.suspend_data", "cmi.core.lesson_location"].includes(element)) {
-      scormSave();
+    var important = ["cmi.core.lesson_status","cmi.suspend_data","cmi.core.lesson_location","cmi.core.score.raw"];
+    if (important.indexOf(element) !== -1) {
+      saveLocal();
+      syncToBackend(false);
+    }
+    if (element === "cmi.core.lesson_status" && (value === "completed" || value === "passed")) {
+      showCompletion();
+      syncToBackend(true);
     }
     return "true";
   },
   LMSCommit: function(param) {
-    console.log("[SCORM] LMSCommit");
-    scormSave();
+    saveLocal();
+    syncToBackend(false);
     return "true";
   },
   LMSGetLastError: function() { return "0"; },
@@ -103,27 +167,22 @@ window.API = {
   LMSGetDiagnostic: function(code) { return "No diagnostic"; }
 };
 
-// Legacy proxy functions used by Articulate SCORM driver
+// Legacy Articulate proxy functions
 function CommitData() { window.API.LMSCommit(); }
 function ConcedeControl() {}
-function CreateResponseIdentifier() { return ""; }
 function Finish() { window.API.LMSFinish(); }
 function GetDataChunk() { return scormData["cmi.suspend_data"] || ""; }
 function GetStatus() { return scormData["cmi.core.lesson_status"]; }
-function MatchingResponse() { return ""; }
-function RecordFillInInteraction() {}
-function RecordMatchingInteraction() {}
-function RecordMultipleChoiceInteraction() {}
 function ResetStatus() { scormData["cmi.core.lesson_status"] = "incomplete"; }
 function SetBookmark(url) { scormData["cmi.core.lesson_location"] = url; CommitData(); }
-function SetDataChunk(d) { scormData["cmi.suspend_data"] = d; }
+function SetDataChunk(d) { scormData["cmi.suspend_data"] = d; CommitData(); }
 function SetFailed() { scormData["cmi.core.lesson_status"] = "failed"; CommitData(); }
 function SetPassed() { scormData["cmi.core.lesson_status"] = "passed"; CommitData(); }
 function SetReachedEnd() { scormData["cmi.core.lesson_status"] = "completed"; CommitData(); }
 function SetScore(raw, min, max) { scormData["cmi.core.score.raw"] = raw || ""; }
-function WriteToDebug(m) { console.log("[SCO Debug]", m); }
+function WriteToDebug(m) { console.log("[SCO]", m); }
 
-// Fallback: show course after 20s regardless
+// Fallback show after 20s
 setTimeout(showCourse, 20000);
 </script>
 </body>
