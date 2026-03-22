@@ -1,0 +1,1079 @@
+{
+	"config": {
+		"background": "fit_content_assets/mgisopgav5vfc0bc4jcs.png",
+		"colors": {
+			"background": "#fff",
+			"experimental": false,
+			"text": "#161616",
+			"theme": "light"
+		},
+		"enableCustomCSS": true,
+		"customCSS": "@import url(\"https://use.typekit.net/aiw8vtw.css\");\n\n\n/*/ Font - you can change this by finding a font to import on Google Fonts /*/\n\n@import url(\"https://use.typekit.net/aiw8vtw.css\");\n\nm {\nfont-family: anton, sans-serif;\n  letter-spacing: 0.03em;\n  font-size: 1em;\n}\n\nbody {\n  font-family: acumin-pro, sans-serif;\n}\n\nb {\n  color:var(--main-color);\n}\nsb {\n  color:var(--accent-color); \n  font-weight:bold;\n}\n\n\nh4 {\n  font-size: 0.9em;\n}\n\nft {\n  background: var(--accent-color);\n  padding-left: 0.4em;\n    padding-right: 0.4em;\n  padding-top: 0.2em;\n    padding-bottom: 0.2em;\n\n  color: var(--text-color)\n}\n\nfti {\n    background: var(--text-color);\n  padding-left: 0.4em;\n    padding-right: 0.4em;\n  padding-top: 0.2em;\n    padding-bottom: 0.2em;\n}\n\n/* Main Colors - Add your primary, accent and text colors. You can also use hex color codes i.e #FF0000 */\n\n:root{\n  --main-color:#085748;\n  --accent-color:#FF0619;\n  --text-color:#FFFFFF;\n}\n\n/* The complicated stuff you don’t need to touch. */\n.btn.btn-muted.btn-done.text-ellipsis,  {\nbackground: url(https://media.edapp.com/image/upload/v1654666896/ringo-uploads/6124efd5975dff6d62262342/courseware/lessons/62a0367a1646103e1a10e85b/j1nvuxth6xyvth6uymvw.png) no-repeat;\n background-size: contain;\n color: var(--accent-color);\n box-shadow:none;\n line-height: .7em;\n transition: none;\n padding-right: 1em;\n}\n.btn.btn-muted.btn-done.text-ellipsis:hover, .btn.btn-muted.btn-done.text-ellipsis.__active {\n box-shadow:none;\n transform:none;\n background-image: url(https://media.edapp.com/image/upload/v1644305426/ringo-uploads/5f92779cffb6c20001de934f/courseware/lessons/615d7ed4d75fa3a3804ca390/up5s0oait5hxkvvfuajj.png);\n  background-size: contain;\n  background-repeat: no-repeat;\n  color: var(--text-color);\n  padding-right: 1em;\n}\n.btn.btn-muted, .btn.btn-solid, #lesson-menu-cancel.btn.btn-block {\n  background:var(--main-color);\n  color:var(--text-color); \n  border-radius:3px;\n  transition: all ease-in-out 300ms;\n  box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4);\n}\n.btn.btn-muted.__active, .btn.btn-muted:hover, .btn.btn-solid.__active, .btn.btn-solid:hover, #lesson-menu-cancel.btn.btn-block:active, #lesson-menu-cancel.btn.btn-block:hover {\n  background: var(--accent-color); \n  color:var(--text-color);\n  transition-delay:0.25s;\n  transition:all ease-in-out 300ms;\n  box-shadow:0px 17px 10px -10px rgba(0,0,0,0.4);\n  transform: translate(0px, -3px);\n}\n\n\n/*/ Header & Slides /*/\n#lesson-header {\n  background:white;\nbox-shadow: 0px 3px 8px 0px rgba(0,0,0,0.3);\n}\n\n#lesson-header-nav, .scroll-middle #lesson-header-nav, .scroll-bottom #lesson-header-nav {\n  background: url(https://media.edapp.com/image/upload/v1644305426/ringo-uploads/5f92779cffb6c20001de934f/courseware/lessons/615d7ed4d75fa3a3804ca390/up5s0oait5hxkvvfuajj.png);\n    background-size: contain;\n    background-repeat: no-repeat;\n    background-position: center;\n    width: 8em;\n  \n}\n#lesson-header-nav-menu-btn {\n  border-left: 1.5px solid var(--text-color);\n}\n#lesson-header-title-content {\n  border-bottom:0px solid var(--main-color);\n  color:var(--main-color); \n}\n#indicator { \n  background-color:var(--main-color); \n  color:var(--accent-color);\n}\n#slides {\n  border-bottom: 0px solid var(--main-color);\n}\n#text-input-view #text-input-dismiss-btn {\n  color:var(--main-color);\n} \n#text-input-view #text-input-container-top {\n  color:var(--main-color);\n}\nli::marker {\n  color:var(--accent-color); \n}\nhr {\n  color:var(--accent-color);\n}\n.pswp__item {\n    background:var(--main-color);\n}\n.selectable.active .btn { \nbackground-color: var(--accent-color);\n}\n\n\n/*/Templates/*/\n.slide-image-slider .style-dark .caption-content {\n  background:var(--main-color);\n  color:var(--text-color);\n  border-radius:3px;\n}\n.slide-image-slider .style-light .caption-content {  \n  background:var(--accent-color);\n  color:var(--text-color);\n  border-radius:3px;\n}\n.slide-image-slider .btn-down, .slide-image-slider .btn-up {\n  background:var(--main-color);\n  color: var(--text-color);\n  border-radius:50%;\n}\n.slide-image-slider .btn-down:hover,.slide-image-slider .btn-down:active, .slide-image-slider .btn-up:hover, .slide-image-slider .btn-up:active {\n  background:var(--accent-color);  \n  color: var(--text-color); \n  border-radius:50%;\n}\n.slide-image-gallery .pagination .dot {\n background-image: url(https://media.edapp.com/image/upload/v1644223193/ringo-uploads/5f92779cffb6c20001de934f/courseware/lessons/615d7ed4d75fa3a3804ca390/jhopbmvtu4dayxb8qj9a.png);\n background-size:cover;\n width:20px;\n height:20px;\n border: 0px solid;\n}\n.slide-image-gallery .pagination .dot.active {\n background-image: url(https://media.edapp.com/image/upload/v1644223190/ringo-uploads/5f92779cffb6c20001de934f/courseware/lessons/615d7ed4d75fa3a3804ca390/imstvtgvd3bkebaccvld.png);\n background-size:cover;\n width:20px;\n height:20px;\n border: 0px solid;\n}\n.slide-image-collection .tappy{ \n  transition: transform .5s ease;\n}\n.slide-image-collection .tappy:hover {\n transform: scale(1.1);\n}\n.slide-text-sequence .btn-down, .slide-text-sequence .btn-up {\n  background:var(--main-color);\n  color: var(--text-color);\n  border-radius:50%;\n}\n.slide-text-sequence .btn-down:hover,.slide-text-sequence .btn-down:active, .slide-text-sequence .btn-up:hover, .slide-text-sequence .btn-up:active {\n  background:var(--accent-color);  \n  color: var(--text-color); \n  border-radius:50%;\n}\n.slide-reveal .btn-reveal-title.flippable {\n  background:var(--accent-color);\n  color: var(--text-color); \n} \n.slide-reveal .btn-reveal.active .btn-reveal-desc.flippable {\n  background:var(--main-color);\n  color: var(--text-color); \n}\n.slide-reveal .btn-reveal-desc, .slide-reveal .btn-reveal-title {\n  pointer-events:none;\n}\n.slide-expandable-list .item.active .item-button {\n  background:var(--accent-color);  \n  color: var(--text-color); \n}\n.slide-image-waypoints .prev-wp, .slide-image-waypoints .next-wp{ \n  background:var(--main-color);\n  color: var(--text-color);\n}\n.slide-list ::marker {\n  color:var(--accent-color); \n}\n.slide-speech-bubble .quote.quote-dk .quote-bg, .quote.quote-dk {\n   background:var(--main-color);  \n   color: var(--text-color); \n   opacity: 1;\n}\n.slide-speech-bubble .quote.pull-left.quote-dk:after {\n    border-color: var(--main-color) transparent transparent;\n}\n.slide-comparison .slider-knob {\n    background-color:var(--main-color);\n}\n.slide-comparison .slider-knob:before, .slide-comparison .slider-knob:after {\n   background-color:var(--main-color);\n}\n.slide-table .table-row:nth-child(odd) {\n    border-radius:3px;\n    background: var(--accent-color);\n    color: var(--text-color);\n}\n.slide-table .table-row:nth-child(even) {\n    border-radius:3px;\n    background:var(--accent-color);\n    color: var(--text-color); \n}\n\n/*/Interactions/*/\n.slide-chat .message--question {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-chat.show-msg-true .selectable {\n  background:var(--accent-color);\n  color:var(--text-color);\n}\n.slide-chat.show-msg-true .selectable.active {\n  background: var(--main-color);\n  color:var(--text-color);\n}\n.slide-chat.state-complete .chat-msg.incorrect {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-chat.state-complete .chat-msg.correct {\n  background:var(--accent-color);\n  color:var(--text-color);\n}\n.slide-chat .message--question:after {\n  border-color:var(--main-color) transparent transparent;\n}\n.slide-chat .message--answer:after {\n  border-color:var(--accent-color) transparent transparent;\n}\n.slide-categorise .direction-ltr .selectable .btn-long, .direction-ltr .draggy .btn-long {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-circle-the-answer .circle-box.active .circle-box-text, .text-dark .slide-circle-the-answer .circle-box.active .circle-box-text {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-multiple-choice-game .btn.btn-solid {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-multiple-choice-game .selectable.active .btn {\n  background:var(--accent-color);\n  color:var(--text-color);\n}\n.slide-multiple-choice-game.state-complete .selectable.incorrect .btn {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-multiple-choice-game.state-complete .selectable.correct .btn {\n  background:var(--accent-color);\n  color:var(--text-color);\n}\n.slide-connect .connect-box {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-connect .connect-box.complete {\n  background:var(--accent-color);\n  color:var(--text-color);\n}\n.slide-game-true-or-false .game-statement {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-game-image-word-match .btn-word {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-game-image-word-match .btn-word.__active {\n  background:var(--accent-color);\n  color:var(--text-color);\n}\n.slide-carousel .btn.btn-solid {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-slider .slider-bar, .slide-slider-survey .slider-bar {\n  background:var(--main-color);\n}\n.slide-slider.active .slider-knob-input, .active.slide-slider-survey .slider-knob-input {\n  background:var(--accent-color);\n}\n.slide-free-text-survey .btn-prompt, .slide-free-text-contribution .btn-prompt {\n  border-radius:50% !important;\n}",
+		"direction": "ltr",
+		"disableInteractionSummary": true,
+		"disableLessonScore": false,
+		"hasAnswerFeedback": true,
+		"hasScormExitButton": false,
+		"preventLogoutOnExit": false,
+		"indicator": true,
+		"logo": "fit_content_assets/rowps1bij5pfjdyenenm.png",
+		"minimumScore": 0,
+		"pageNumbers": true,
+		"pagination": false,
+		"soundDisabled": false,
+		"language": "en"
+	},
+	"slides": [
+		{
+			"id": "27d7cfb9-e523-4265-beb6-aa01ed6868f4",
+			"type": "image-slider",
+			"subtype": "single",
+			"name": 0,
+			"displayIndex": 1,
+			"templateName": "Vertical series",
+			"templateDescription": "Swipe through a group of images",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "27d7cfb9-e523-4265-beb6-aa01ed6868f4"
+			},
+			"data": {
+				"prompt": "<ft>Swipe up to see more",
+				"items": [
+					{
+						"content": "fit_content_assets/hwvrtrzjw0ggpeb2s2bw.gif",
+						"contentType": "image",
+						"position": "Top",
+						"color": "n",
+						"caption": "#### <b><span style=\"font-size:110%\">ROLL'D - FOOD SAFETY\n# <sb><m><span style=\"font-size:130%\">**Personal Hygiene**\n",
+						"imagePosition": "Cover",
+						"captionStyle": "Default"
+					},
+					{
+						"content": "fit_content_assets/e4mhb10qihyo17s8wtfw.jpg",
+						"contentType": "image",
+						"position": "Middle",
+						"color": "n",
+						"caption": "# <sb><m>WELCOME TO YOUR COURSE!\n### <b> In this course, we'll be focusing on the Food Safety Protocols on:\n\n- Personal Hygiene\n- Temperature\n- Time\n- Food Separation\n- Storage\n- Work Area and Equipment",
+						"imagePosition": "Cover",
+						"captionStyle": "Default"
+					},
+					{
+						"content": "fit_content_assets/wtkildshniuxtxkzhysx.jpg",
+						"contentType": "image",
+						"position": "Middle",
+						"color": "n",
+						"caption": "## In this first lesson, you will learn about:\n- ## Importance of Personal Hygiene\n- ## Personal Hygiene Protocols",
+						"imagePosition": "Cover",
+						"captionStyle": "Default"
+					},
+					{
+						"content": "fit_content_assets/tkmoc6qqzoenawphtinb.jpg",
+						"contentType": "image",
+						"position": "Top",
+						"color": "n",
+						"caption": "# <b>ARE YOU READY TO <sb>_ROLL'D_</sb>?",
+						"imagePosition": "Cover",
+						"captionStyle": "Default"
+					}
+				],
+				"arrows": true,
+				"doneText": "Ready!",
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "07eeb2e4-9720-47b2-ba78-671ce1f26b80",
+			"type": "expandable-list",
+			"subtype": "three",
+			"name": 1,
+			"displayIndex": 2,
+			"templateName": "Expandable list",
+			"templateDescription": "Display a list of bullet points",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "07eeb2e4-9720-47b2-ba78-671ce1f26b80"
+			},
+			"data": {
+				"content": null,
+				"prompt": "Select an item to see more",
+				"focus": true,
+				"doneText": "Continue",
+				"list": [
+					{
+						"content": "## Gloves are essential to being “food safe” by adding an extra layer of protection between your hands and food. Gloves protect the food from your hands, not keep your hands clean.",
+						"title": "Purpose"
+					},
+					{
+						"content": "## <b>✔</b> Wash hands before putting on gloves\n## <b>✔</b> Change gloves when you change food (change gloves between handling meat and vegetables)\n## <b>✔</b> Use tongs instead of gloves, if possible\n<br>",
+						"title": "Do's"
+					},
+					{
+						"content": "## <sb>✘</sb> Touch anything other than food (hair, face, broom, floors)\n## <sb>✘</sb>  Handle money while wearing gloves\n## <sb>✘</sb> Wear gloves when cleaning or carrying dishes\n## <sb>✘</sb> Wear gloves when serving customers (always take them off, then wear fresh gloves when you return to food handling)",
+						"title": "Don'ts"
+					}
+				],
+				"title": "<sb>Tip #1:</sb> **Wear Gloves**",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "5a900afb-4dc4-4fe1-a11c-0ddc4c3e64f6",
+			"type": "image-waypoints",
+			"subtype": "guided",
+			"name": 2,
+			"displayIndex": 3,
+			"templateName": "Image waypoints",
+			"templateDescription": "Highlight important details in an image",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "5a900afb-4dc4-4fe1-a11c-0ddc4c3e64f6"
+			},
+			"data": {
+				"guided": true,
+				"doneText": "Continue",
+				"url": "fit_content_assets/loy4mtvmeiiuei886ahf.jpg",
+				"prompt": "Click next to see more",
+				"appearance": {
+					"waypointColor": "White"
+				},
+				"lightbox": {
+					"background": "white",
+					"textColor": "Black"
+				},
+				"waypoints": [
+					{
+						"image": null,
+						"caption": "# <sb>Tip #2:</sb> **Wash your Hands**",
+						"narration": null,
+						"region": {
+							"yMax": 1,
+							"xMax": 1,
+							"yMin": 0,
+							"xMin": 0
+						}
+					},
+					{
+						"image": null,
+						"caption": "## Wash your hands for **40-60 seconds**. Here are the guidelines for washing hands:",
+						"narration": null,
+						"region": {
+							"yMax": 1,
+							"xMax": 1,
+							"yMin": 0,
+							"xMin": 0
+						}
+					},
+					{
+						"image": null,
+						"caption": "## Wash hands with water.",
+						"narration": null,
+						"region": {
+							"yMax": 0.32000010172526044,
+							"xMax": 0.39199076848538406,
+							"yMin": 0.18,
+							"xMin": 0.1708847994324749
+						}
+					},
+					{
+						"image": null,
+						"caption": "## Apply enough soap to all hand surfaces.",
+						"narration": null,
+						"region": {
+							"yMax": 0.31066650390625,
+							"xMax": 0.6243364904963189,
+							"yMin": 0.1826666259765625,
+							"xMin": 0.39929222665573666
+						}
+					},
+					{
+						"image": null,
+						"caption": "## Rub hands palm to palm.",
+						"narration": "",
+						"region": {
+							"yMax": 0.31066680908203115,
+							"xMax": 0.8488051722573439,
+							"yMin": 0.18533345540364585,
+							"xMin": 0.6237610586416164
+						}
+					},
+					{
+						"image": null,
+						"caption": "## Put right palm over left dorsum with interlaced fingers and vice-versa.",
+						"narration": "",
+						"region": {
+							"yMax": 0.45599995930989584,
+							"xMax": 0.39986720783587526,
+							"yMin": 0.33066675821940106,
+							"xMin": 0.17482294399529322
+						}
+					},
+					{
+						"image": null,
+						"caption": "## Place palm to palm with fingers interlaced.",
+						"narration": "",
+						"region": {
+							"yMax": 0.45866668701171875,
+							"xMax": 0.6203981957086458,
+							"yMin": 0.3279998779296875,
+							"xMin": 0.3953539318680638
+						}
+					},
+					{
+						"image": null,
+						"caption": "## Put the back of fingers to opposing palms with fingers interlocked.",
+						"narration": "",
+						"region": {
+							"yMax": 0.4600000000000001,
+							"xMax": 0.8488051722573439,
+							"yMin": 0.3293334452311198,
+							"xMin": 0.6198232145285072
+						}
+					},
+					{
+						"image": null,
+						"caption": "## Make a rotational rubbing of left thumb clasped in right palm and vice-versa.",
+						"narration": "",
+						"region": {
+							"yMax": 0.6146666463216146,
+							"xMax": 0.40380520217383903,
+							"yMin": 0.49199996948242186,
+							"xMin": 0.17482294399529322
+						}
+					},
+					{
+						"image": null,
+						"caption": "## Make a rotational rubbing, backwards and forwards with clasped fingers of right hand in palm and vice-versa.",
+						"narration": "",
+						"region": {
+							"yMax": 0.6146666463216146,
+							"xMax": 0.6203981957086457,
+							"yMin": 0.48933329264322917,
+							"xMin": 0.3992920764308821
+						}
+					},
+					{
+						"image": null,
+						"caption": "## Rinse hands with water.",
+						"narration": "",
+						"region": {
+							"yMax": 0.6173333740234375,
+							"xMax": 0.8409291835814163,
+							"yMin": 0.4866666158040365,
+							"xMin": 0.6198232145285072
+						}
+					},
+					{
+						"image": null,
+						"caption": "## Dry thoroughly with a single-use towel.",
+						"narration": "",
+						"region": {
+							"yMax": 0.7946666463216147,
+							"xMax": 0.4077428960620936,
+							"yMin": 0.6639999643961588,
+							"xMin": 0.1708847994324749
+						}
+					},
+					{
+						"image": null,
+						"caption": "## Use a towel to turn off the faucet.",
+						"narration": "",
+						"region": {
+							"yMax": 0.7960000610351563,
+							"xMax": 0.6203981957086457,
+							"yMin": 0.6680000305175782,
+							"xMin": 0.39929222665573666
+						}
+					},
+					{
+						"image": null,
+						"caption": "## Dry your hands using a towel.",
+						"narration": "",
+						"region": {
+							"yMax": 0.8,
+							"xMax": 0.848805472707053,
+							"yMin": 0.6666666920979818,
+							"xMin": 0.6237613590913256
+						}
+					}
+				],
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "0d40bb0e-5406-460f-bd13-9bd023f0a4db",
+			"type": "drag-to-match",
+			"subtype": "classify-three-into-two",
+			"name": 3,
+			"displayIndex": 4,
+			"templateName": "Drag to match",
+			"templateDescription": "",
+			"permanent": false,
+			"metadata": {
+				"questions": [
+					{
+						"question": {
+							"category": "<b>DO</b> or <sb>DON'T</sb>",
+							"content": "## Wash hands before putting on gloves",
+							"questionId": "7e8b5f32-9413-4769-a865-b0678bfec88a",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "# <b>DO</b>",
+								"correct": false,
+								"answerId": "a9d85f69-7597-4620-9bb8-482c866ad9b1",
+								"type": "text"
+							},
+							{
+								"content": "# <sb>DON'T</sb>",
+								"correct": false,
+								"answerId": "80980602-677f-4e7e-9661-1b9d60867896",
+								"type": "text"
+							},
+							{
+								"content": "# <sb>DON'T</sb>",
+								"correct": false,
+								"answerId": "d213a55e-ac44-457c-9558-d3dad89f6105",
+								"type": "text"
+							},
+							{
+								"content": "# <b>DO</b>",
+								"correct": true,
+								"answerId": "8c6029bc-c71d-417e-b12f-b09dd17e1431",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"question": {
+							"category": "<b>DO</b> or <sb>DON'T</sb>",
+							"content": "## Use tongs instead of gloves",
+							"questionId": "9ec87329-f7e7-4236-bb2a-44884d2e9fb2",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "# <b>DO</b>",
+								"correct": false,
+								"answerId": "d26d9f30-867f-46d2-9f4a-e8865241e78d",
+								"type": "text"
+							},
+							{
+								"content": "# <sb>DON'T</sb>",
+								"correct": false,
+								"answerId": "e653bfdb-9a41-4eab-9939-0941679f5d35",
+								"type": "text"
+							},
+							{
+								"content": "# <sb>DON'T</sb>",
+								"correct": false,
+								"answerId": "34bc6d73-0706-48ec-bea3-4586a9c9dc98",
+								"type": "text"
+							},
+							{
+								"content": "# <b>DO</b>",
+								"correct": true,
+								"answerId": "873105e5-6fb8-415c-8443-be971846449d",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"question": {
+							"category": "<b>DO</b> or <sb>DON'T</sb>",
+							"content": "## Wear gloves when carrying dishes",
+							"questionId": "82efaf24-c193-4881-aa0e-070d5d1b1433",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "# <b>DO</b>",
+								"correct": false,
+								"answerId": "1dce5d15-7d42-40a7-bd4d-b6354941b762",
+								"type": "text"
+							},
+							{
+								"content": "# <b>DO</b>",
+								"correct": false,
+								"answerId": "45ae7b8f-47c0-42e5-868d-f0bc2d65104b",
+								"type": "text"
+							},
+							{
+								"content": "# <sb>DON'T</sb>",
+								"correct": false,
+								"answerId": "17ffb389-2587-4075-a361-80b560a2ebbb",
+								"type": "text"
+							},
+							{
+								"content": "# <sb>DON'T</sb>",
+								"correct": true,
+								"answerId": "4dd79756-85f5-4ac8-be7c-aa15dce4e41a",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"question": {
+							"category": "<b>DO</b> or <sb>DON'T</sb>",
+							"content": "## Wash hands for 20 seconds only",
+							"questionId": "22b5bca2-3376-4eb2-a417-ec20a35a9de4",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "# <b>DO</b>",
+								"correct": false,
+								"answerId": "de192cc5-af10-4f49-80e2-a352ef1dbace",
+								"type": "text"
+							},
+							{
+								"content": "# <b>DO</b>",
+								"correct": false,
+								"answerId": "a76a0bde-efe6-48ec-88d3-27cc92538b59",
+								"type": "text"
+							},
+							{
+								"content": "# <sb>DON'T</sb>",
+								"correct": false,
+								"answerId": "f41ad962-1aaf-41c4-bf97-df7ae4768e50",
+								"type": "text"
+							},
+							{
+								"content": "# <sb>DON'T</sb>",
+								"correct": true,
+								"answerId": "d9012914-c9ec-4327-81b3-a220b1269673",
+								"type": "text"
+							}
+						]
+					}
+				],
+				"slideId": "0d40bb0e-5406-460f-bd13-9bd023f0a4db"
+			},
+			"data": {
+				"reject": true,
+				"list": [
+					{
+						"name": "# <b>DO</b>",
+						"nameType": "text",
+						"image": "## Wash hands before putting on gloves",
+						"imageType": "text"
+					},
+					{
+						"name": "# <b>DO</b>",
+						"nameType": "text",
+						"image": "## Use tongs instead of gloves",
+						"imageType": "text"
+					},
+					{
+						"name": "# <sb>DON'T</sb>",
+						"nameType": "text",
+						"image": "## Wear gloves when carrying dishes",
+						"imageType": "text"
+					},
+					{
+						"name": "# <sb>DON'T</sb>",
+						"nameType": "text",
+						"image": "## Wash hands for 20 seconds only",
+						"imageType": "text"
+					}
+				],
+				"doneText": "Continue",
+				"answer": {
+					"takeaway": "_Learn about the other protocols regarding proper hygiene in the following slides._",
+					"incorrect": "Not quite...",
+					"correct": "That's correct!",
+					"text": "## **Do's**\n* Wash hands before putting on gloves\n* Use tongs instead of gloves\n\n## **Don'ts**\n* Wear gloves when carrying dishes\n* Wash hands for 20 seconds only",
+					"value": null
+				},
+				"game": {
+					"timer": {
+						"limit": -1,
+						"isDisabled": false,
+						"out-of-time-prompt": null
+					},
+					"stars": null
+				},
+				"prompt": "Drag the statements to their labels",
+				"title": "<b>DO</b> or <sb>DON'T</sb>",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": {
+					"nb_stars": null,
+					"weighting": 1
+				},
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": null
+			}
+		},
+		{
+			"id": "42265c0a-db9d-4461-b6bc-462b3a34b515",
+			"type": "image-gallery",
+			"subtype": "image-gallery",
+			"name": 4,
+			"displayIndex": 5,
+			"templateName": "Horizontal series",
+			"templateDescription": "Swipe through a gallery of images",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "42265c0a-db9d-4461-b6bc-462b3a34b515"
+			},
+			"data": {
+				"prompt": "Swipe to continue",
+				"background": "",
+				"lightbox": false,
+				"images": [
+					{
+						"image": "fit_content_assets/Copy_of_Module_4_8_Non_-_Negotiables_11_y2p3cq_z8hsdv.png",
+						"caption": "# <sb>Tip #3:</sb> **Cover Sores and Open Wounds**"
+					},
+					{
+						"image": "fit_content_assets/Copy_of_Module_4_8_Non_-_Negotiables_13_ftftrz_e9gclo.png",
+						"caption": "## Food handlers must **tell **their **supervisors **about any infections or conditions that may result in discharges. They may make food unsafe for people to eat because of their conditions."
+					},
+					{
+						"image": "fit_content_assets/xnl5wahb1sssyok9zyig.png",
+						"caption": "## It is possible to take precautions so conditions **do not affect food quality**. For example, cover an infected sore with a waterproof covering."
+					},
+					{
+						"image": "fit_content_assets/Copy_of_Module_4_8_Non_-_Negotiables_13_bk9xmm_dpknbz.png",
+						"caption": "## If food handlers are unwell or have injuries, **stay at work to do other tasks**. They must do everything reasonable to avoid contaminating any food."
+					}
+				],
+				"doneText": "Continue",
+				"title": null,
+				"titleType": null,
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "a4207615-191b-414d-9d9f-6f5c5c705299",
+			"type": "scratch-to-reveal",
+			"subtype": "scratch-to-reveal",
+			"name": 5,
+			"displayIndex": 6,
+			"templateName": "Scratch to reveal",
+			"templateDescription": "Scratch to reveal the content",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "a4207615-191b-414d-9d9f-6f5c5c705299"
+			},
+			"data": {
+				"before": {
+					"label": "",
+					"content": "fit_content_assets/Screen_Shot_2024-09-17_at_11.56.42_am_zgjiwo.png",
+					"contentType": "image"
+				},
+				"after": {
+					"label": "",
+					"content": "## All team members and managers must wear the **Roll'd supplied bandanas**. This is to avoid hair contaminating our food and presents a neat and clean look to our customers.",
+					"contentType": "text"
+				},
+				"canvasBackground": null,
+				"prompt": "Scratch to reveal the content",
+				"doneText": "Continue",
+				"title": "<sb>Tip #4:</sb> **Wear Headgear**",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "4ec9e663-8d42-4404-aed0-cb9a81e234bf",
+			"type": "matrix",
+			"subtype": "matrix",
+			"name": 6,
+			"displayIndex": 7,
+			"templateName": "Multi-question",
+			"templateDescription": "",
+			"permanent": false,
+			"metadata": {
+				"questions": [
+					{
+						"question": {
+							"category": "<b>True</b> or <sb>False</sb>",
+							"content": "### 1. Skin injuries may make food unsafe.",
+							"questionId": "9ca7ffe1-ed0d-41a8-aba4-863c4bec05fb",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "False",
+								"correct": false,
+								"answerId": "540959dd-343c-4472-877d-033aca503680",
+								"type": "text"
+							},
+							{
+								"content": "True",
+								"correct": true,
+								"answerId": "f6cfd96a-5eaa-45e3-a0e3-807d2121ceab",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"question": {
+							"category": "<b>True</b> or <sb>False</sb>",
+							"content": "### 2. Bandana is noncompulsory for managers.",
+							"questionId": "486449c6-b158-4428-abf5-19a7e5c67fbc",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "True",
+								"correct": false,
+								"answerId": "d704e09b-27c9-4d2b-9103-8f9763abbd01",
+								"type": "text"
+							},
+							{
+								"content": "False",
+								"correct": true,
+								"answerId": "fce2c91d-9a64-4201-ae8c-3194c92cd77d",
+								"type": "text"
+							}
+						]
+					}
+				],
+				"slideId": "4ec9e663-8d42-4404-aed0-cb9a81e234bf"
+			},
+			"data": {
+				"doneText": "Continue",
+				"columns": [
+					{
+						"title": "### 1. Skin injuries may make food unsafe.",
+						"correct": "True",
+						"incorrect": [
+							"False"
+						]
+					},
+					{
+						"title": "### 2. Bandana is noncompulsory for managers.",
+						"correct": "False",
+						"incorrect": [
+							"True"
+						]
+					}
+				],
+				"answer": {
+					"takeaway": "_Learn other protocols regarding proper hygiene in the following slides._",
+					"incorrect": "Not quite...",
+					"correct": "That's correct!",
+					"text": "Here are the correct answers:\n1. True\n2. False. Managers must also wear bandanas.",
+					"value": null
+				},
+				"game": {
+					"timer": {
+						"limit": -1,
+						"isDisabled": false,
+						"out-of-time-prompt": null
+					},
+					"stars": null
+				},
+				"prompt": "Select each correct answer",
+				"title": "<b>True</b> or <sb>False</sb>",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": {
+					"nb_stars": null,
+					"weighting": 1
+				},
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": null
+			}
+		},
+		{
+			"id": "90cb364b-e56d-4ea1-98ba-19f876d2b9d6",
+			"type": "image-slider",
+			"subtype": "single",
+			"name": 7,
+			"displayIndex": 8,
+			"templateName": "Vertical series",
+			"templateDescription": "Swipe through a group of images",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "90cb364b-e56d-4ea1-98ba-19f876d2b9d6"
+			},
+			"data": {
+				"prompt": "Swipe up to see more",
+				"items": [
+					{
+						"content": "fit_content_assets/jo7g6bqhkqrcaqhoylku.png",
+						"contentType": "image",
+						"position": "Middle",
+						"color": "",
+						"caption": "# <sb>Tip #5:</sb> **Wear Clean Apron and Clothes**",
+						"imagePosition": "Cover",
+						"captionStyle": "Transparent Dark Text"
+					},
+					{
+						"content": "fit_content_assets/gekppthsrqw6ddg81ehw.png",
+						"contentType": "image",
+						"position": "Middle",
+						"color": "",
+						"caption": "## As a team member at Roll'd, your **appearance and presentation** to our customers are critically important.",
+						"imagePosition": "Cover",
+						"captionStyle": "Transparent Dark Text"
+					},
+					{
+						"content": "fit_content_assets/mgdoyzz6lsdfie71oddr.png",
+						"contentType": "image",
+						"position": "Middle",
+						"color": "",
+						"caption": "## Each team member must present a neat, clean, professional, and fun Roll'd image that meets the same standards regardless of where they work.",
+						"imagePosition": "Cover",
+						"captionStyle": "Transparent Dark Text"
+					},
+					{
+						"content": "fit_content_assets/Copy_of_Module_4_8_Non_-_Negotiables_14_whoyic_nxkpf0.png",
+						"contentType": "image",
+						"position": "Bottom",
+						"color": "",
+						"caption": "<h2><strong>Management </strong>must wear a black collar shirt short or long sleeves.</h2>",
+						"imagePosition": "Middle",
+						"captionStyle": "Default"
+					},
+					{
+						"content": "fit_content_assets/Copy_of_Module_4_8_Non_-_Negotiables_14_qhsxs7_mkls87.png",
+						"contentType": "image",
+						"position": "Bottom",
+						"color": "",
+						"caption": "<h2><strong>Front-of-house</strong> (service) team members must wear a Fresh tee and when rolling a FOH apron.</h2>",
+						"imagePosition": "Middle",
+						"captionStyle": "Default"
+					},
+					{
+						"content": "fit_content_assets/Copy_of_Module_4_8_Non_-_Negotiables_14_dxou7h_vo7qjn.png",
+						"contentType": "image",
+						"position": "Bottom",
+						"color": "",
+						"caption": "## **Back-of-house** (kitchen) team members must wear a black apron.",
+						"imagePosition": "Middle",
+						"captionStyle": "Default"
+					}
+				],
+				"arrows": true,
+				"doneText": "Continue",
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "760c69b7-1b29-4f92-bd04-4efcf8865955",
+			"type": "image-collection",
+			"subtype": "image-collection",
+			"name": 8,
+			"displayIndex": 9,
+			"templateName": "Image collection",
+			"templateDescription": "Select an image to see more detail",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "760c69b7-1b29-4f92-bd04-4efcf8865955"
+			},
+			"data": {
+				"prompt": "Select each image for more details",
+				"background": "",
+				"lightbox": false,
+				"images": [
+					{
+						"content": "## **Make-up** should be **subtle**.",
+						"image": "fit_content_assets/Copy_of_Module_4_8_Non_-_Negotiables_3_khwlqb_irqmn3.png",
+						"narration": null
+					},
+					{
+						"content": "## Keep your **hands clean**. Make sure the nails are short and neat and have no nail polish.",
+						"image": "fit_content_assets/pwdnmt7emzixlah2tgvh.png",
+						"narration": null
+					},
+					{
+						"content": "## **Perfumes or after-shaves** with subtle fragrances are permitted.",
+						"image": "fit_content_assets/r8s6rnmr5f7q3gfu1eag.png",
+						"narration": null
+					},
+					{
+						"content": "## We recommend a good **antiperspirant/deodorant** as it gets hot behind the counter when it gets busy.",
+						"image": "fit_content_assets/pz7xjzfgodc4xgytjbse.png",
+						"narration": null
+					},
+					{
+						"content": "## **Hair** should be **clean and tied back** into a tight bun (for females) and under a cap (for males).",
+						"image": "fit_content_assets/Copy_of_Module_4_8_Non_-_Negotiables_15_sr2evv_wxtsxq.png",
+						"narration": null
+					},
+					{
+						"content": "## All men must present a **clean-shaven appearance** with any sideburns, goatees or other facial hair neatly trimmed.",
+						"image": "fit_content_assets/Copy_of_Module_4_8_Non_-_Negotiables_15_xkyvvc_g0pdde.png",
+						"narration": null
+					}
+				],
+				"doneText": "Continue",
+				"title": "<br>\n<sb>Other Personal Hygiene Rules</sb>",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "ce345906-c2dc-474b-a5a9-4cb335270806",
+			"type": "connect",
+			"subtype": "connect-three",
+			"name": 9,
+			"displayIndex": 10,
+			"templateName": "Connect",
+			"templateDescription": "Draw a line between each pair",
+			"permanent": false,
+			"metadata": {
+				"questions": [
+					{
+						"question": {
+							"category": "<b>Match the appropriate <sb>uniform</sb> for each staff</b>",
+							"content": "fit_content_assets/Screenshot_2024-10-22_at_4.10.31_pm_pkhwxo.png",
+							"questionId": "c096af72-3aa6-4b92-86a2-4ea3113eb494",
+							"type": "image"
+						},
+						"answers": [
+							{
+								"content": "<h2>FOH Staff</h2>",
+								"correct": false,
+								"answerId": "e043d480-0aae-4254-baa1-9c9e5b5549b1",
+								"type": "text"
+							},
+							{
+								"content": "<h2>BOH Kitchen Staff</h2>",
+								"correct": false,
+								"answerId": "992c3bf2-5174-4062-af2c-28adbb303958",
+								"type": "text"
+							},
+							{
+								"content": "<h2>Supervisor/ Manager Staff</h2>",
+								"correct": true,
+								"answerId": "945df27b-910c-4584-9db5-cce2100fa75b",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"question": {
+							"category": "<b>Match the appropriate <sb>uniform</sb> for each staff</b>",
+							"content": "fit_content_assets/Screenshot_2024-10-22_at_4.10.03_pm_foev4l.png",
+							"questionId": "ddec214b-275c-4b95-b6a3-8c121b55f77d",
+							"type": "image"
+						},
+						"answers": [
+							{
+								"content": "<h2>Supervisor/ Manager Staff</h2>",
+								"correct": false,
+								"answerId": "73cf19dd-4b72-4a1f-8189-6c356ffdb52b",
+								"type": "text"
+							},
+							{
+								"content": "<h2>BOH Kitchen Staff</h2>",
+								"correct": false,
+								"answerId": "466290db-89ba-4a2b-82bc-1cc54be30095",
+								"type": "text"
+							},
+							{
+								"content": "<h2>FOH Staff</h2>",
+								"correct": true,
+								"answerId": "def9b317-c0c0-4c5f-977e-5ef7d0df0093",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"question": {
+							"category": "<b>Match the appropriate <sb>uniform</sb> for each staff</b>",
+							"content": "fit_content_assets/Screenshot_2024-10-22_at_4.10.14_pm_pjhc6k.png",
+							"questionId": "27dc46e9-6d87-4131-82d5-2f5dabc62b5a",
+							"type": "image"
+						},
+						"answers": [
+							{
+								"content": "<h2>Supervisor/ Manager Staff</h2>",
+								"correct": false,
+								"answerId": "368af34c-2ae9-43b2-ad51-11698ede7300",
+								"type": "text"
+							},
+							{
+								"content": "<h2>FOH Staff</h2>",
+								"correct": false,
+								"answerId": "69263304-3a25-4b7d-a63c-691e57481c63",
+								"type": "text"
+							},
+							{
+								"content": "<h2>BOH Kitchen Staff</h2>",
+								"correct": true,
+								"answerId": "256cbe38-93c6-4da5-b54c-f89589a21e7e",
+								"type": "text"
+							}
+						]
+					}
+				],
+				"slideId": "ce345906-c2dc-474b-a5a9-4cb335270806"
+			},
+			"data": {
+				"pairs": [
+					{
+						"right": "<h2>Supervisor/ Manager Staff</h2>",
+						"rightType": "text",
+						"left": "fit_content_assets/Screenshot_2024-10-22_at_4.10.31_pm_pkhwxo.png",
+						"leftType": "image"
+					},
+					{
+						"right": "<h2>FOH Staff</h2>",
+						"rightType": "text",
+						"left": "fit_content_assets/Screenshot_2024-10-22_at_4.10.03_pm_foev4l.png",
+						"leftType": "image"
+					},
+					{
+						"right": "<h2>BOH Kitchen Staff</h2>",
+						"rightType": "text",
+						"left": "fit_content_assets/Screenshot_2024-10-22_at_4.10.14_pm_pjhc6k.png",
+						"leftType": "image"
+					}
+				],
+				"doneText": "Continue",
+				"answer": {
+					"takeaway": "",
+					"incorrect": "Not quite...",
+					"correct": "That's correct!",
+					"text": "Here are the correct answers:\n* Management - no apron\n* Service - plain black apron\n* Kitchen - striped apron ",
+					"value": null
+				},
+				"game": {
+					"timer": {
+						"limit": -1,
+						"isDisabled": false,
+						"out-of-time-prompt": null
+					},
+					"stars": null
+				},
+				"prompt": "Draw a line between each pair",
+				"title": "<b>Match the appropriate <sb>uniform</sb> for each staff</b>",
+				"titleType": "text",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": {
+					"nb_stars": null,
+					"weighting": 1
+				},
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": null
+			}
+		},
+		{
+			"id": "ab2ac5f7-342e-4e6b-b406-80943a70220c",
+			"type": "exit",
+			"subtype": "default",
+			"name": 10,
+			"displayIndex": 11,
+			"templateName": "Exit Lesson",
+			"templateDescription": "",
+			"permanent": true,
+			"metadata": {
+				"questions": [],
+				"slideId": "ab2ac5f7-342e-4e6b-b406-80943a70220c"
+			},
+			"data": {
+				"content": "<h3>You've completed this <strong>Personal Hygiene</strong> lesson.</h3><h3>Proceed to the next one to earn more stars.</h3>",
+				"buttonText": "Exit Lesson",
+				"title": "<B>Great job!",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": null,
+				"narration": null
+			}
+		}
+	],
+	"title": "Personal Hygiene",
+	"index": 0,
+	"scorm": true,
+	"id": "66e77ee8687f1f539e89630a"
+}
