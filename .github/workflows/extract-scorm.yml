@@ -1,4 +1,4 @@
-name: Extract SCORM
+name: Extract SCORM Zip
 
 on:
   workflow_dispatch:
@@ -9,61 +9,26 @@ on:
       title:
         description: 'Course title'
         required: true
-      entry_point:
-        description: 'SCORM entry point file'
-        required: true
-        default: 'index.html'
-      base_prefix:
-        description: 'Base prefix to strip from paths'
-        required: false
-        default: ''
 
 jobs:
   extract:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v3
 
-      - name: Extract SCORM zip
+      - name: Extract zip to folder
         run: |
           SLUG="${{ github.event.inputs.slug }}"
-          BASE_PREFIX="${{ github.event.inputs.base_prefix }}"
           ZIP_PATH="_zips/${SLUG}.zip"
-          if [ ! -f "$ZIP_PATH" ]; then echo "Zip not found: $ZIP_PATH"; exit 1; fi
+          echo "Extracting ${ZIP_PATH} to ${SLUG}/"
           mkdir -p "${SLUG}"
-          if [ -n "$BASE_PREFIX" ]; then
-            unzip -o "$ZIP_PATH" -d "_tmp_extract"
-            cp -r "_tmp_extract/${BASE_PREFIX}"* "${SLUG}/" 2>/dev/null || true
-            rm -rf "_tmp_extract"
-          else
-            unzip -o "$ZIP_PATH" -d "${SLUG}"
-          fi
-          echo "Extracted $(find ${SLUG} -type f | wc -l) files"
-
-      - name: Patch SCORM index.html
-        run: |
-          SLUG="${{ github.event.inputs.slug }}"
-          if [ -f "${SLUG}/scormcontent/index.html" ]; then INDEX_FILE="${SLUG}/scormcontent/index.html";
-          elif [ -f "${SLUG}/index.html" ]; then INDEX_FILE="${SLUG}/index.html"; else INDEX_FILE=""; fi
-          if [ -n "$INDEX_FILE" ]; then
-            sed -i 's/pick(LMSProxySelections, window.parent, Function.prototype)/pick(LMSProxySelections, window, Function.prototype)/g' "$INDEX_FILE"
-            sed -i 's/LMSProxy.GetStatus() === window.parent.LESSON_STATUS_PASSED/LMSProxy.GetStatus() === "passed"/g' "$INDEX_FILE"
-            python3 - "$INDEX_FILE" <<'PYEOF'
-import sys
-content = open(sys.argv[1]).read()
-if 'window.API = {' not in content:
-    shim = '<script>(function(){var d={};var K="scorm_"+(new URLSearchParams(location.search).get("courseId")||"x");try{var s=localStorage.getItem(K);if(s){d=JSON.parse(s);d["cmi.core.entry"]="resume";}}catch(e){}function sv(){try{localStorage.setItem(K,JSON.stringify(d));}catch(e){}}function sy(){try{parent.postMessage({type:"scorm_update",data:d},"*");}catch(e){}}window.API={LMSInitialize:function(){sy();return"true";},LMSFinish:function(){sv();sy();return"true";},LMSGetValue:function(e){return d[e]!==undefined?String(d[e]):"";},LMSSetValue:function(e,v){d[e]=v;sv();sy();return"true";},LMSCommit:function(){sv();sy();return"true";},LMSGetLastError:function(){return"0";},LMSGetErrorString:function(){return"No error";},LMSGetDiagnostic:function(){return"";}};window.CommitData=function(){sv();sy();};window.SetPassed=function(){d["cmi.core.lesson_status"]="passed";window.CommitData();};window.SetFailed=function(){d["cmi.core.lesson_status"]="failed";window.CommitData();};window.SetReachedEnd=function(){if(not d.get("cmi.core.lesson_status") or d["cmi.core.lesson_status"] in ["incomplete","not attempted"]):d["cmi.core.lesson_status"]="completed";window.CommitData();};window.SetScore=function(s){d["cmi.core.score.raw"]=s;window.CommitData();};window.LESSON_STATUS_PASSED="passed";})()</script>'
-    content = content.replace('</head>', shim + chr(10) + '</head>', 1)
-    open(sys.argv[1], 'w').write(content)
-    print('Patched index.html')
-PYEOF
-          fi
+          unzip -o "${ZIP_PATH}" -d "${SLUG}"
+          echo "Done"
 
       - name: Commit and push
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add "${{ github.event.inputs.slug }}/"
-          git diff --cached --quiet || git commit -m "Extract SCORM: ${{ github.event.inputs.title }}"
+          git config user.email "actions@github.com"
+          git config user.name "GitHub Actions"
+          git add .
+          git commit -m "Extract SCORM: ${{ github.event.inputs.title }}" || echo "Nothing to commit"
           git push
