@@ -1,14 +1,14 @@
 name: Extract SCORM Zip
 
 on:
+  push:
+    paths:
+      - '_zips/*.zip'
   workflow_dispatch:
     inputs:
       slug:
-        description: 'Course slug'
-        required: true
-      title:
-        description: 'Course title'
-        required: true
+        description: 'Course slug (optional - leave blank to extract all new zips)'
+        required: false
 
 jobs:
   extract:
@@ -16,16 +16,24 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 2
 
-      - name: Extract zip to folder
+      - name: Extract new or changed zips
         run: |
-          SLUG="${{ github.event.inputs.slug }}"
-          ZIP_PATH="_zips/${SLUG}.zip"
-          echo "Extracting ${ZIP_PATH} to ${SLUG}/"
-          mkdir -p "${SLUG}"
-          unzip -o "${ZIP_PATH}" -d "${SLUG}"
-          echo "Done"
+          if [ -n "${{ github.event.inputs.slug }}" ]; then
+            ZIPS="${{ github.event.inputs.slug }}.zip"
+          else
+            ZIPS=$(git diff --name-only HEAD~1 HEAD -- '_zips/*.zip' | xargs -I{} basename {})
+          fi
+
+          for ZIP in $ZIPS; do
+            SLUG="${ZIP%.zip}"
+            ZIP_PATH="_zips/${ZIP}"
+            echo "Extracting ${ZIP_PATH} to ${SLUG}/"
+            mkdir -p "${SLUG}"
+            unzip -o "${ZIP_PATH}" -d "${SLUG}"
+            echo "Done: ${SLUG}"
+          done
 
       - name: Commit and push
         run: |
@@ -33,5 +41,5 @@ jobs:
           git config user.name "GitHub Actions"
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git add .
-          git commit -m "Extract SCORM: ${{ github.event.inputs.title }}" || echo "Nothing to commit"
+          git commit -m "Auto-extract SCORM zips" || echo "Nothing to commit"
           git push
