@@ -1,0 +1,820 @@
+{
+	"config": {
+		"background": "fit_content_assets/mgisopgav5vfc0bc4jcs.png",
+		"colors": {
+			"background": "#fff",
+			"experimental": false,
+			"text": "#161616",
+			"theme": "light"
+		},
+		"enableCustomCSS": true,
+		"customCSS": "@import url(\"https://use.typekit.net/aiw8vtw.css\");\n\n\n/*/ Font - you can change this by finding a font to import on Google Fonts /*/\n\n@import url(\"https://use.typekit.net/aiw8vtw.css\");\n\nm {\nfont-family: anton, sans-serif;\n  letter-spacing: 0.03em;\n  font-size: 1em;\n}\n\nbody {\n  font-family: acumin-pro, sans-serif;\n}\n\nb {\n  color:var(--main-color);\n}\nsb {\n  color:var(--accent-color); \n  font-weight:bold;\n}\n\n\nh4 {\n  font-size: 0.9em;\n}\n\nft {\n  background: var(--accent-color);\n  padding-left: 0.4em;\n    padding-right: 0.4em;\n  padding-top: 0.2em;\n    padding-bottom: 0.2em;\n\n  color: var(--text-color)\n}\n\nfti {\n    background: var(--text-color);\n  padding-left: 0.4em;\n    padding-right: 0.4em;\n  padding-top: 0.2em;\n    padding-bottom: 0.2em;\n}\n\n/* Main Colors - Add your primary, accent and text colors. You can also use hex color codes i.e #FF0000 */\n\n:root{\n  --main-color:#085748;\n  --accent-color:#FF0619;\n  --text-color:#FFFFFF;\n}\n\n/* The complicated stuff you don’t need to touch. */\n.btn.btn-muted.btn-done.text-ellipsis,  {\nbackground: url(https://media.edapp.com/image/upload/v1654666896/ringo-uploads/6124efd5975dff6d62262342/courseware/lessons/62a0367a1646103e1a10e85b/j1nvuxth6xyvth6uymvw.png) no-repeat;\n background-size: contain;\n color: var(--accent-color);\n box-shadow:none;\n line-height: .7em;\n transition: none;\n padding-right: 1em;\n}\n.btn.btn-muted.btn-done.text-ellipsis:hover, .btn.btn-muted.btn-done.text-ellipsis.__active {\n box-shadow:none;\n transform:none;\n background-image: url(https://media.edapp.com/image/upload/v1644305426/ringo-uploads/5f92779cffb6c20001de934f/courseware/lessons/615d7ed4d75fa3a3804ca390/up5s0oait5hxkvvfuajj.png);\n  background-size: contain;\n  background-repeat: no-repeat;\n  color: var(--text-color);\n  padding-right: 1em;\n}\n.btn.btn-muted, .btn.btn-solid, #lesson-menu-cancel.btn.btn-block {\n  background:var(--main-color);\n  color:var(--text-color); \n  border-radius:3px;\n  transition: all ease-in-out 300ms;\n  box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4);\n}\n.btn.btn-muted.__active, .btn.btn-muted:hover, .btn.btn-solid.__active, .btn.btn-solid:hover, #lesson-menu-cancel.btn.btn-block:active, #lesson-menu-cancel.btn.btn-block:hover {\n  background: var(--accent-color); \n  color:var(--text-color);\n  transition-delay:0.25s;\n  transition:all ease-in-out 300ms;\n  box-shadow:0px 17px 10px -10px rgba(0,0,0,0.4);\n  transform: translate(0px, -3px);\n}\n\n\n/*/ Header & Slides /*/\n#lesson-header {\n  background:white;\nbox-shadow: 0px 3px 8px 0px rgba(0,0,0,0.3);\n}\n\n#lesson-header-nav, .scroll-middle #lesson-header-nav, .scroll-bottom #lesson-header-nav {\n  background: url(https://media.edapp.com/image/upload/v1644305426/ringo-uploads/5f92779cffb6c20001de934f/courseware/lessons/615d7ed4d75fa3a3804ca390/up5s0oait5hxkvvfuajj.png);\n    background-size: contain;\n    background-repeat: no-repeat;\n    background-position: center;\n    width: 8em;\n  \n}\n#lesson-header-nav-menu-btn {\n  border-left: 1.5px solid var(--text-color);\n}\n#lesson-header-title-content {\n  border-bottom:0px solid var(--main-color);\n  color:var(--main-color); \n}\n#indicator { \n  background-color:var(--main-color); \n  color:var(--accent-color);\n}\n#slides {\n  border-bottom: 0px solid var(--main-color);\n}\n#text-input-view #text-input-dismiss-btn {\n  color:var(--main-color);\n} \n#text-input-view #text-input-container-top {\n  color:var(--main-color);\n}\nli::marker {\n  color:var(--accent-color); \n}\nhr {\n  color:var(--accent-color);\n}\n.pswp__item {\n    background:var(--main-color);\n}\n.selectable.active .btn { \nbackground-color: var(--accent-color);\n}\n\n\n/*/Templates/*/\n.slide-image-slider .style-dark .caption-content {\n  background:var(--main-color);\n  color:var(--text-color);\n  border-radius:3px;\n}\n.slide-image-slider .style-light .caption-content {  \n  background:var(--accent-color);\n  color:var(--text-color);\n  border-radius:3px;\n}\n.slide-image-slider .btn-down, .slide-image-slider .btn-up {\n  background:var(--main-color);\n  color: var(--text-color);\n  border-radius:50%;\n}\n.slide-image-slider .btn-down:hover,.slide-image-slider .btn-down:active, .slide-image-slider .btn-up:hover, .slide-image-slider .btn-up:active {\n  background:var(--accent-color);  \n  color: var(--text-color); \n  border-radius:50%;\n}\n.slide-image-gallery .pagination .dot {\n background-image: url(https://media.edapp.com/image/upload/v1644223193/ringo-uploads/5f92779cffb6c20001de934f/courseware/lessons/615d7ed4d75fa3a3804ca390/jhopbmvtu4dayxb8qj9a.png);\n background-size:cover;\n width:20px;\n height:20px;\n border: 0px solid;\n}\n.slide-image-gallery .pagination .dot.active {\n background-image: url(https://media.edapp.com/image/upload/v1644223190/ringo-uploads/5f92779cffb6c20001de934f/courseware/lessons/615d7ed4d75fa3a3804ca390/imstvtgvd3bkebaccvld.png);\n background-size:cover;\n width:20px;\n height:20px;\n border: 0px solid;\n}\n.slide-image-collection .tappy{ \n  transition: transform .5s ease;\n}\n.slide-image-collection .tappy:hover {\n transform: scale(1.1);\n}\n.slide-text-sequence .btn-down, .slide-text-sequence .btn-up {\n  background:var(--main-color);\n  color: var(--text-color);\n  border-radius:50%;\n}\n.slide-text-sequence .btn-down:hover,.slide-text-sequence .btn-down:active, .slide-text-sequence .btn-up:hover, .slide-text-sequence .btn-up:active {\n  background:var(--accent-color);  \n  color: var(--text-color); \n  border-radius:50%;\n}\n.slide-reveal .btn-reveal-title.flippable {\n  background:var(--accent-color);\n  color: var(--text-color); \n} \n.slide-reveal .btn-reveal.active .btn-reveal-desc.flippable {\n  background:var(--main-color);\n  color: var(--text-color); \n}\n.slide-reveal .btn-reveal-desc, .slide-reveal .btn-reveal-title {\n  pointer-events:none;\n}\n.slide-expandable-list .item.active .item-button {\n  background:var(--accent-color);  \n  color: var(--text-color); \n}\n.slide-image-waypoints .prev-wp, .slide-image-waypoints .next-wp{ \n  background:var(--main-color);\n  color: var(--text-color);\n}\n.slide-list ::marker {\n  color:var(--accent-color); \n}\n.slide-speech-bubble .quote.quote-dk .quote-bg, .quote.quote-dk {\n   background:var(--main-color);  \n   color: var(--text-color); \n   opacity: 1;\n}\n.slide-speech-bubble .quote.pull-left.quote-dk:after {\n    border-color: var(--main-color) transparent transparent;\n}\n.slide-comparison .slider-knob {\n    background-color:var(--main-color);\n}\n.slide-comparison .slider-knob:before, .slide-comparison .slider-knob:after {\n   background-color:var(--main-color);\n}\n.slide-table .table-row:nth-child(odd) {\n    border-radius:3px;\n    background: var(--accent-color);\n    color: var(--text-color);\n}\n.slide-table .table-row:nth-child(even) {\n    border-radius:3px;\n    background:var(--accent-color);\n    color: var(--text-color); \n}\n\n/*/Interactions/*/\n.slide-chat .message--question {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-chat.show-msg-true .selectable {\n  background:var(--accent-color);\n  color:var(--text-color);\n}\n.slide-chat.show-msg-true .selectable.active {\n  background: var(--main-color);\n  color:var(--text-color);\n}\n.slide-chat.state-complete .chat-msg.incorrect {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-chat.state-complete .chat-msg.correct {\n  background:var(--accent-color);\n  color:var(--text-color);\n}\n.slide-chat .message--question:after {\n  border-color:var(--main-color) transparent transparent;\n}\n.slide-chat .message--answer:after {\n  border-color:var(--accent-color) transparent transparent;\n}\n.slide-categorise .direction-ltr .selectable .btn-long, .direction-ltr .draggy .btn-long {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-circle-the-answer .circle-box.active .circle-box-text, .text-dark .slide-circle-the-answer .circle-box.active .circle-box-text {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-multiple-choice-game .btn.btn-solid {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-multiple-choice-game .selectable.active .btn {\n  background:var(--accent-color);\n  color:var(--text-color);\n}\n.slide-multiple-choice-game.state-complete .selectable.incorrect .btn {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-multiple-choice-game.state-complete .selectable.correct .btn {\n  background:var(--accent-color);\n  color:var(--text-color);\n}\n.slide-connect .connect-box {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-connect .connect-box.complete {\n  background:var(--accent-color);\n  color:var(--text-color);\n}\n.slide-game-true-or-false .game-statement {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-game-image-word-match .btn-word {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-game-image-word-match .btn-word.__active {\n  background:var(--accent-color);\n  color:var(--text-color);\n}\n.slide-carousel .btn.btn-solid {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-slider .slider-bar, .slide-slider-survey .slider-bar {\n  background:var(--main-color);\n}\n.slide-slider.active .slider-knob-input, .active.slide-slider-survey .slider-knob-input {\n  background:var(--accent-color);\n}\n.slide-free-text-survey .btn-prompt, .slide-free-text-contribution .btn-prompt {\n  border-radius:50% !important;\n}",
+		"direction": "ltr",
+		"disableInteractionSummary": true,
+		"disableLessonScore": false,
+		"hasAnswerFeedback": true,
+		"hasScormExitButton": false,
+		"preventLogoutOnExit": false,
+		"indicator": true,
+		"logo": "fit_content_assets/rowps1bij5pfjdyenenm.png",
+		"minimumScore": 0,
+		"pageNumbers": true,
+		"pagination": false,
+		"soundDisabled": false,
+		"language": "en"
+	},
+	"slides": [
+		{
+			"id": "0b62f172-5be3-4a52-ae46-11ccaa0a7d81",
+			"type": "image-slider",
+			"subtype": "single",
+			"name": 0,
+			"displayIndex": 1,
+			"templateName": "Vertical series",
+			"templateDescription": "Swipe through a group of images",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "0b62f172-5be3-4a52-ae46-11ccaa0a7d81"
+			},
+			"data": {
+				"prompt": "<ft>Swipe up to see more",
+				"items": [
+					{
+						"content": "fit_content_assets/vqog0cjphgelk3omp7hj.gif",
+						"contentType": "image",
+						"position": "Top",
+						"color": "n",
+						"caption": "#### <b><span style=\"font-size:110%\">ROLL'D - FOOD SAFETY\n# <sb><m><span style=\"font-size:130%\">**Work Area and Equipment**\n",
+						"imagePosition": "Cover",
+						"captionStyle": "Default"
+					},
+					{
+						"content": "fit_content_assets/e4mhb10qihyo17s8wtfw.jpg",
+						"contentType": "image",
+						"position": "Middle",
+						"color": "n",
+						"caption": "# <sb><m>WELCOME TO YOUR COURSE!\n### <b> In this course, we'll be focusing on the Food Safety Protocols on:\n\n- Personal Hygiene\n- Temperature\n- Time\n- Food Separation\n- Storage\n- Work Area and Equipment",
+						"imagePosition": "Cover",
+						"captionStyle": "Default"
+					},
+					{
+						"content": "fit_content_assets/wtkildshniuxtxkzhysx.jpg",
+						"contentType": "image",
+						"position": "Middle",
+						"color": "n",
+						"caption": "## In this lesson, you will learn about:\n- ## Cleaning and Sanitising\n- ## Procedures to Prevent Contamination",
+						"imagePosition": "Cover",
+						"captionStyle": "Default"
+					},
+					{
+						"content": "fit_content_assets/tkmoc6qqzoenawphtinb.jpg",
+						"contentType": "image",
+						"position": "Top",
+						"color": "n",
+						"caption": "# <b>ARE YOU READY TO <sb>_ROLL'D_</sb>?",
+						"imagePosition": "Cover",
+						"captionStyle": "Default"
+					}
+				],
+				"arrows": true,
+				"doneText": "Ready!",
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "c92d3ce0-120d-4680-ab5f-7c6f29839f6d",
+			"type": "image-gallery",
+			"subtype": "image-gallery",
+			"name": 1,
+			"displayIndex": 2,
+			"templateName": "Horizontal series",
+			"templateDescription": "Swipe through a gallery of images",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "c92d3ce0-120d-4680-ab5f-7c6f29839f6d"
+			},
+			"data": {
+				"prompt": "Swipe to continue",
+				"background": "",
+				"lightbox": false,
+				"images": [
+					{
+						"image": "fit_content_assets/joptysqjlx6unwiq4ico.png",
+						"caption": "<h1>➤ Cleaning and Sanitising</h1>"
+					},
+					{
+						"image": "fit_content_assets/rzokpgkepqt6qum99xpu.png",
+						"caption": "<h2><strong>➤ Clean and sanitise</strong> equipment, vehicles, containers and cleaning cloths correctly to avoid food contamination. You must:</h2>"
+					},
+					{
+						"image": "fit_content_assets/bgembdrvb2ssmavxjxyr.png",
+						"caption": "## <div align=left> ➤ Use appropriate **cleaning products and equipment**."
+					},
+					{
+						"image": "fit_content_assets/ueavjy8e6op74gnt0iev.png",
+						"caption": "<h2>➤ Develop and implement <strong>effective cleaning arrangements</strong>. Team Members should know how to clean, what to clean, and when.</h2>"
+					},
+					{
+						"image": "fit_content_assets/y5msvskrco2wd2rx1tvh.png",
+						"caption": "<h2>➤ Ensure <strong>Team  </strong>have the <strong>required skills</strong>.</h2>"
+					},
+					{
+						"image": "fit_content_assets/w8or5nkjtlql8qcjgddr.png",
+						"caption": "## <div align=left> ➤ **Replace cleaning cloths and equipment** regularly."
+					}
+				],
+				"doneText": "Continue",
+				"title": null,
+				"titleType": null,
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "232f4d30-34d9-42a8-91ee-3250bd0b37a5",
+			"type": "expandable-list",
+			"subtype": "three",
+			"name": 2,
+			"displayIndex": 3,
+			"templateName": "Expandable list",
+			"templateDescription": "Display a list of bullet points",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "232f4d30-34d9-42a8-91ee-3250bd0b37a5"
+			},
+			"data": {
+				"content": null,
+				"prompt": "Select an item to see more",
+				"focus": true,
+				"doneText": "Continue",
+				"list": [
+					{
+						"content": "## Scrape, wipe or sweep away food scraps and rinse with water.",
+						"title": "Step 1: Pre-Clean"
+					},
+					{
+						"content": "## Use hot water and detergent to remove grease and dirt and soak if needed.",
+						"title": "Step 2: Wash"
+					},
+					{
+						"content": "## Rinse off any loose dirt or detergent foam.",
+						"title": "Step 3: Rinse"
+					},
+					{
+						"content": "## Use sanitiser to kill remaining germs.",
+						"title": "Step 4: Sanitise"
+					},
+					{
+						"content": "## Wash off sanitiser. Read the instructions on the sanitiser container to see if you need to do this.",
+						"title": "Step 5: Final Rinse"
+					},
+					{
+						"content": "## Allow to air dry.",
+						"title": "Step 6: Dry"
+					}
+				],
+				"title": "<sb>Steps in Cleaning and Sanitising Food Contact Surfaces and Equipment </sb>",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "784d3995-b1bc-40eb-9f70-29a5715afffa",
+			"type": "reorder",
+			"subtype": "cities",
+			"name": 3,
+			"displayIndex": 4,
+			"templateName": "Reorder",
+			"templateDescription": "Put the items in the correct order",
+			"permanent": false,
+			"metadata": {
+				"questions": [
+					{
+						"question": {
+							"content": "**Arrange the steps in cleaning and sanitising equipment in order**",
+							"questionId": "0531b1a7-1877-4a88-af37-20ca891a347f",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "Pre-Clean|Wash|Rinse|Sanitise|Final Rinse|Dry",
+								"correct": true,
+								"answerId": "122a7ffc-3726-4f0c-ba98-b6c0f65cfedb",
+								"type": "sequence"
+							},
+							{
+								"correct": false,
+								"answerId": "1e019426-7395-44a0-9ff7-f40c4c8d29e8",
+								"type": "incorrect-answer"
+							}
+						]
+					}
+				],
+				"slideId": "784d3995-b1bc-40eb-9f70-29a5715afffa"
+			},
+			"data": {
+				"doneText": "Continue",
+				"list": [
+					"Pre-Clean",
+					"Wash",
+					"Rinse",
+					"Sanitise",
+					"Final Rinse",
+					"Dry"
+				],
+				"answer": {
+					"takeaway": "_Learn more about the work area and equipment protocols in the following slides._",
+					"incorrect": "Not quite...",
+					"correct": "That's correct!",
+					"text": "Here's the recap of the steps:\n1. Pre-Clean\n2. Wash\n3. Rinse\n4. Sanitise\n5. Final Rinse\n6. Dry",
+					"value": null
+				},
+				"game": {
+					"timer": {
+						"limit": -1,
+						"isDisabled": false,
+						"out-of-time-prompt": null
+					},
+					"stars": null
+				},
+				"prompt": "Put the items in the correct order",
+				"title": "**Arrange the steps in cleaning and sanitising equipment in order**",
+				"titleType": "text",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": {
+					"nb_stars": null,
+					"weighting": 1
+				},
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": null
+			}
+		},
+		{
+			"id": "e44c5520-a4b0-436d-9f48-30ae42eeeb3b",
+			"type": "parallax",
+			"subtype": "multiple",
+			"name": 4,
+			"displayIndex": 5,
+			"templateName": "Image stack",
+			"templateDescription": "Create the illusion of 3-dimensions",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "e44c5520-a4b0-436d-9f48-30ae42eeeb3b"
+			},
+			"data": {
+				"images": [
+					"fit_content_assets/rfg9xlgjbiwsz3gfy0cy.png",
+					"fit_content_assets/gzwylb7ftgvqmz5dmvwk.png",
+					"fit_content_assets/jbjydkle9tl1kit6m3w6.png",
+					"fit_content_assets/mmtfblnr6ol1y3l9ujpj.png"
+				],
+				"caption": "<h1>Cleaning Schedule</h1><h3>It is important to have and follow a <strong>cleaning schedule</strong> to ensure that every part of our store is clean.</h3><h3>Please refer to the <strong>Team Member Hub </strong>to download the Cleaning Schedule documents.</h3>",
+				"background": "",
+				"doneText": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "3105c36b-d39f-4e77-b7c1-26df1e5f3a74",
+			"type": "scrolling-media",
+			"subtype": "scrolling-media",
+			"name": 5,
+			"displayIndex": 6,
+			"templateName": "Scrolling mix",
+			"templateDescription": "Display long form content of any type",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "3105c36b-d39f-4e77-b7c1-26df1e5f3a74"
+			},
+			"data": {
+				"content": [
+					{
+						"content": "## Please look and read through our <a href=\"https://media.edapp.com/image/upload/v1667452076/briefcase-documents/Soldier_Tray_Cleaning_Procedure_pxgvqt.pdf\">'**Soldier Tray Cleaning Procedures**'</a> in the briefcase to ensure that no contamination occurs to our soldiers.",
+						"contentType": "text"
+					},
+					{
+						"content": "fit_content_assets/Copy_of_Module_4_8_Non_-_Negotiables_9_c1gnd1_mwh6ta_lyythq.png",
+						"contentType": "image"
+					}
+				],
+				"prompt": "Scroll to see more",
+				"doneText": "Continue",
+				"preventFocus": true,
+				"title": "<sb>Soldier Tray Cleaning Procedure</sb>",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "cb5bd9ef-44a3-4ec7-bf96-91501d35062a",
+			"type": "scratch-to-reveal",
+			"subtype": "scratch-to-reveal",
+			"name": 6,
+			"displayIndex": 7,
+			"templateName": "Scratch to reveal",
+			"templateDescription": "Scratch to reveal the content",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "cb5bd9ef-44a3-4ec7-bf96-91501d35062a"
+			},
+			"data": {
+				"before": {
+					"label": "",
+					"content": "fit_content_assets/Screen_Shot_2024-09-17_at_10.33.51_am_cacp14.png",
+					"contentType": "image"
+				},
+				"after": {
+					"label": "",
+					"content": "<h2>To ensure that our equipment is functioning properly, we must follow a <strong>regular maintenance schedule</strong>.</h2><h2>Please refer to the Team Member Hub<strong>, Training Home</strong> to download the Maintenance Schedule documents.</h2>",
+					"contentType": "text"
+				},
+				"canvasBackground": null,
+				"prompt": "Scratch to reveal the content",
+				"doneText": "Continue",
+				"title": "<sb>Maintenance Schedule</sb>",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "5ddd6a22-6d64-4a25-a575-58e72af23532",
+			"type": "circle-the-answer",
+			"subtype": "circle-the-answer",
+			"name": 7,
+			"displayIndex": 8,
+			"templateName": "Circle the answer",
+			"templateDescription": "",
+			"permanent": false,
+			"metadata": {
+				"questions": [
+					{
+						"question": {
+							"content": "**Where can you locate the cleaning and maintenance schedule documents?**",
+							"questionId": "996d79c8-ac84-4bdb-88cc-a9a6fc172ee1",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "Area Manager Platform ",
+								"correct": false,
+								"answerId": "ee82d7bd-cde7-410c-9869-083889cde4c6",
+								"type": "text"
+							},
+							{
+								"content": "Store Manager Platform ",
+								"correct": false,
+								"answerId": "2ed0e4a4-19cb-4260-bdc2-e338d95379c7",
+								"type": "text"
+							},
+							{
+								"content": "<p>Team Member Hub</p>",
+								"correct": true,
+								"answerId": "03978e4c-513e-48cc-ba8b-08bb5395af2f",
+								"type": "text"
+							}
+						]
+					}
+				],
+				"slideId": "5ddd6a22-6d64-4a25-a575-58e72af23532"
+			},
+			"data": {
+				"answers": {
+					"correct": "<p>Team Member Hub</p>",
+					"incorrect": [
+						"Area Manager Platform ",
+						"Store Manager Platform "
+					]
+				},
+				"doneText": "Continue",
+				"answer": {
+					"takeaway": "_Learn more about the work area and equipment protocols in the following slides._",
+					"incorrect": "Not quite...",
+					"correct": "That's correct!",
+					"text": "<p>Please visit the <strong>Team Member Hub</strong> for download links to the Cleaning and Maintenance Schedule documents.</p>",
+					"value": null
+				},
+				"game": {
+					"timer": {
+						"limit": -1,
+						"isDisabled": false,
+						"out-of-time-prompt": null
+					},
+					"stars": null
+				},
+				"prompt": "Circle the correct answer",
+				"title": "**Where can you locate the cleaning and maintenance schedule documents?**",
+				"titleType": "text",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": {
+					"nb_stars": null,
+					"weighting": 1
+				},
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": null
+			}
+		},
+		{
+			"id": "b562d1e1-c19c-4d92-bc4d-722cb61f1746",
+			"type": "reveal",
+			"subtype": "reveal",
+			"name": 8,
+			"displayIndex": 9,
+			"templateName": "Reveal",
+			"templateDescription": "Flip cards to reveal more details",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "b562d1e1-c19c-4d92-bc4d-722cb61f1746"
+			},
+			"data": {
+				"content": [
+					{
+						"title": "<img src=\"https://img.icons8.com/external-flatart-icons-outline-flatarticons/50/FFFFFF/external-mincer-home-appliances-and-kitchen-flatart-icons-outline-flatarticons.png\"/>",
+						"description": "### Maintain equipment and replace it when defective. Some equipment, such as slicers and mincers, must be regularly checked to ensure they operate safely and are adequately cleaned."
+					},
+					{
+						"title": "<img src=\"https://img.icons8.com/ios-glyphs/50/FFFFFF/soccer-goal.png\"/>",
+						"description": "### Make sure pest control screens and refrigerators are working correctly to maintain the safety of the food you produce."
+					},
+					{
+						"title": "<img src=\"https://img.icons8.com/ios/50/FFFFFF/industrial-scales.png\"/>",
+						"description": "### Make sure equipment, such as weighing scales, is calibrated or adjusted to be reliable and accurate. "
+					},
+					{
+						"title": "<img src=\"https://img.icons8.com/ios/50/FFFFFF/medical-thermometer.png\"/>",
+						"description": "### Clean and sanitise probe thermometers before and after each use. When inserting a probe into food, clean and sanitise after checking each food item."
+					}
+				],
+				"prompt": "Select each item to find out more",
+				"focus": true,
+				"doneText": "Continue",
+				"title": "<br>\n<sb>Thermometers and Equipment</sb>",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "949e0428-87e0-4706-9db4-637cbc3e3026",
+			"type": "image-slider",
+			"subtype": "single",
+			"name": 9,
+			"displayIndex": 10,
+			"templateName": "Vertical series",
+			"templateDescription": "Swipe through a group of images",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "949e0428-87e0-4706-9db4-637cbc3e3026"
+			},
+			"data": {
+				"prompt": "Swipe up to see more",
+				"items": [
+					{
+						"content": "fit_content_assets/eeuvgtz5ptyjwzz4x97z.jpg",
+						"contentType": "image",
+						"position": "Middle",
+						"color": "",
+						"caption": "# <sb>Back of House</sb>\n",
+						"imagePosition": "Cover",
+						"captionStyle": "Transparent Dark Text"
+					},
+					{
+						"content": "fit_content_assets/oairxjytfro2gm2gtqkw.jpg",
+						"contentType": "image",
+						"position": "Middle",
+						"color": "n",
+						"caption": "## Keeping a **clean kitchen** is everyone's responsibility. ",
+						"imagePosition": "Cover",
+						"captionStyle": "Transparent Dark Text"
+					},
+					{
+						"content": "fit_content_assets/gdat5crkdjo0oepp5akj.jpg",
+						"contentType": "image",
+						"position": "Middle",
+						"color": "n",
+						"caption": "## **Food safety** is critical to the success of your business, so keeping the kitchen clean (including fridges and freezers) is **not negotiable**.",
+						"imagePosition": "Cover",
+						"captionStyle": "Transparent Dark Text"
+					},
+					{
+						"content": "fit_content_assets/zsokrdjfgewsnef6cbo8.jpg",
+						"contentType": "image",
+						"position": "Middle",
+						"color": "n",
+						"caption": "## Follow food safety **requirements **at all times.",
+						"imagePosition": "Cover",
+						"captionStyle": "Transparent Dark Text"
+					},
+					{
+						"content": "fit_content_assets/da7yyzqcbgi0ngrwaf2r.jpg",
+						"contentType": "image",
+						"position": "Middle",
+						"color": "n",
+						"caption": "## Sanitise the **benches** before and after use.",
+						"imagePosition": "Cover",
+						"captionStyle": "Transparent Dark Text"
+					},
+					{
+						"content": "fit_content_assets/cnbsq508yvqva7g9ygel.jpg",
+						"contentType": "image",
+						"position": "Middle",
+						"color": "n",
+						"caption": "## Sweep and mop all **floors **and underneath **all equipment**.",
+						"imagePosition": "Cover",
+						"captionStyle": "Transparent Dark Text"
+					},
+					{
+						"content": "fit_content_assets/dexf2tmfw8ndk39x60we.jpg",
+						"contentType": "image",
+						"position": "Middle",
+						"color": "n",
+						"caption": "## Change the **bins **when they are **3/4 full**.",
+						"imagePosition": "Cover",
+						"captionStyle": "Transparent Dark Text"
+					},
+					{
+						"content": "fit_content_assets/sbvtg5qurtgxijmbdbch.jpg",
+						"contentType": "image",
+						"position": "Middle",
+						"color": "n",
+						"caption": "## **Separate the food items** to avoid contamination—for example, separate meats from veggies and chillers.",
+						"imagePosition": "Cover",
+						"captionStyle": "Transparent Dark Text"
+					},
+					{
+						"content": "fit_content_assets/jufxkze3vnez1zxnsud8.jpg",
+						"contentType": "image",
+						"position": "Middle",
+						"color": "n",
+						"caption": "## **Do not store personal items** above food items or preparation areas.",
+						"imagePosition": "Cover",
+						"captionStyle": "Transparent Dark Text"
+					}
+				],
+				"arrows": true,
+				"doneText": "Continue",
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "8ca142cd-b40f-43bf-9aac-4994867982bc",
+			"type": "matrix",
+			"subtype": "matrix",
+			"name": 10,
+			"displayIndex": 11,
+			"templateName": "Multi-question",
+			"templateDescription": "",
+			"permanent": false,
+			"metadata": {
+				"questions": [
+					{
+						"question": {
+							"category": "<b>DO</b> or <sb>DON'T</sb>",
+							"content": "### 1. In between each usage, clean and sanitise the probe thermometers.",
+							"questionId": "c9144df7-9228-4999-8071-45a060ce0ddc",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "DON'T",
+								"correct": false,
+								"answerId": "96d5eb4b-b734-45b0-b558-0c763101ef1b",
+								"type": "text"
+							},
+							{
+								"content": "DO",
+								"correct": true,
+								"answerId": "234e48a5-4045-4312-af13-26a4f7405bcc",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"question": {
+							"category": "<b>DO</b> or <sb>DON'T</sb>",
+							"content": "### 2. Only change bins once they are full.",
+							"questionId": "7a9da443-f0d1-40c2-bf1f-69cab3d6bea9",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "DO",
+								"correct": false,
+								"answerId": "56855f5a-0bdc-4938-b49d-39e3c67e0eac",
+								"type": "text"
+							},
+							{
+								"content": "DON'T",
+								"correct": true,
+								"answerId": "fc67eccd-fb3d-4485-b7ae-8eaffc138462",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"question": {
+							"category": "<b>DO</b> or <sb>DON'T</sb>",
+							"content": "### 3. Store personal belongings above food items.",
+							"questionId": "8ce316bd-cc70-421f-80cd-0c0a5096658f",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "DO",
+								"correct": false,
+								"answerId": "d2b083a5-0b9d-45c2-b556-3d44a9348e44",
+								"type": "text"
+							},
+							{
+								"content": "DON'T",
+								"correct": true,
+								"answerId": "9e9fa086-0b87-48e0-b248-66aaf6f00a02",
+								"type": "text"
+							}
+						]
+					}
+				],
+				"slideId": "8ca142cd-b40f-43bf-9aac-4994867982bc"
+			},
+			"data": {
+				"doneText": "Continue",
+				"columns": [
+					{
+						"title": "### 1. In between each usage, clean and sanitise the probe thermometers.",
+						"correct": "DO",
+						"incorrect": [
+							"DON'T"
+						]
+					},
+					{
+						"title": "### 2. Only change bins once they are full.",
+						"correct": "DON'T",
+						"incorrect": [
+							"DO"
+						]
+					},
+					{
+						"title": "### 3. Store personal belongings above food items.",
+						"correct": "DON'T",
+						"incorrect": [
+							"DO"
+						]
+					}
+				],
+				"answer": {
+					"takeaway": "",
+					"incorrect": "Not quite...",
+					"correct": "That's correct!",
+					"text": "Here are the correct answers:\n1. Do\n2. Don't\n3. Don't",
+					"value": null
+				},
+				"game": {
+					"timer": {
+						"limit": -1,
+						"isDisabled": false,
+						"out-of-time-prompt": null
+					},
+					"stars": null
+				},
+				"prompt": "Select each correct answer",
+				"title": "<b>DO</b> or <sb>DON'T</sb>",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": {
+					"nb_stars": null,
+					"weighting": 1
+				},
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": null
+			}
+		},
+		{
+			"id": "a714b044-ebc8-4ce5-a902-72f56cefb0bd",
+			"type": "exit",
+			"subtype": "default",
+			"name": 11,
+			"displayIndex": 12,
+			"templateName": "Exit Lesson",
+			"templateDescription": "",
+			"permanent": true,
+			"metadata": {
+				"questions": [],
+				"slideId": "a714b044-ebc8-4ce5-a902-72f56cefb0bd"
+			},
+			"data": {
+				"content": "<h3>You've completed this <strong>Work Area and Equipment</strong> lesson.</h3><h3>Almost there!</h3>",
+				"buttonText": "Exit Lesson",
+				"title": "<B>Great job!",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": null,
+				"narration": null
+			}
+		}
+	],
+	"title": "Work Area and Equipment",
+	"index": 0,
+	"scorm": true,
+	"id": "66e77ee8687f1f539e89630e"
+}

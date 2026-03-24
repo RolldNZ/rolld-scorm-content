@@ -1,0 +1,808 @@
+{
+	"config": {
+		"background": "fit_content_assets/mgisopgav5vfc0bc4jcs.png",
+		"colors": {
+			"background": "#fff",
+			"experimental": false,
+			"text": "#161616",
+			"theme": "light"
+		},
+		"enableCustomCSS": true,
+		"customCSS": "@import url(\"https://use.typekit.net/aiw8vtw.css\");\n\n\n/*/ Font - you can change this by finding a font to import on Google Fonts /*/\n\n@import url(\"https://use.typekit.net/aiw8vtw.css\");\n\nm {\nfont-family: anton, sans-serif;\n  letter-spacing: 0.03em;\n  font-size: 1em;\n}\n\nbody {\n  font-family: acumin-pro, sans-serif;\n}\n\nb {\n  color:var(--main-color);\n}\nsb {\n  color:var(--accent-color); \n  font-weight:bold;\n}\n\n\nh4 {\n  font-size: 0.9em;\n}\n\nft {\n  background: var(--accent-color);\n  padding-left: 0.4em;\n    padding-right: 0.4em;\n  padding-top: 0.2em;\n    padding-bottom: 0.2em;\n\n  color: var(--text-color)\n}\n\nfti {\n    background: var(--text-color);\n  padding-left: 0.4em;\n    padding-right: 0.4em;\n  padding-top: 0.2em;\n    padding-bottom: 0.2em;\n}\n\n/* Main Colors - Add your primary, accent and text colors. You can also use hex color codes i.e #FF0000 */\n\n:root{\n  --main-color:#085748;\n  --accent-color:#FF0619;\n  --text-color:#FFFFFF;\n}\n\n/* The complicated stuff you don’t need to touch. */\n.btn.btn-muted.btn-done.text-ellipsis {\nbackground: url(https://media.edapp.com/image/upload/v1654666896/ringo-uploads/6124efd5975dff6d62262342/courseware/lessons/62a0367a1646103e1a10e85b/j1nvuxth6xyvth6uymvw.png) no-repeat;\n background-size: contain;\n color: var(--accent-color);\n box-shadow:none;\n line-height: .7em;\n transition: none;\n padding-right: 1em;\n}\n.btn.btn-muted.btn-done.text-ellipsis:hover, .btn.btn-muted.btn-done.text-ellipsis.__active {\n box-shadow:none;\n transform:none;\n background-image: url(https://media.edapp.com/image/upload/v1644305426/ringo-uploads/5f92779cffb6c20001de934f/courseware/lessons/615d7ed4d75fa3a3804ca390/up5s0oait5hxkvvfuajj.png);\n  background-size: contain;\n  background-repeat: no-repeat;\n  color: var(--text-color);\n  padding-right: 1em;\n}\n.btn.btn-muted, .btn.btn-solid {\n  background:var(--main-color);\n  color:var(--text-color); \n  border-radius:3px;\n  transition: all ease-in-out 300ms;\n  box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4);\n}\n.btn.btn-muted.__active, .btn.btn-muted:hover, .btn.btn-solid.__active, .btn.btn-solid:hover {\n  background: var(--accent-color); \n  color:var(--text-color);\n  transition-delay:0.25s;\n  transition:all ease-in-out 300ms;\n  box-shadow:0px 17px 10px -10px rgba(0,0,0,0.4);\n  transform: translate(0px, -3px);\n}\n\n\n/*/ Header & Slides /*/\n#lesson-header {\n  background:white;\nbox-shadow: 0px 3px 8px 0px rgba(0,0,0,0.3);\n}\n\n#lesson-header-nav, .scroll-middle #lesson-header-nav, .scroll-bottom #lesson-header-nav {\n  background: url(https://media.edapp.com/image/upload/v1644305426/ringo-uploads/5f92779cffb6c20001de934f/courseware/lessons/615d7ed4d75fa3a3804ca390/up5s0oait5hxkvvfuajj.png);\n    background-size: contain;\n    background-repeat: no-repeat;\n    background-position: center;\n    width: 8em;\n  \n}\n#lesson-header-nav-menu-btn {\n  border-left: 1.5px solid var(--text-color);\n}\n#lesson-header-title-content {\n  border-bottom:0px solid var(--main-color);\n  color:var(--main-color); \n}\n#indicator { \n  background-color:var(--main-color); \n  color:var(--accent-color);\n}\n#slides {\n  border-bottom: 0px solid var(--main-color);\n}\n#text-input-view #text-input-dismiss-btn {\n  color:var(--main-color);\n} \n#text-input-view #text-input-container-top {\n  color:var(--main-color);\n}\nli::marker {\n  color:var(--accent-color); \n}\nhr {\n  color:var(--accent-color);\n}\n.pswp__item {\n    background:var(--main-color);\n}\n.selectable.active .btn { \nbackground-color: var(--accent-color);\n}\n\n\n/*/Templates/*/\n.slide-image-slider .style-dark .caption-content {\n  background:var(--main-color);\n  color:var(--text-color);\n  border-radius:3px;\n}\n.slide-image-slider .style-light .caption-content {  \n  background:var(--accent-color);\n  color:var(--text-color);\n  border-radius:3px;\n}\n.slide-image-slider .btn-down, .slide-image-slider .btn-up {\n  background:var(--main-color);\n  color: var(--text-color);\n  border-radius:50%;\n}\n.slide-image-slider .btn-down:hover,.slide-image-slider .btn-down:active, .slide-image-slider .btn-up:hover, .slide-image-slider .btn-up:active {\n  background:var(--accent-color);  \n  color: var(--text-color); \n  border-radius:50%;\n}\n.slide-image-gallery .pagination .dot {\n background-image: url(https://media.edapp.com/image/upload/v1644223193/ringo-uploads/5f92779cffb6c20001de934f/courseware/lessons/615d7ed4d75fa3a3804ca390/jhopbmvtu4dayxb8qj9a.png);\n background-size:cover;\n width:20px;\n height:20px;\n border: 0px solid;\n}\n.slide-image-gallery .pagination .dot.active {\n background-image: url(https://media.edapp.com/image/upload/v1644223190/ringo-uploads/5f92779cffb6c20001de934f/courseware/lessons/615d7ed4d75fa3a3804ca390/imstvtgvd3bkebaccvld.png);\n background-size:cover;\n width:20px;\n height:20px;\n border: 0px solid;\n}\n.slide-image-collection .tappy{ \n  transition: transform .5s ease;\n}\n.slide-image-collection .tappy:hover {\n transform: scale(1.1);\n}\n.slide-text-sequence .btn-down, .slide-text-sequence .btn-up {\n  background:var(--main-color);\n  color: var(--text-color);\n  border-radius:50%;\n}\n.slide-text-sequence .btn-down:hover,.slide-text-sequence .btn-down:active, .slide-text-sequence .btn-up:hover, .slide-text-sequence .btn-up:active {\n  background:var(--accent-color);  \n  color: var(--text-color); \n  border-radius:50%;\n}\n.slide-reveal .btn-reveal-title.flippable {\n  background:var(--accent-color);\n  color: var(--text-color); \n} \n.slide-reveal .btn-reveal.active .btn-reveal-desc.flippable {\n  background:var(--main-color);\n  color: var(--text-color); \n}\n.slide-reveal .btn-reveal-desc, .slide-reveal .btn-reveal-title {\n  pointer-events:none;\n}\n.slide-expandable-list .item.active .item-button {\n  background:var(--accent-color);  \n  color: var(--text-color); \n}\n.slide-image-waypoints .prev-wp, .slide-image-waypoints .next-wp{ \n  background:var(--main-color);\n  color: var(--text-color);\n}\n.slide-list ::marker {\n  color:var(--accent-color); \n}\n.slide-speech-bubble .quote.quote-dk .quote-bg, .quote.quote-dk {\n   background:var(--main-color);  \n   color: var(--text-color); \n   opacity: 1;\n}\n.slide-speech-bubble .quote.pull-left.quote-dk:after {\n    border-color: var(--main-color) transparent transparent;\n}\n.slide-comparison .slider-knob {\n    background-color:var(--main-color);\n}\n.slide-comparison .slider-knob:before, .slide-comparison .slider-knob:after {\n   background-color:var(--main-color);\n}\n.slide-table .table-row:nth-child(odd) {\n    border-radius:3px;\n    background: var(--accent-color);\n    color: var(--text-color);\n}\n.slide-table .table-row:nth-child(even) {\n    border-radius:3px;\n    background:var(--accent-color);\n    color: var(--text-color); \n}\n\n/*/Interactions/*/\n.slide-chat .message--question {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-chat.show-msg-true .selectable {\n  background:var(--accent-color);\n  color:var(--text-color);\n}\n.slide-chat.show-msg-true .selectable.active {\n  background: var(--main-color);\n  color:var(--text-color);\n}\n.slide-chat.state-complete .chat-msg.incorrect {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-chat.state-complete .chat-msg.correct {\n  background:var(--accent-color);\n  color:var(--text-color);\n}\n.slide-chat .message--question:after {\n  border-color:var(--main-color) transparent transparent;\n}\n.slide-chat .message--answer:after {\n  border-color:var(--accent-color) transparent transparent;\n}\n.slide-categorise .direction-ltr .selectable .btn-long, .direction-ltr .draggy .btn-long {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-circle-the-answer .circle-box.active .circle-box-text, .text-dark .slide-circle-the-answer .circle-box.active .circle-box-text {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-multiple-choice-game .btn.btn-solid {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-multiple-choice-game .selectable.active .btn {\n  background:var(--accent-color);\n  color:var(--text-color);\n}\n.slide-multiple-choice-game.state-complete .selectable.incorrect .btn {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-multiple-choice-game.state-complete .selectable.correct .btn {\n  background:var(--accent-color);\n  color:var(--text-color);\n}\n.slide-connect .connect-box {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-connect .connect-box.complete {\n  background:var(--accent-color);\n  color:var(--text-color);\n}\n.slide-game-true-or-false .game-statement {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-game-image-word-match .btn-word {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-game-image-word-match .btn-word.__active {\n  background:var(--accent-color);\n  color:var(--text-color);\n}\n.slide-carousel .btn.btn-solid {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-slider .slider-bar, .slide-slider-survey .slider-bar {\n  background:var(--main-color);\n}\n.slide-slider.active .slider-knob-input, .active.slide-slider-survey .slider-knob-input {\n  background:var(--accent-color);\n}\n.slide-free-text-survey .btn-prompt, .slide-free-text-contribution .btn-prompt {\n  border-radius:50% !important;\n}",
+		"direction": "ltr",
+		"disableInteractionSummary": true,
+		"disableLessonScore": false,
+		"hasAnswerFeedback": true,
+		"hasScormExitButton": false,
+		"preventLogoutOnExit": false,
+		"indicator": true,
+		"logo": "fit_content_assets/rowps1bij5pfjdyenenm.png",
+		"minimumScore": 50,
+		"pageNumbers": true,
+		"pagination": false,
+		"soundDisabled": false,
+		"language": "en"
+	},
+	"slides": [
+		{
+			"id": "9fcc774d-1a21-4acf-bf8c-ee673c123ab3",
+			"type": "image-slider",
+			"subtype": "single",
+			"name": 1,
+			"displayIndex": 1,
+			"templateName": "Vertical series",
+			"templateDescription": "Swipe through a group of images",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "9fcc774d-1a21-4acf-bf8c-ee673c123ab3"
+			},
+			"data": {
+				"prompt": "<ft>Swipe up to see more",
+				"items": [
+					{
+						"content": "fit_content_assets/xqn1tt5vqim2zquxiqsg.jpg",
+						"contentType": "image",
+						"position": "Top",
+						"color": "n",
+						"caption": "#### <b><span style=\"font-size:110%\">ROLL'D - 8 NON-NEGOTIABLES\n# <sb><m><span style=\"font-size:130%\">**Uniforms**\n",
+						"imagePosition": "Cover",
+						"captionStyle": "Default"
+					},
+					{
+						"content": "fit_content_assets/e4mhb10qihyo17s8wtfw.jpg",
+						"contentType": "image",
+						"position": "Middle",
+						"color": "n",
+						"caption": "<h1>WELCOME TO YOUR COURSE!</h1><h2><strong>In this course, we'll be focusing on our 8 Non-Negotiables:</strong></h2><ul><li><p><strong>Uniforms</strong></p></li><li><p><strong>Fresh Rolls Display</strong></p></li><li><p><strong>Drinks Fridge</strong></p></li><li><p><strong>Store Presentation</strong></p></li><li><p><strong>Correct In-Store Collateral</strong></p></li><li><p><strong>All Food Items Available</strong></p></li><li><p><strong>Leadership Present</strong></p></li><li><p><strong>Greet &amp; Farewell</strong></p></li></ul>",
+						"imagePosition": "Cover",
+						"captionStyle": "Default"
+					},
+					{
+						"content": "fit_content_assets/wtkildshniuxtxkzhysx.jpg",
+						"contentType": "image",
+						"position": "Middle",
+						"color": "n",
+						"caption": "## In this first lesson, you will learn about:\n- ## The importance of following our 8 Non-Negotiables\n- ## Uniform guidelines",
+						"imagePosition": "Cover",
+						"captionStyle": "Default"
+					},
+					{
+						"content": "fit_content_assets/tkmoc6qqzoenawphtinb.jpg",
+						"contentType": "image",
+						"position": "Top",
+						"color": "n",
+						"caption": "# <b>ARE YOU READY TO <sb>_ROLL'D_</sb>?",
+						"imagePosition": "Cover",
+						"captionStyle": "Default"
+					}
+				],
+				"arrows": true,
+				"doneText": "Ready!",
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "b6e9744d-6aa1-4881-b4d3-5b9975b02be3",
+			"type": "expandable-list",
+			"subtype": "three",
+			"name": 2,
+			"displayIndex": 2,
+			"templateName": "Expandable list",
+			"templateDescription": "Display a list of bullet points",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "b6e9744d-6aa1-4881-b4d3-5b9975b02be3"
+			},
+			"data": {
+				"content": null,
+				"prompt": "Select an item to see more",
+				"focus": true,
+				"doneText": "Continue",
+				"list": [
+					{
+						"content": "## Our 8 Non-Negotiables are the minimum basic standards our stores must follow at all times.",
+						"title": "What is it?"
+					},
+					{
+						"content": "## The 8 Non-Negotiables should be followed at all times to uphold brand standards.",
+						"title": "How important is it to us?"
+					},
+					{
+						"content": "- ## This measures how compliant a store/franchisee/team is.\n- ## Our 8 Non-Negotiables serve as the ingredients to the foundation of a successful store.",
+						"title": "How important is it to the business?"
+					}
+				],
+				"title": "## <m> <b>**Here's what you need to know about our <SB>8 Non Negotiables:</SB>**",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "2040d733-fcc8-4831-a7d7-c0513ac83d11",
+			"type": "multiple-choice-game",
+			"subtype": "one-of-three",
+			"name": 3,
+			"displayIndex": 3,
+			"templateName": "Multiple Choice",
+			"templateDescription": "Select the correct answer(s)",
+			"permanent": false,
+			"metadata": {
+				"questions": [
+					{
+						"question": {
+							"category": "<br>\n\n*Select three answers.*",
+							"content": "<sb>Which of the following are true about our 8 Non-Negotiables?</sb>",
+							"questionId": "86b7e186-0f05-4b1b-a83a-b59bf8625e2d",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "These are the minimum basic standards which our stores must follow at all times.\n",
+								"correct": true,
+								"answerId": "fc7846a9-c4e3-458a-b0ae-cc740f2bc1e6",
+								"type": "text"
+							},
+							{
+								"content": "It measures how compliant a store/franchisee/team is.\n",
+								"correct": true,
+								"answerId": "c678b3f9-211a-4fec-879b-932469ef2f5d",
+								"type": "text"
+							},
+							{
+								"content": "These serve as ingredients to the foundation of a successful store",
+								"correct": true,
+								"answerId": "f750b528-ed3d-4a21-b8a9-a4702ce70635",
+								"type": "text"
+							},
+							{
+								"content": "It determines which employee needs additional training.",
+								"correct": false,
+								"answerId": "424d2224-96e0-4016-bc25-fe1d546cbffc",
+								"type": "text"
+							}
+						]
+					}
+				],
+				"slideId": "2040d733-fcc8-4831-a7d7-c0513ac83d11"
+			},
+			"data": {
+				"additionalContent": null,
+				"additionalContentType": "text",
+				"selectable": 3,
+				"randomize": true,
+				"doneText": "Continue",
+				"answers": [
+					{
+						"id": "fe24b00f-ffe2-4ef2-ae87-6ff677e90717",
+						"content": "These are the minimum basic standards which our stores must follow at all times.\n",
+						"correct": true
+					},
+					{
+						"id": "84b3c73d-f9af-47f5-acf2-455f0756e1da",
+						"content": "It measures how compliant a store/franchisee/team is.\n",
+						"correct": true
+					},
+					{
+						"id": "c77ef73b-9e10-41d1-ac69-cb0db5fb2c49",
+						"content": "These serve as ingredients to the foundation of a successful store",
+						"correct": true
+					},
+					{
+						"id": "609d2889-be4c-403d-a77a-939644cc40a1",
+						"content": "It determines which employee needs additional training.",
+						"correct": false
+					}
+				],
+				"answer": {
+					"takeaway": "### <center> *Let's start identifying our 8 Non-Negotiables on the next slide.*",
+					"incorrect": "Not quite...",
+					"correct": "That's correct!",
+					"text": "Here are the answers: \n- It measures how compliant a store/franchisee/team is.\n- These serve as ingredients to the foundation of a successful store\n- These are the minimum basic standards which our stores must follow at all times.\n\n",
+					"value": null
+				},
+				"game": {
+					"timer": {
+						"limit": -1,
+						"isDisabled": false,
+						"out-of-time-prompt": null
+					},
+					"stars": null
+				},
+				"prompt": "",
+				"title": "<sb>Which of the following are true about our 8 Non-Negotiables?</sb>",
+				"titleType": "text",
+				"subtitle": "<br>\n\n*Select three answers.*",
+				"subtitleType": "text",
+				"challenge_configuration": {
+					"nb_stars": null,
+					"weighting": 1
+				},
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": null
+			}
+		},
+		{
+			"id": "95361811-4b05-49b8-9695-a1b3071b6a8d",
+			"type": "image-gallery",
+			"subtype": "image-gallery",
+			"name": 4,
+			"displayIndex": 4,
+			"templateName": "Horizontal series",
+			"templateDescription": "Swipe through a gallery of images",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "95361811-4b05-49b8-9695-a1b3071b6a8d"
+			},
+			"data": {
+				"prompt": "Swipe to continue",
+				"background": "",
+				"lightbox": false,
+				"images": [
+					{
+						"image": "fit_content_assets/j4ik7dqrred5elvjnopp.png",
+						"caption": "## <m><b> 8 Non-Negotiables</b>\n# <m> <sb> Uniforms\n\n### *Dress for success and follow our prescribed uniform shown on the succeeding slides.*"
+					},
+					{
+						"image": "fit_content_assets/Screen_Shot_2024-09-10_at_16.18.18_pm_js86l4.png",
+						"caption": "## Team members wear our \"Fresh\" t-shirt."
+					},
+					{
+						"image": "fit_content_assets/Screen_Shot_2024-09-10_at_16.18.06_pm_fmgygd.png",
+						"caption": "<h2>Managers and Supervisors should wear the Roll'd collar shirt (short or long sleeves).</h2>"
+					},
+					{
+						"image": "fit_content_assets/mnt9vafffnvo2hcjirau.png",
+						"caption": "## Wear black pants."
+					},
+					{
+						"image": "fit_content_assets/Screen_Shot_2024-09-10_at_16.27.29_pm_fpjrd7.png",
+						"caption": "- ## Team members to the Roll'd supplied bandana or Roll'd black cap.\n- ## Black striped apron only to be worn for team members working in the kitchen.\n- ## Waist apron optional to be worn for team members working at the front of house."
+					},
+					{
+						"image": "fit_content_assets/h5iaf27oft54kd0j67ej.png",
+						"caption": "## Wear black leather shoes – fully enclosed with a nonslip sole"
+					},
+					{
+						"image": "fit_content_assets/Screen_Shot_2024-09-24_at_11.19.11_am_j3hbqs.png",
+						"caption": "## Make sure your name badge is visible."
+					},
+					{
+						"image": "fit_content_assets/jfhfebzhcxticdxeefdy.png",
+						"caption": "## Keep your hair tied back, off the face, and in a tied bun.\n\n"
+					}
+				],
+				"doneText": "Let's Review",
+				"title": null,
+				"titleType": null,
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "1a8e5af7-4617-452d-b99b-7071fe97a194",
+			"type": "multiple-choice-game",
+			"subtype": "one-of-three",
+			"name": 5,
+			"displayIndex": 5,
+			"templateName": "Multiple Choice",
+			"templateDescription": "Select the correct answer(s)",
+			"permanent": false,
+			"metadata": {
+				"questions": [
+					{
+						"question": {
+							"category": "<br>\n\n*Select six answers.*",
+							"content": "<sb>Which of the following should be worn as part of the Team Member Uniform?\n</sb>",
+							"questionId": "da7c9026-19f6-4003-8a3f-79a81568a5f9",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "Black pants",
+								"correct": true,
+								"answerId": "4699172b-bc5c-45e9-b8a6-f4a6c626b598",
+								"type": "text"
+							},
+							{
+								"content": "Roll’d “Fresh” t-shirt",
+								"correct": true,
+								"answerId": "809d849c-120a-4abb-90a8-a8c846aec904",
+								"type": "text"
+							},
+							{
+								"content": "Name badge",
+								"correct": true,
+								"answerId": "cb3e718c-a6ae-426d-a878-369616feddc0",
+								"type": "text"
+							},
+							{
+								"content": "Black leather shoes – fully enclosed with a nonslip sole",
+								"correct": true,
+								"answerId": "1bd0c471-66d7-4f40-ba24-c93934013fab",
+								"type": "text"
+							},
+							{
+								"content": "Bandana or Roll’d cap",
+								"correct": true,
+								"answerId": "2be59ef0-c145-4df5-88d4-a06828db93e1",
+								"type": "text"
+							},
+							{
+								"content": "White slacks",
+								"correct": false,
+								"answerId": "1fbb89b8-f8df-40d6-a72b-c89b95a70e87",
+								"type": "text"
+							},
+							{
+								"content": "White shoes",
+								"correct": false,
+								"answerId": "7445d505-1c7e-4389-b99a-710ef5866964",
+								"type": "text"
+							},
+							{
+								"content": "Black striped apron for team members working in the kitchen",
+								"correct": true,
+								"answerId": "4623f8e1-47ec-426c-9603-055bef9161b7",
+								"type": "text"
+							}
+						]
+					}
+				],
+				"slideId": "1a8e5af7-4617-452d-b99b-7071fe97a194"
+			},
+			"data": {
+				"additionalContent": null,
+				"additionalContentType": "text",
+				"selectable": 6,
+				"randomize": true,
+				"doneText": "Continue",
+				"answers": [
+					{
+						"id": "9505d821-6a20-4332-8e38-39099d39823e",
+						"content": "Black pants",
+						"correct": true
+					},
+					{
+						"id": "176ed1bc-2775-4aff-947a-ea12362308a3",
+						"content": "Roll’d “Fresh” t-shirt",
+						"correct": true
+					},
+					{
+						"id": "60da5541-3b5d-49ed-9537-a4c8af7950eb",
+						"content": "Name badge",
+						"correct": true
+					},
+					{
+						"id": "a5824fdd-152b-4feb-a7bb-ce539a54ccff",
+						"content": "Black leather shoes – fully enclosed with a nonslip sole",
+						"correct": true
+					},
+					{
+						"id": "12ecc22e-2ff7-42e2-a8aa-1950f2ae38e7",
+						"content": "Bandana or Roll’d cap",
+						"correct": true
+					},
+					{
+						"id": "fedf5026-ca51-4896-a5f4-3da934211599",
+						"content": "White slacks",
+						"correct": false
+					},
+					{
+						"id": "789b4f66-f8ff-43c8-bb05-ad4ad5761ed7",
+						"content": "White shoes",
+						"correct": false
+					},
+					{
+						"id": "0a31642b-9463-4e51-829f-6b2b9c68371f",
+						"content": "Black striped apron for team members working in the kitchen",
+						"correct": true
+					}
+				],
+				"answer": {
+					"takeaway": "",
+					"incorrect": "Not quite...",
+					"correct": "That's correct!",
+					"text": "The following should be worn as part of our uniform: \n\n- Black pants \n- Roll’d “Fresh” t-shirt\n- Name badge\n- Black leather shoes – fully enclosed with a nonslip sole\n- Bandana or Roll’d cap\n- Black striped apron for team members working in the kitchen\n",
+					"value": null
+				},
+				"game": {
+					"timer": {
+						"limit": -1,
+						"isDisabled": false,
+						"out-of-time-prompt": null
+					},
+					"stars": null
+				},
+				"prompt": "",
+				"title": "<sb>Which of the following should be worn as part of the Team Member Uniform?\n</sb>",
+				"titleType": "text",
+				"subtitle": "<br>\n\n*Select six answers.*",
+				"subtitleType": "text",
+				"challenge_configuration": {
+					"nb_stars": null,
+					"weighting": 1
+				},
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": null
+			}
+		},
+		{
+			"id": "cb3bbefc-0169-467a-bba3-fadea17b842c",
+			"type": "categorise",
+			"subtype": "true-or-false",
+			"name": 6,
+			"displayIndex": 6,
+			"templateName": "Categorize",
+			"templateDescription": "Drag to the correct category",
+			"permanent": false,
+			"metadata": {
+				"questions": [
+					{
+						"question": {
+							"category": "It is optional to wear Roll'd waist apron while working at the front of house.",
+							"content": "## <m> <sb> Take a guess... </sb> <br>\n###  <b>Is the following statement true or false?</b>",
+							"questionId": "e190e917-5f60-4d58-bbd9-6e70e9d2422c",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "## True",
+								"correct": true,
+								"answerId": "7baf37ce-d5a3-4528-ac74-aaecef67e01d",
+								"type": "text"
+							},
+							{
+								"content": "## False",
+								"correct": false,
+								"answerId": "7e23d93b-9323-4e4b-a66f-7aaa587465be",
+								"type": "text"
+							}
+						]
+					}
+				],
+				"slideId": "cb3bbefc-0169-467a-bba3-fadea17b842c"
+			},
+			"data": {
+				"buttonText": "It is optional to wear Roll'd waist apron while working at the front of house.",
+				"categories": [
+					{
+						"text": "## True",
+						"correct": true
+					},
+					{
+						"text": "## False",
+						"correct": false
+					}
+				],
+				"doneText": "Continue",
+				"answer": {
+					"takeaway": "### <center> *Are earrings allowed? Discover more on the next slide.*",
+					"incorrect": "Not quite...",
+					"correct": "That's correct!",
+					"text": "This statement is <sb> correct</sb>. Roll'd waist apron is optional for team members to wear at the front of house.",
+					"value": null
+				},
+				"game": {
+					"timer": {
+						"limit": -1,
+						"isDisabled": false,
+						"out-of-time-prompt": null
+					},
+					"stars": null
+				},
+				"prompt": "Drag to the correct category",
+				"title": "## <m> <sb> Take a guess... </sb> <br>\n###  <b>Is the following statement true or false?</b>",
+				"titleType": "text",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": {
+					"nb_stars": null,
+					"weighting": 0
+				},
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": null
+			}
+		},
+		{
+			"id": "cd3a3e18-d1f0-4260-9869-30ab95d9d82c",
+			"type": "image-collection",
+			"subtype": "image-collection",
+			"name": 7,
+			"displayIndex": 7,
+			"templateName": "Image collection",
+			"templateDescription": "Select an image to see more detail",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "cd3a3e18-d1f0-4260-9869-30ab95d9d82c"
+			},
+			"data": {
+				"prompt": "Select each image for more details",
+				"background": "",
+				"lightbox": false,
+				"images": [
+					{
+						"content": "## Plain wedding band can be worn.",
+						"image": "fit_content_assets/v1qfsicztqaadkas5xjj.jpg",
+						"narration": null
+					},
+					{
+						"content": "## Watches can be worn while working.",
+						"image": "fit_content_assets/clxz4bygxit4boru2ttr.jpg",
+						"narration": null
+					},
+					{
+						"content": "## Stud earrings can be worn.",
+						"image": "fit_content_assets/dx9xoib39cbanyjnzyi2.jpg",
+						"narration": ""
+					}
+				],
+				"doneText": "Continue",
+				"title": "## <m><b> 8 Non-Negotiables</b>\n# <m> <sb> Uniforms </b>\n\n---\n\n### *Minimalistic jewellery can be worn and must be securely attached to body. Allowed items are listed below.*",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "2f303846-456b-4af4-ad2f-2ee766a13d27",
+			"type": "game-true-or-false",
+			"subtype": "true-or-false",
+			"name": 8,
+			"displayIndex": 8,
+			"templateName": "Left or right",
+			"templateDescription": "",
+			"permanent": false,
+			"metadata": {
+				"questions": [
+					{
+						"question": {
+							"content": "Team members wear the Roll’d “Fresh t-shirt”.\n",
+							"questionId": "e580754f-b1b8-4f58-bdea-f73e84f5e951",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "True",
+								"correct": true,
+								"answerId": "8d34e106-5ffd-4eec-8ba5-02fd37060d9a",
+								"type": "text"
+							},
+							{
+								"content": "False",
+								"correct": false,
+								"answerId": "3db6505e-c128-4812-bba0-0895945a45a1",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"question": {
+							"content": "Keep hair tied back, off the face and in tied bun.",
+							"questionId": "faecda48-50e8-47a5-864c-45d402b39b58",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "True",
+								"correct": true,
+								"answerId": "589ac08d-7f2f-4819-a7be-0c706583b051",
+								"type": "text"
+							},
+							{
+								"content": "False",
+								"correct": false,
+								"answerId": "cf40fb24-bcff-4ac2-afe4-fc66436a5b35",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"question": {
+							"content": "Watch can be worn while working.\n",
+							"questionId": "48345db7-aefe-4466-9e3a-29d44a7cb01c",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "True",
+								"correct": true,
+								"answerId": "7b58415f-a948-475f-85e8-6859095c892a",
+								"type": "text"
+							},
+							{
+								"content": "False",
+								"correct": false,
+								"answerId": "cf7b1546-4304-4a5a-8497-1e55b43784f0",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"question": {
+							"content": "Wear nail polish in neutral colors.",
+							"questionId": "29c57187-e8b9-421d-85fe-a37e9211e03c",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "False",
+								"correct": true,
+								"answerId": "79665e90-b2c3-441a-b1a1-3e9299758cc7",
+								"type": "text"
+							},
+							{
+								"content": "True",
+								"correct": false,
+								"answerId": "25237830-edd9-410f-ae88-902caafead40",
+								"type": "text"
+							}
+						]
+					}
+				],
+				"slideId": "2f303846-456b-4af4-ad2f-2ee766a13d27"
+			},
+			"data": {
+				"statements": [
+					{
+						"text": "Team members wear the Roll’d “Fresh t-shirt”.\n",
+						"true": true
+					},
+					{
+						"text": "Keep hair tied back, off the face and in tied bun.",
+						"true": true
+					},
+					{
+						"text": "Watch can be worn while working.\n",
+						"true": true
+					},
+					{
+						"text": "Wear nail polish in neutral colors.",
+						"true": false
+					}
+				],
+				"falseText": "Don't",
+				"trueText": "Do",
+				"doneText": "Continue",
+				"readyText": null,
+				"game": {
+					"timer": {
+						"limit": 20000,
+						"isDisabled": true,
+						"out-of-time-prompt": null
+					},
+					"stars": {
+						"max": 10000,
+						"min": 1000
+					}
+				},
+				"prompt": "Swipe to answer",
+				"description": "Swipe to the left for statements showing poor practices. Swipe to the right for statements showing good practices.\n",
+				"title": "<m> <b>  Do or Don't?",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": {
+					"nb_stars": null,
+					"weighting": 1
+				},
+				"socialLearning": null,
+				"narration": null
+			}
+		},
+		{
+			"id": "248cbb4b-5077-4a80-8208-d9bb857d6451",
+			"type": "scrollable",
+			"subtype": "scrolling-content",
+			"name": 9,
+			"displayIndex": 9,
+			"templateName": "Scrolling text",
+			"templateDescription": "Display a long amount of content",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "248cbb4b-5077-4a80-8208-d9bb857d6451"
+			},
+			"data": {
+				"content": "<h2><strong>Do</strong>:</h2><ul><li><p>Team members wear the Roll'd \"Fresh T-shirt\".</p></li><li><p>Keep hair tied back, off the face and in a tied bun.</p></li><li><p>Watch can be worn while working.</p></li></ul><p><br></p><h2><strong>Don't</strong></h2><ul><li><p>Wear nail polish or artificial nails.</p></li></ul>",
+				"prompt": "Scroll to see more",
+				"doneText": "Continue",
+				"title": "<sb>Review</sb>",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "44f57bab-665f-41a7-818f-fc8956f85e28",
+			"type": "exit",
+			"subtype": "default",
+			"name": 10,
+			"displayIndex": 10,
+			"templateName": "Exit Lesson",
+			"templateDescription": "",
+			"permanent": true,
+			"metadata": {
+				"questions": [],
+				"slideId": "44f57bab-665f-41a7-818f-fc8956f85e28"
+			},
+			"data": {
+				"content": "### You've completed this lesson.\n\n### Proceed to the next one to earn more stars.",
+				"buttonText": "Exit Lesson",
+				"title": "<B>Great job!",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": null,
+				"narration": null
+			}
+		}
+	],
+	"title": "Uniforms",
+	"index": 0,
+	"scorm": true,
+	"id": "656fec72f10d39b6251b9605"
+}

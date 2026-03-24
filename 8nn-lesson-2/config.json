@@ -1,0 +1,907 @@
+{
+	"config": {
+		"background": "fit_content_assets/mgisopgav5vfc0bc4jcs.png",
+		"colors": {
+			"background": "#fff",
+			"experimental": false,
+			"text": "#161616",
+			"theme": "light"
+		},
+		"enableCustomCSS": true,
+		"customCSS": "@import url(\"https://use.typekit.net/aiw8vtw.css\");\n\n\n/*/ Font - you can change this by finding a font to import on Google Fonts /*/\n\n@import url(\"https://use.typekit.net/aiw8vtw.css\");\n\nm {\nfont-family: anton, sans-serif;\n  letter-spacing: 0.03em;\n  font-size: 1em;\n}\n\nbody {\n  font-family: acumin-pro, sans-serif;\n}\n\nb {\n  color:var(--main-color);\n}\nsb {\n  color:var(--accent-color); \n  font-weight:bold;\n}\n\n\nh4 {\n  font-size: 0.9em;\n}\n\nft {\n  background: var(--accent-color);\n  padding-left: 0.4em;\n    padding-right: 0.4em;\n  padding-top: 0.2em;\n    padding-bottom: 0.2em;\n\n  color: var(--text-color)\n}\n\nfti {\n    background: var(--text-color);\n  padding-left: 0.4em;\n    padding-right: 0.4em;\n  padding-top: 0.2em;\n    padding-bottom: 0.2em;\n}\n\n/* Main Colors - Add your primary, accent and text colors. You can also use hex color codes i.e #FF0000 */\n\n:root{\n  --main-color:#085748;\n  --accent-color:#FF0619;\n  --text-color:#FFFFFF;\n}\n\n/* The complicated stuff you don’t need to touch. */\n.btn.btn-muted.btn-done.text-ellipsis {\nbackground: url(https://media.edapp.com/image/upload/v1654666896/ringo-uploads/6124efd5975dff6d62262342/courseware/lessons/62a0367a1646103e1a10e85b/j1nvuxth6xyvth6uymvw.png) no-repeat;\n background-size: contain;\n color: var(--accent-color);\n box-shadow:none;\n line-height: .7em;\n transition: none;\n padding-right: 1em;\n}\n.btn.btn-muted.btn-done.text-ellipsis:hover, .btn.btn-muted.btn-done.text-ellipsis.__active {\n box-shadow:none;\n transform:none;\n background-image: url(https://media.edapp.com/image/upload/v1644305426/ringo-uploads/5f92779cffb6c20001de934f/courseware/lessons/615d7ed4d75fa3a3804ca390/up5s0oait5hxkvvfuajj.png);\n  background-size: contain;\n  background-repeat: no-repeat;\n  color: var(--text-color);\n  padding-right: 1em;\n}\n.btn.btn-muted, .btn.btn-solid {\n  background:var(--main-color);\n  color:var(--text-color); \n  border-radius:3px;\n  transition: all ease-in-out 300ms;\n  box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4);\n}\n.btn.btn-muted.__active, .btn.btn-muted:hover, .btn.btn-solid.__active, .btn.btn-solid:hover {\n  background: var(--accent-color); \n  color:var(--text-color);\n  transition-delay:0.25s;\n  transition:all ease-in-out 300ms;\n  box-shadow:0px 17px 10px -10px rgba(0,0,0,0.4);\n  transform: translate(0px, -3px);\n}\n\n\n/*/ Header & Slides /*/\n#lesson-header {\n  background:white;\nbox-shadow: 0px 3px 8px 0px rgba(0,0,0,0.3);\n}\n\n#lesson-header-nav, .scroll-middle #lesson-header-nav, .scroll-bottom #lesson-header-nav {\n  background: url(https://media.edapp.com/image/upload/v1644305426/ringo-uploads/5f92779cffb6c20001de934f/courseware/lessons/615d7ed4d75fa3a3804ca390/up5s0oait5hxkvvfuajj.png);\n    background-size: contain;\n    background-repeat: no-repeat;\n    background-position: center;\n    width: 8em;\n  \n}\n#lesson-header-nav-menu-btn {\n  border-left: 1.5px solid var(--text-color);\n}\n#lesson-header-title-content {\n  border-bottom:0px solid var(--main-color);\n  color:var(--main-color); \n}\n#indicator { \n  background-color:var(--main-color); \n  color:var(--accent-color);\n}\n#slides {\n  border-bottom: 0px solid var(--main-color);\n}\n#text-input-view #text-input-dismiss-btn {\n  color:var(--main-color);\n} \n#text-input-view #text-input-container-top {\n  color:var(--main-color);\n}\nli::marker {\n  color:var(--accent-color); \n}\nhr {\n  color:var(--accent-color);\n}\n.pswp__item {\n    background:var(--main-color);\n}\n.selectable.active .btn { \nbackground-color: var(--accent-color);\n}\n\n\n/*/Templates/*/\n.slide-image-slider .style-dark .caption-content {\n  background:var(--main-color);\n  color:var(--text-color);\n  border-radius:3px;\n}\n.slide-image-slider .style-light .caption-content {  \n  background:var(--accent-color);\n  color:var(--text-color);\n  border-radius:3px;\n}\n.slide-image-slider .btn-down, .slide-image-slider .btn-up {\n  background:var(--main-color);\n  color: var(--text-color);\n  border-radius:50%;\n}\n.slide-image-slider .btn-down:hover,.slide-image-slider .btn-down:active, .slide-image-slider .btn-up:hover, .slide-image-slider .btn-up:active {\n  background:var(--accent-color);  \n  color: var(--text-color); \n  border-radius:50%;\n}\n.slide-image-gallery .pagination .dot {\n background-image: url(https://media.edapp.com/image/upload/v1644223193/ringo-uploads/5f92779cffb6c20001de934f/courseware/lessons/615d7ed4d75fa3a3804ca390/jhopbmvtu4dayxb8qj9a.png);\n background-size:cover;\n width:20px;\n height:20px;\n border: 0px solid;\n}\n.slide-image-gallery .pagination .dot.active {\n background-image: url(https://media.edapp.com/image/upload/v1644223190/ringo-uploads/5f92779cffb6c20001de934f/courseware/lessons/615d7ed4d75fa3a3804ca390/imstvtgvd3bkebaccvld.png);\n background-size:cover;\n width:20px;\n height:20px;\n border: 0px solid;\n}\n.slide-image-collection .tappy{ \n  transition: transform .5s ease;\n}\n.slide-image-collection .tappy:hover {\n transform: scale(1.1);\n}\n.slide-text-sequence .btn-down, .slide-text-sequence .btn-up {\n  background:var(--main-color);\n  color: var(--text-color);\n  border-radius:50%;\n}\n.slide-text-sequence .btn-down:hover,.slide-text-sequence .btn-down:active, .slide-text-sequence .btn-up:hover, .slide-text-sequence .btn-up:active {\n  background:var(--accent-color);  \n  color: var(--text-color); \n  border-radius:50%;\n}\n.slide-reveal .btn-reveal-title.flippable {\n  background:var(--accent-color);\n  color: var(--text-color); \n} \n.slide-reveal .btn-reveal.active .btn-reveal-desc.flippable {\n  background:var(--main-color);\n  color: var(--text-color); \n}\n.slide-reveal .btn-reveal-desc, .slide-reveal .btn-reveal-title {\n  pointer-events:none;\n}\n.slide-expandable-list .item.active .item-button {\n  background:var(--accent-color);  \n  color: var(--text-color); \n}\n.slide-image-waypoints .prev-wp, .slide-image-waypoints .next-wp{ \n  background:var(--main-color);\n  color: var(--text-color);\n}\n.slide-list ::marker {\n  color:var(--accent-color); \n}\n.slide-speech-bubble .quote.quote-dk .quote-bg, .quote.quote-dk {\n   background:var(--main-color);  \n   color: var(--text-color); \n   opacity: 1;\n}\n.slide-speech-bubble .quote.pull-left.quote-dk:after {\n    border-color: var(--main-color) transparent transparent;\n}\n.slide-comparison .slider-knob {\n    background-color:var(--main-color);\n}\n.slide-comparison .slider-knob:before, .slide-comparison .slider-knob:after {\n   background-color:var(--main-color);\n}\n.slide-table .table-row:nth-child(odd) {\n    border-radius:3px;\n    background: var(--accent-color);\n    color: var(--text-color);\n}\n.slide-table .table-row:nth-child(even) {\n    border-radius:3px;\n    background:var(--accent-color);\n    color: var(--text-color); \n}\n\n/*/Interactions/*/\n.slide-chat .message--question {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-chat.show-msg-true .selectable {\n  background:var(--accent-color);\n  color:var(--text-color);\n}\n.slide-chat.show-msg-true .selectable.active {\n  background: var(--main-color);\n  color:var(--text-color);\n}\n.slide-chat.state-complete .chat-msg.incorrect {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-chat.state-complete .chat-msg.correct {\n  background:var(--accent-color);\n  color:var(--text-color);\n}\n.slide-chat .message--question:after {\n  border-color:var(--main-color) transparent transparent;\n}\n.slide-chat .message--answer:after {\n  border-color:var(--accent-color) transparent transparent;\n}\n.slide-categorise .direction-ltr .selectable .btn-long, .direction-ltr .draggy .btn-long {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-circle-the-answer .circle-box.active .circle-box-text, .text-dark .slide-circle-the-answer .circle-box.active .circle-box-text {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-multiple-choice-game .btn.btn-solid {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-multiple-choice-game .selectable.active .btn {\n  background:var(--accent-color);\n  color:var(--text-color);\n}\n.slide-multiple-choice-game.state-complete .selectable.incorrect .btn {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-multiple-choice-game.state-complete .selectable.correct .btn {\n  background:var(--accent-color);\n  color:var(--text-color);\n}\n.slide-connect .connect-box {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-connect .connect-box.complete {\n  background:var(--accent-color);\n  color:var(--text-color);\n}\n.slide-game-true-or-false .game-statement {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-game-image-word-match .btn-word {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-game-image-word-match .btn-word.__active {\n  background:var(--accent-color);\n  color:var(--text-color);\n}\n.slide-carousel .btn.btn-solid {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-slider .slider-bar, .slide-slider-survey .slider-bar {\n  background:var(--main-color);\n}\n.slide-slider.active .slider-knob-input, .active.slide-slider-survey .slider-knob-input {\n  background:var(--accent-color);\n}\n.slide-free-text-survey .btn-prompt, .slide-free-text-contribution .btn-prompt {\n  border-radius:50% !important;\n}",
+		"direction": "ltr",
+		"disableInteractionSummary": true,
+		"disableLessonScore": false,
+		"hasAnswerFeedback": true,
+		"hasScormExitButton": false,
+		"preventLogoutOnExit": false,
+		"indicator": true,
+		"logo": "fit_content_assets/rowps1bij5pfjdyenenm.png",
+		"minimumScore": 50,
+		"pageNumbers": true,
+		"pagination": false,
+		"soundDisabled": false,
+		"language": "en"
+	},
+	"slides": [
+		{
+			"id": "d9847f17-f2d9-4c54-a5e0-1442a1a7d323",
+			"type": "image-slider",
+			"subtype": "single",
+			"name": 1,
+			"displayIndex": 1,
+			"templateName": "Vertical series",
+			"templateDescription": "Swipe through a group of images",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "d9847f17-f2d9-4c54-a5e0-1442a1a7d323"
+			},
+			"data": {
+				"prompt": "<ft>Swipe up to see more",
+				"items": [
+					{
+						"content": "fit_content_assets/sbeb1mtx2g0ds6czdeq3.jpg",
+						"contentType": "image",
+						"position": "Top",
+						"color": "n",
+						"caption": "<h4><strong><span style=\"font-size:110%\">ROLL'D 8 NON-NEGOTIABLES</span></strong></h4><h1><strong><span style=\"font-size:130%\">FRESH ROLLS DISPLAY &amp; DRINKS FRIDGE</span></strong></h1>",
+						"imagePosition": "Cover",
+						"captionStyle": "Default"
+					},
+					{
+						"content": "fit_content_assets/mqlqctlswbpcytvtprvo.jpg",
+						"contentType": "image",
+						"position": "Middle",
+						"color": "n",
+						"caption": "<h1>WELCOME TO YOUR SECOND LESSON!</h1><h2><strong>Here's what you'll learn about:</strong></h2><ul><li><p><strong>Fresh Rolls display</strong></p></li><li><p><strong>Drinks Fridge</strong></p></li></ul>",
+						"imagePosition": "Cover",
+						"captionStyle": "Default"
+					},
+					{
+						"content": "fit_content_assets/reu1a1zaq8wsx7z3d9fa.jpg",
+						"contentType": "image",
+						"position": "Top",
+						"color": "n",
+						"caption": "# <b>ARE YOU READY TO <sb>_ROLL'D_</sb>?",
+						"imagePosition": "Cover",
+						"captionStyle": "Default"
+					}
+				],
+				"arrows": true,
+				"doneText": "Ready!",
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "876c1d77-765e-4a2d-be98-2075c207d210",
+			"type": "scrolling-media",
+			"subtype": "scrolling-media",
+			"name": 2,
+			"displayIndex": 2,
+			"templateName": "Scrolling mix",
+			"templateDescription": "Display long form content of any type",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "876c1d77-765e-4a2d-be98-2075c207d210"
+			},
+			"data": {
+				"content": [
+					{
+						"content": "https://training-media.safetyculture.com/image/upload/v1762149754/applications/65238625c5791b71454666ac/documents/Fresh_rolls_Planogram_w_crispy_chicken_a3iti4_lfkaym.png",
+						"contentType": "image"
+					},
+					{
+						"content": "<hr><h2>Here's how we put the \"SOLD\" in <strong>Fresh Rolls</strong>:</h2>",
+						"contentType": "text"
+					},
+					{
+						"content": "https://training-media.safetyculture.com/image/upload/v1762149813/applications/65238625c5791b71454666ac/documents/Screenshot_2025-10-31_at_12.55.44_pm_rbuj4r.png",
+						"contentType": "image"
+					},
+					{
+						"content": "## <center> Ensure that you've put the correct label signage.\n## <center> The labels need to be up to date and laminated.",
+						"contentType": "text"
+					},
+					{
+						"content": "fit_content_assets/kt8slqfsr6tbbhwfynwi.png",
+						"contentType": "image"
+					},
+					{
+						"content": "## <center> Ensure that the silicon paper is flat and always clean. ",
+						"contentType": "text"
+					},
+					{
+						"content": "fit_content_assets/dauiugowfqddzypbykei.png",
+						"contentType": "image"
+					},
+					{
+						"content": "## <center> Display fridge glass has to be clean and free of fingerprints and dust.",
+						"contentType": "text"
+					},
+					{
+						"content": "https://training-media.safetyculture.com/image/upload/v1762149991/applications/65238625c5791b71454666ac/documents/Screenshot_2025-11-03_at_5.06.17_pm_rp1l3e.png",
+						"contentType": "image"
+					},
+					{
+						"content": "<h2>There should be no cling wraps in the display fridge, and Fresh rolls should not be double stacked.</h2>",
+						"contentType": "text"
+					}
+				],
+				"prompt": "Scroll to see more",
+				"doneText": "Let's Review",
+				"preventFocus": false,
+				"title": "<h1><strong>Fresh Rolls Display</strong></h1>",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "3c8a3414-2d79-4cc7-8c62-de9394ee204b",
+			"type": "game-true-or-false",
+			"subtype": "true-or-false",
+			"name": 3,
+			"displayIndex": 3,
+			"templateName": "Left or right",
+			"templateDescription": "",
+			"permanent": false,
+			"metadata": {
+				"questions": [
+					{
+						"question": {
+							"category": "<p>Try to double stack Fresh rolls to save space when putting them on display.</p>",
+							"content": "<p>Try to double stack Fresh rolls to save space when putting them on display.</p>",
+							"questionId": "1876e49b-f30f-4487-81a2-a02b5ce2a809",
+							"text": "<p>Try to double stack Fresh rolls to save space when putting them on display.</p>",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "false",
+								"correct": true,
+								"answerId": "628564e2-27ec-4a48-bf0f-0b3ddbee5272",
+								"text": "false",
+								"type": "text"
+							},
+							{
+								"content": "true",
+								"correct": false,
+								"answerId": "b391e263-30d4-40b9-a80b-bbe83d86e3fb",
+								"text": "true",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"question": {
+							"category": "<p>Display up-to-date and clean labels.</p>",
+							"content": "<p>Display up-to-date and clean labels.</p>",
+							"questionId": "404d1b37-16b2-43d6-9932-2b52264f2edc",
+							"text": "<p>Display up-to-date and clean labels.</p>",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "true",
+								"correct": true,
+								"answerId": "f179800b-67a7-4a55-b30b-e2ee1c288655",
+								"text": "true",
+								"type": "text"
+							},
+							{
+								"content": "false",
+								"correct": false,
+								"answerId": "f78efa90-31cd-4494-abf8-82a707135602",
+								"text": "false",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"question": {
+							"category": "Remove cling wrap in the display fridge.",
+							"content": "Remove cling wrap in the display fridge.",
+							"questionId": "0f9bca23-9faf-432a-bac1-49470d1a6510",
+							"text": "Remove cling wrap in the display fridge.",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "true",
+								"correct": true,
+								"answerId": "6121b7c3-4955-488e-89c4-41e9d94a2c61",
+								"text": "true",
+								"type": "text"
+							},
+							{
+								"content": "false",
+								"correct": false,
+								"answerId": "62b0c1e8-2d1e-4ff9-a1c4-b8df59e33248",
+								"text": "false",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"question": {
+							"category": "Keep the silicon paper folded and always clean.",
+							"content": "Keep the silicon paper folded and always clean.",
+							"questionId": "fcc64e8b-c2a4-48f0-9dc9-5d4b7313d5cb",
+							"text": "Keep the silicon paper folded and always clean.",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "false",
+								"correct": true,
+								"answerId": "eea6ab6c-6ce0-4a2f-a299-7ebd6d98848a",
+								"text": "false",
+								"type": "text"
+							},
+							{
+								"content": "true",
+								"correct": false,
+								"answerId": "fdaf66f4-7560-418e-a2ba-b484b70de5e4",
+								"text": "true",
+								"type": "text"
+							}
+						]
+					}
+				],
+				"slideId": "3c8a3414-2d79-4cc7-8c62-de9394ee204b"
+			},
+			"data": {
+				"statements": [
+					{
+						"text": "<p>Try to double stack Fresh rolls to save space when putting them on display.</p>",
+						"true": false
+					},
+					{
+						"text": "<p>Display up-to-date and clean labels.</p>",
+						"true": true
+					},
+					{
+						"text": "Remove cling wrap in the display fridge.",
+						"true": true
+					},
+					{
+						"text": "Keep the silicon paper folded and always clean.",
+						"true": false
+					}
+				],
+				"falseText": "Don't",
+				"trueText": "Do",
+				"doneText": "Continue",
+				"readyText": null,
+				"game": {
+					"timer": {
+						"limit": 20000,
+						"isDisabled": true,
+						"out-of-time-prompt": null
+					},
+					"stars": {
+						"max": 10000,
+						"min": 1000
+					}
+				},
+				"prompt": "Swipe to answer",
+				"description": "Swipe to the left for statements showing poor practices. Swipe to the right for statements showing good practices.",
+				"title": "<m> <b> **Do or Don't?**",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": {
+					"nb_stars": null,
+					"weighting": 1
+				},
+				"socialLearning": null,
+				"narration": null
+			}
+		},
+		{
+			"id": "23ce860b-c966-421b-8b0e-fc00b410255e",
+			"type": "scrollable",
+			"subtype": "scrolling-content",
+			"name": 4,
+			"displayIndex": 4,
+			"templateName": "Scrolling text",
+			"templateDescription": "Display a long amount of content",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "23ce860b-c966-421b-8b0e-fc00b410255e"
+			},
+			"data": {
+				"content": "<h2><strong>Do</strong></h2><ul><li><p>Display up-to-date and clean labels.</p></li><li><p>Remove cling wrap in the display fridge.</p></li></ul><h2><strong>Don't</strong></h2><ul><li><p>Try to double stack Fresh rolls to save space when putting them on display.</p></li><li><p>Keep the silicon paper folded.</p></li></ul>",
+				"prompt": "Scroll to see more",
+				"doneText": "Continue",
+				"title": "<sb> Review</sb>",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "ee8c6001-9c82-4eac-b133-737ae005a2f9",
+			"type": "expandable-list",
+			"subtype": "three",
+			"name": 5,
+			"displayIndex": 5,
+			"templateName": "Expandable list",
+			"templateDescription": "Display a list of bullet points",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "ee8c6001-9c82-4eac-b133-737ae005a2f9"
+			},
+			"data": {
+				"content": null,
+				"prompt": "Select an item to see more",
+				"focus": true,
+				"doneText": "Let's Review",
+				"list": [
+					{
+						"content": "## There should be 2 trays displayed per flavour.",
+						"title": "During peak hours"
+					},
+					{
+						"content": "## There should be 1 tray displayed per flavour.",
+						"title": "During non-peak hours"
+					}
+				],
+				"title": "<p><strong>How many Fresh Rolls should be put on display?</strong></p>",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "504fbe9d-df3a-45c4-bc81-97e790be7708",
+			"type": "matrix",
+			"subtype": "matrix",
+			"name": 6,
+			"displayIndex": 6,
+			"templateName": "Multi-question",
+			"templateDescription": "",
+			"permanent": false,
+			"metadata": {
+				"questions": [
+					{
+						"question": {
+							"category": "<p>How many Fresh rolls should be displayed during...</p>",
+							"content": "## <m> <b>Peak hours</b>\n### *Select one answer.*",
+							"questionId": "0638c5d6-30a9-4f63-8a7f-c51e69ef0141",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "<p>1 tray of Fresh rolls</p>",
+								"correct": false,
+								"answerId": "ad115d08-4bc7-4154-a515-153abec348ff",
+								"type": "text"
+							},
+							{
+								"content": "<p>1 1/2 trays of Fresh rolls</p>",
+								"correct": false,
+								"answerId": "a9eeb406-3b26-4960-9cb4-dcbc4b7c2732",
+								"type": "text"
+							},
+							{
+								"content": "<p>2 trays of Fresh rolls per flavour</p>",
+								"correct": true,
+								"answerId": "873c8bc1-a0b8-4641-8ed5-56acda50f8ea",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"question": {
+							"category": "<p>How many Fresh rolls should be displayed during...</p>",
+							"content": "## <m> <b>Non-peak hours</b>\n\n### *Select one answer.*",
+							"questionId": "602375e7-6ee0-488a-93f4-4e80d3af3bf9",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "<p>2 trays of Fresh rolls</p>",
+								"correct": false,
+								"answerId": "7f65f214-dbd9-4682-b2d6-89466d61b5aa",
+								"type": "text"
+							},
+							{
+								"content": "<p>1 1/2 trays of Fresh rolls</p>",
+								"correct": false,
+								"answerId": "6e6ba20f-25df-45a9-a98e-74d72dde08e0",
+								"type": "text"
+							},
+							{
+								"content": "<p>1 tray of Fresh rolls per flavour</p>",
+								"correct": true,
+								"answerId": "9709f46f-b3cd-4fd2-a01b-f665dbc0ce85",
+								"type": "text"
+							}
+						]
+					}
+				],
+				"slideId": "504fbe9d-df3a-45c4-bc81-97e790be7708"
+			},
+			"data": {
+				"doneText": "Continue",
+				"columns": [
+					{
+						"title": "## <m> <b>Peak hours</b>\n### *Select one answer.*",
+						"correct": "<p>2 trays of Fresh rolls per flavour</p>",
+						"incorrect": [
+							"<p>1 tray of Fresh rolls</p>",
+							"<p>1 1/2 trays of Fresh rolls</p>"
+						]
+					},
+					{
+						"title": "## <m> <b>Non-peak hours</b>\n\n### *Select one answer.*",
+						"correct": "<p>1 tray of Fresh rolls per flavour</p>",
+						"incorrect": [
+							"<p>2 trays of Fresh rolls</p>",
+							"<p>1 1/2 trays of Fresh rolls</p>"
+						]
+					}
+				],
+				"answer": {
+					"takeaway": "",
+					"incorrect": "Not quite...",
+					"correct": "That's correct!",
+					"text": "<p>Ensure minimum quantities of Fresh rolls during:</p><ul><li><p>Peak hours: 2 trays of Fresh rolls per flavour</p></li><li><p>Non-peak hours: 1 tray of Fresh rolls per flavour</p></li></ul>",
+					"value": null
+				},
+				"game": {
+					"timer": {
+						"limit": -1,
+						"isDisabled": false,
+						"out-of-time-prompt": null
+					},
+					"stars": null
+				},
+				"prompt": "Select each correct answer",
+				"title": "<p>How many Fresh rolls should be displayed during...</p>",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": {
+					"nb_stars": null,
+					"weighting": 1
+				},
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": null
+			}
+		},
+		{
+			"id": "61516db5-901b-4294-87df-82ceab4e604f",
+			"type": "scrolling-media",
+			"subtype": "scrolling-media",
+			"name": 7,
+			"displayIndex": 7,
+			"templateName": "Scrolling mix",
+			"templateDescription": "Display long form content of any type",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "61516db5-901b-4294-87df-82ceab4e604f"
+			},
+			"data": {
+				"content": [
+					{
+						"content": "fit_content_assets/Screen_Shot_2024-09-05_at_10.14.17_am_esaodt.png",
+						"contentType": "image"
+					},
+					{
+						"content": "## <center> Drink Fridge must be full of stock and labels are facing toward customers.",
+						"contentType": "text"
+					},
+					{
+						"content": "fit_content_assets/Screen_Shot_2024-09-05_at_10.13.34_am_rutojw.png",
+						"contentType": "image"
+					},
+					{
+						"content": "## <center> Ensure glass doors are clean and fridge light is on for visibility. ",
+						"contentType": "text"
+					},
+					{
+						"content": "fit_content_assets/Screen_Shot_2024-09-24_at_11.34.47_am_c1gr2x.png",
+						"contentType": "image"
+					},
+					{
+						"content": "<h2 style=\"text-align: center\">Ensure to follow the latest updated <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://drive.google.com/file/d/1_B__6be7AFnIMNTCrjdwfWSugGOPjobG/view?usp=drive_link\">Drink Planogram.</a></h2>",
+						"contentType": "text"
+					},
+					{
+						"content": "<h2 style=\"text-align: center\">Ice Coffee &amp; Ice Tea machine is turned on and functional</h2><h2 style=\"text-align: center\">🍋Lemon is on the left</h2><h2 style=\"text-align: center\">🍑Peach is on the right</h2>",
+						"contentType": "text"
+					},
+					{
+						"content": "fit_content_assets/Screen_Shot_2024-09-24_at_11.37.34_am_j82mvt.png",
+						"contentType": "image"
+					}
+				],
+				"prompt": "Scroll to see more",
+				"doneText": "Let's Review",
+				"preventFocus": false,
+				"title": "# <center> <m><b> Drink Fridge",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "77357e9b-96b5-421c-aaec-096777459292",
+			"type": "chat",
+			"subtype": "one-of-three",
+			"name": 8,
+			"displayIndex": 8,
+			"templateName": "Chat",
+			"templateDescription": "",
+			"permanent": false,
+			"metadata": {
+				"questions": [
+					{
+						"question": {
+							"content": "## How should you display drinks stored in the fridge?",
+							"questionId": "5febec00-680e-4da1-a766-3e3842ab1af8",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "The drinks should be arranged according to colours.",
+								"correct": false,
+								"answerId": "acc2c60a-87c6-4fa2-824c-020a549321d5",
+								"type": "text"
+							},
+							{
+								"content": "The back of the drink should be facing the customers.",
+								"correct": false,
+								"answerId": "6231819d-f7c7-432b-ba51-6b4243075e01",
+								"type": "text"
+							},
+							{
+								"content": "The drink labels should be facing towards the customers.",
+								"correct": true,
+								"answerId": "f530d94a-1f7b-44d2-bc8d-4961b675f855",
+								"type": "text"
+							}
+						]
+					}
+				],
+				"slideId": "77357e9b-96b5-421c-aaec-096777459292"
+			},
+			"data": {
+				"message": {
+					"responder": "## <b>What's your answer?</b>",
+					"sender": "## <sb> Question </sb>",
+					"content": "## How should you display drinks stored in the fridge?"
+				},
+				"answers": {
+					"correct": "The drink labels should be facing towards the customers.",
+					"incorrect": [
+						"The drinks should be arranged according to colours.",
+						"The back of the drink should be facing the customers."
+					]
+				},
+				"doneText": "Check Answer",
+				"answer": {
+					"takeaway": "",
+					"incorrect": "Not quite...",
+					"correct": "That's correct!",
+					"text": "Ensure the fridge is fully stocked and that the drink labels should be <b>facing towards</b> the customers.",
+					"value": null
+				},
+				"game": {
+					"timer": {
+						"limit": -1,
+						"isDisabled": false,
+						"out-of-time-prompt": null
+					},
+					"stars": null
+				},
+				"prompt": "Select the correct answer",
+				"title": null,
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": {
+					"nb_stars": null,
+					"weighting": 1
+				},
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": null
+			}
+		},
+		{
+			"id": "0928578f-8d69-41dc-a0b6-85d586dac78d",
+			"type": "game-true-or-false",
+			"subtype": "true-or-false",
+			"name": 9,
+			"displayIndex": 9,
+			"templateName": "Left or right",
+			"templateDescription": "",
+			"permanent": false,
+			"metadata": {
+				"questions": [
+					{
+						"question": {
+							"content": "Try to double stack Soldiers to save space when putting them on display.",
+							"questionId": "186756c3-cd93-4db4-8ea3-391b3f553452",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "False",
+								"correct": true,
+								"answerId": "7c4b022e-dd6c-4a4f-8c32-f00cfbe8df4c",
+								"type": "text"
+							},
+							{
+								"content": "True",
+								"correct": false,
+								"answerId": "5290c8ba-304b-41e2-908a-fdd90800532b",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"question": {
+							"content": "Ensure that the fridge light is turned on for visibility.",
+							"questionId": "fe507213-5b21-4f50-bca0-11a16d4ca40e",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "True",
+								"correct": true,
+								"answerId": "29f76af7-bf36-43a9-8529-2d94226f60e8",
+								"type": "text"
+							},
+							{
+								"content": "False",
+								"correct": false,
+								"answerId": "586f062c-0bca-451b-aabc-8b97cb917a7a",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"question": {
+							"content": "The drink labels should be facing towards the customers.",
+							"questionId": "ec62b08f-f6e3-46db-80cf-373fbef7bd00",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "True",
+								"correct": true,
+								"answerId": "3b1fee4d-4616-409e-bd37-937941caee5f",
+								"type": "text"
+							},
+							{
+								"content": "False",
+								"correct": false,
+								"answerId": "f8bc7713-666a-4148-82a6-21f14fa8bfe2",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"question": {
+							"content": "Display up-to-date and laminated labels.",
+							"questionId": "6e2a445a-b80a-4674-9f98-fd5e9360b8a3",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "True",
+								"correct": true,
+								"answerId": "c8ae27ea-5bdf-4385-a2fc-a8ae7808dd05",
+								"type": "text"
+							},
+							{
+								"content": "False",
+								"correct": false,
+								"answerId": "95c6796e-9d29-4856-b981-2aa93e5dab48",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"question": {
+							"content": "Place cling wrap in the display fridge.",
+							"questionId": "05fc28e4-bbc0-4065-a1cc-800c906b473f",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "False",
+								"correct": true,
+								"answerId": "1e504d19-5068-4175-a37d-ab18b54812ce",
+								"type": "text"
+							},
+							{
+								"content": "True",
+								"correct": false,
+								"answerId": "e931ad8b-d6ab-49c6-a78b-9269d6345b78",
+								"type": "text"
+							}
+						]
+					}
+				],
+				"slideId": "0928578f-8d69-41dc-a0b6-85d586dac78d"
+			},
+			"data": {
+				"statements": [
+					{
+						"text": "Try to double stack Soldiers to save space when putting them on display.",
+						"true": false
+					},
+					{
+						"text": "Ensure that the fridge light is turned on for visibility.",
+						"true": true
+					},
+					{
+						"text": "The drink labels should be facing towards the customers.",
+						"true": true
+					},
+					{
+						"text": "Display up-to-date and laminated labels.",
+						"true": true
+					},
+					{
+						"text": "Place cling wrap in the display fridge.",
+						"true": false
+					}
+				],
+				"falseText": "False",
+				"trueText": "True",
+				"doneText": "Continue",
+				"readyText": null,
+				"game": {
+					"timer": {
+						"limit": 20000,
+						"isDisabled": true,
+						"out-of-time-prompt": null
+					},
+					"stars": {
+						"max": 10000,
+						"min": 1000
+					}
+				},
+				"prompt": "Swipe to answer",
+				"description": "Swipe to the left for statements showing poor practices. Swipe to the right for statements showing good practices.",
+				"title": "<m> <b> **Do or Don't?**",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": {
+					"nb_stars": null,
+					"weighting": 1
+				},
+				"socialLearning": null,
+				"narration": null
+			}
+		},
+		{
+			"id": "a1247af4-1c77-4cbe-85b2-8daeaf72496b",
+			"type": "scrollable",
+			"subtype": "scrolling-content",
+			"name": 10,
+			"displayIndex": 10,
+			"templateName": "Scrolling text",
+			"templateDescription": "Display a long amount of content",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "a1247af4-1c77-4cbe-85b2-8daeaf72496b"
+			},
+			"data": {
+				"content": "## <center> **Do**\n\n- ### Ensure that the fridge light is turned on for visibility.\n- ### The drink labels should be facing towards the customers.\n- ### Display up-to-date and laminated labels.\n\n## <center> **Don't**\n\n- ### Try to double stack Soldiers to save space when putting them on display.\n- ###  Place cling wrap in the display fridge.",
+				"prompt": "Scroll to see more",
+				"doneText": "Continue",
+				"title": "<sb> Review</sb>",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "e152114a-ce37-4fe9-9d89-78fa289efbb3",
+			"type": "exit",
+			"subtype": "default",
+			"name": 11,
+			"displayIndex": 11,
+			"templateName": "Exit Lesson",
+			"templateDescription": "",
+			"permanent": true,
+			"metadata": {
+				"questions": [],
+				"slideId": "e152114a-ce37-4fe9-9d89-78fa289efbb3"
+			},
+			"data": {
+				"content": "### You've completed this lesson.\n\n### Proceed to the next one to earn more stars.",
+				"buttonText": "Exit Lesson",
+				"title": "<B>Great job!",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": null,
+				"narration": null
+			}
+		}
+	],
+	"title": "Fresh Rolls Display and Drinks Fridge",
+	"index": 0,
+	"scorm": true,
+	"id": "656fec72f10d39b6251b9606"
+}

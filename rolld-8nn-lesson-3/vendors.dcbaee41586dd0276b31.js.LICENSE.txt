@@ -1,0 +1,7 @@
+/*!
+  * typogr.js
+  * Copyright(c) 2011 Eugene Kalinin
+  * MIT Licensed
+  */
+
+/*! iScroll v5.1.3 ~ (c) 2008-2014 Matteo Spinelli ~ http://cubiq.org/license */

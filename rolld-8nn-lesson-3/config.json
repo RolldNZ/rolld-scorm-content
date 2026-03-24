@@ -1,0 +1,913 @@
+{
+	"config": {
+		"background": "fit_content_assets/mgisopgav5vfc0bc4jcs.png",
+		"colors": {
+			"background": "#fff",
+			"experimental": false,
+			"text": "#161616",
+			"theme": "light"
+		},
+		"enableCustomCSS": true,
+		"customCSS": "@import url(\"https://use.typekit.net/aiw8vtw.css\");\n\n\n/*/ Font - you can change this by finding a font to import on Google Fonts /*/\n\n@import url(\"https://use.typekit.net/aiw8vtw.css\");\n\nm {\nfont-family: anton, sans-serif;\n  letter-spacing: 0.03em;\n  font-size: 1em;\n}\n\nbody {\n  font-family: acumin-pro, sans-serif;\n}\n\nb {\n  color:var(--main-color);\n}\nsb {\n  color:var(--accent-color); \n  font-weight:bold;\n}\n\n\nh4 {\n  font-size: 0.9em;\n}\n\nft {\n  background: var(--accent-color);\n  padding-left: 0.4em;\n    padding-right: 0.4em;\n  padding-top: 0.2em;\n    padding-bottom: 0.2em;\n\n  color: var(--text-color)\n}\n\nfti {\n    background: var(--text-color);\n  padding-left: 0.4em;\n    padding-right: 0.4em;\n  padding-top: 0.2em;\n    padding-bottom: 0.2em;\n}\n\n/* Main Colors - Add your primary, accent and text colors. You can also use hex color codes i.e #FF0000 */\n\n:root{\n  --main-color:#085748;\n  --accent-color:#FF0619;\n  --text-color:#FFFFFF;\n}\n\n/* The complicated stuff you don’t need to touch. */\n.btn.btn-muted.btn-done.text-ellipsis {\nbackground: url(https://media.edapp.com/image/upload/v1654666896/ringo-uploads/6124efd5975dff6d62262342/courseware/lessons/62a0367a1646103e1a10e85b/j1nvuxth6xyvth6uymvw.png) no-repeat;\n background-size: contain;\n color: var(--accent-color);\n box-shadow:none;\n line-height: .7em;\n transition: none;\n padding-right: 1em;\n}\n.btn.btn-muted.btn-done.text-ellipsis:hover, .btn.btn-muted.btn-done.text-ellipsis.__active {\n box-shadow:none;\n transform:none;\n background-image: url(https://media.edapp.com/image/upload/v1644305426/ringo-uploads/5f92779cffb6c20001de934f/courseware/lessons/615d7ed4d75fa3a3804ca390/up5s0oait5hxkvvfuajj.png);\n  background-size: contain;\n  background-repeat: no-repeat;\n  color: var(--text-color);\n  padding-right: 1em;\n}\n.btn.btn-muted, .btn.btn-solid {\n  background:var(--main-color);\n  color:var(--text-color); \n  border-radius:3px;\n  transition: all ease-in-out 300ms;\n  box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4);\n}\n.btn.btn-muted.__active, .btn.btn-muted:hover, .btn.btn-solid.__active, .btn.btn-solid:hover {\n  background: var(--accent-color); \n  color:var(--text-color);\n  transition-delay:0.25s;\n  transition:all ease-in-out 300ms;\n  box-shadow:0px 17px 10px -10px rgba(0,0,0,0.4);\n  transform: translate(0px, -3px);\n}\n\n\n/*/ Header & Slides /*/\n#lesson-header {\n  background:white;\nbox-shadow: 0px 3px 8px 0px rgba(0,0,0,0.3);\n}\n\n#lesson-header-nav, .scroll-middle #lesson-header-nav, .scroll-bottom #lesson-header-nav {\n  background: url(https://media.edapp.com/image/upload/v1644305426/ringo-uploads/5f92779cffb6c20001de934f/courseware/lessons/615d7ed4d75fa3a3804ca390/up5s0oait5hxkvvfuajj.png);\n    background-size: contain;\n    background-repeat: no-repeat;\n    background-position: center;\n    width: 8em;\n  \n}\n#lesson-header-nav-menu-btn {\n  border-left: 1.5px solid var(--text-color);\n}\n#lesson-header-title-content {\n  border-bottom:0px solid var(--main-color);\n  color:var(--main-color); \n}\n#indicator { \n  background-color:var(--main-color); \n  color:var(--accent-color);\n}\n#slides {\n  border-bottom: 0px solid var(--main-color);\n}\n#text-input-view #text-input-dismiss-btn {\n  color:var(--main-color);\n} \n#text-input-view #text-input-container-top {\n  color:var(--main-color);\n}\nli::marker {\n  color:var(--accent-color); \n}\nhr {\n  color:var(--accent-color);\n}\n.pswp__item {\n    background:var(--main-color);\n}\n.selectable.active .btn { \nbackground-color: var(--accent-color);\n}\n\n\n/*/Templates/*/\n.slide-image-slider .style-dark .caption-content {\n  background:var(--main-color);\n  color:var(--text-color);\n  border-radius:3px;\n}\n.slide-image-slider .style-light .caption-content {  \n  background:var(--accent-color);\n  color:var(--text-color);\n  border-radius:3px;\n}\n.slide-image-slider .btn-down, .slide-image-slider .btn-up {\n  background:var(--main-color);\n  color: var(--text-color);\n  border-radius:50%;\n}\n.slide-image-slider .btn-down:hover,.slide-image-slider .btn-down:active, .slide-image-slider .btn-up:hover, .slide-image-slider .btn-up:active {\n  background:var(--accent-color);  \n  color: var(--text-color); \n  border-radius:50%;\n}\n.slide-image-gallery .pagination .dot {\n background-image: url(https://media.edapp.com/image/upload/v1644223193/ringo-uploads/5f92779cffb6c20001de934f/courseware/lessons/615d7ed4d75fa3a3804ca390/jhopbmvtu4dayxb8qj9a.png);\n background-size:cover;\n width:20px;\n height:20px;\n border: 0px solid;\n}\n.slide-image-gallery .pagination .dot.active {\n background-image: url(https://media.edapp.com/image/upload/v1644223190/ringo-uploads/5f92779cffb6c20001de934f/courseware/lessons/615d7ed4d75fa3a3804ca390/imstvtgvd3bkebaccvld.png);\n background-size:cover;\n width:20px;\n height:20px;\n border: 0px solid;\n}\n.slide-image-collection .tappy{ \n  transition: transform .5s ease;\n}\n.slide-image-collection .tappy:hover {\n transform: scale(1.1);\n}\n.slide-text-sequence .btn-down, .slide-text-sequence .btn-up {\n  background:var(--main-color);\n  color: var(--text-color);\n  border-radius:50%;\n}\n.slide-text-sequence .btn-down:hover,.slide-text-sequence .btn-down:active, .slide-text-sequence .btn-up:hover, .slide-text-sequence .btn-up:active {\n  background:var(--accent-color);  \n  color: var(--text-color); \n  border-radius:50%;\n}\n.slide-reveal .btn-reveal-title.flippable {\n  background:var(--accent-color);\n  color: var(--text-color); \n} \n.slide-reveal .btn-reveal.active .btn-reveal-desc.flippable {\n  background:var(--main-color);\n  color: var(--text-color); \n}\n.slide-reveal .btn-reveal-desc, .slide-reveal .btn-reveal-title {\n  pointer-events:none;\n}\n.slide-expandable-list .item.active .item-button {\n  background:var(--accent-color);  \n  color: var(--text-color); \n}\n.slide-image-waypoints .prev-wp, .slide-image-waypoints .next-wp{ \n  background:var(--main-color);\n  color: var(--text-color);\n}\n.slide-list ::marker {\n  color:var(--accent-color); \n}\n.slide-speech-bubble .quote.quote-dk .quote-bg, .quote.quote-dk {\n   background:var(--main-color);  \n   color: var(--text-color); \n   opacity: 1;\n}\n.slide-speech-bubble .quote.pull-left.quote-dk:after {\n    border-color: var(--main-color) transparent transparent;\n}\n.slide-comparison .slider-knob {\n    background-color:var(--main-color);\n}\n.slide-comparison .slider-knob:before, .slide-comparison .slider-knob:after {\n   background-color:var(--main-color);\n}\n.slide-table .table-row:nth-child(odd) {\n    border-radius:3px;\n    background: var(--accent-color);\n    color: var(--text-color);\n}\n.slide-table .table-row:nth-child(even) {\n    border-radius:3px;\n    background:var(--accent-color);\n    color: var(--text-color); \n}\n\n/*/Interactions/*/\n.slide-chat .message--question {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-chat.show-msg-true .selectable {\n  background:var(--accent-color);\n  color:var(--text-color);\n}\n.slide-chat.show-msg-true .selectable.active {\n  background: var(--main-color);\n  color:var(--text-color);\n}\n.slide-chat.state-complete .chat-msg.incorrect {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-chat.state-complete .chat-msg.correct {\n  background:var(--accent-color);\n  color:var(--text-color);\n}\n.slide-chat .message--question:after {\n  border-color:var(--main-color) transparent transparent;\n}\n.slide-chat .message--answer:after {\n  border-color:var(--accent-color) transparent transparent;\n}\n.slide-categorise .direction-ltr .selectable .btn-long, .direction-ltr .draggy .btn-long {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-circle-the-answer .circle-box.active .circle-box-text, .text-dark .slide-circle-the-answer .circle-box.active .circle-box-text {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-multiple-choice-game .btn.btn-solid {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-multiple-choice-game .selectable.active .btn {\n  background:var(--accent-color);\n  color:var(--text-color);\n}\n.slide-multiple-choice-game.state-complete .selectable.incorrect .btn {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-multiple-choice-game.state-complete .selectable.correct .btn {\n  background:var(--accent-color);\n  color:var(--text-color);\n}\n.slide-connect .connect-box {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-connect .connect-box.complete {\n  background:var(--accent-color);\n  color:var(--text-color);\n}\n.slide-game-true-or-false .game-statement {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-game-image-word-match .btn-word {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-game-image-word-match .btn-word.__active {\n  background:var(--accent-color);\n  color:var(--text-color);\n}\n.slide-carousel .btn.btn-solid {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-slider .slider-bar, .slide-slider-survey .slider-bar {\n  background:var(--main-color);\n}\n.slide-slider.active .slider-knob-input, .active.slide-slider-survey .slider-knob-input {\n  background:var(--accent-color);\n}\n.slide-free-text-survey .btn-prompt, .slide-free-text-contribution .btn-prompt {\n  border-radius:50% !important;\n}",
+		"direction": "ltr",
+		"disableInteractionSummary": true,
+		"disableLessonScore": false,
+		"hasAnswerFeedback": true,
+		"hasScormExitButton": false,
+		"preventLogoutOnExit": false,
+		"indicator": true,
+		"logo": "fit_content_assets/rowps1bij5pfjdyenenm.png",
+		"minimumScore": 50,
+		"pageNumbers": true,
+		"pagination": false,
+		"soundDisabled": false,
+		"language": "en"
+	},
+	"slides": [
+		{
+			"id": "7bfb4284-946d-4974-a1eb-83791f4432c6",
+			"type": "image-slider",
+			"subtype": "single",
+			"name": 1,
+			"displayIndex": 1,
+			"templateName": "Vertical series",
+			"templateDescription": "Swipe through a group of images",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "7bfb4284-946d-4974-a1eb-83791f4432c6"
+			},
+			"data": {
+				"prompt": "<ft>Swipe up to see more",
+				"items": [
+					{
+						"content": "fit_content_assets/ipr6vbkkt70wtho58qx9.jpg",
+						"contentType": "image",
+						"position": "Top",
+						"color": "n",
+						"caption": "#### <b><span style=\"font-size:110%\">ROLL'D 8 NON-NEGOTIABLES\n# <sb><m><span style=\"font-size:110%\">**STORE PRESENTATION, **\n# <sb><m><span style=\"font-size:110%\">**MARKETING COLLATERAL**\n# <sb><m><span style=\"font-size:110%\">**& FOOD AVAILABILITY**\n",
+						"imagePosition": "Cover",
+						"captionStyle": "Default"
+					},
+					{
+						"content": "fit_content_assets/mqlqctlswbpcytvtprvo.jpg",
+						"contentType": "image",
+						"position": "Middle",
+						"color": "n",
+						"caption": "# <sb><m>WELCOME TO YOUR THIRD LESSON!\n## <b> In this lesson, you'll learn about the other Roll'd 8-Non Negotiables including: \n\n- ## Store Presentation\n- ## Correct In-Store Collateral\n- ## All Food Items Available",
+						"imagePosition": "Cover",
+						"captionStyle": "Default"
+					},
+					{
+						"content": "fit_content_assets/reu1a1zaq8wsx7z3d9fa.jpg",
+						"contentType": "image",
+						"position": "Top",
+						"color": "n",
+						"caption": "# <b>ARE YOU READY TO <sb>_ROLL'D_</sb>?",
+						"imagePosition": "Cover",
+						"captionStyle": "Default"
+					}
+				],
+				"arrows": true,
+				"doneText": "Ready!",
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "62de43a5-1bda-4cc5-9bd5-af75631a4a84",
+			"type": "image-gallery",
+			"subtype": "image-gallery",
+			"name": 2,
+			"displayIndex": 2,
+			"templateName": "Horizontal series",
+			"templateDescription": "Swipe through a gallery of images",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "62de43a5-1bda-4cc5-9bd5-af75631a4a84"
+			},
+			"data": {
+				"prompt": "Swipe to continue",
+				"background": "",
+				"lightbox": false,
+				"images": [
+					{
+						"image": "fit_content_assets/tfgy79ldzgw14ugwep57.png",
+						"caption": "\n## <m><b> 8 Non-Negotiables</b>\n# <m> <sb> Store Presentation\n\n### *Learn how you can make your store shine (literally)!* \n\n"
+					},
+					{
+						"image": "fit_content_assets/lqxpnxvdjgwowisqs9ba.png",
+						"caption": "<h2><strong>Clean glass &amp; floors</strong></h2><ul><li><p>Maintain sparkly glass, inside and out (particularly on our Fresh rolls displays).</p></li><li><p>There should be no visible food scraps or rubbish in FOH, BOH and dining areas.</p></li></ul>"
+					},
+					{
+						"image": "fit_content_assets/r4ckmtljjihozdhvyf04.png",
+						"caption": "## <b> Clean POS & Summary areas</b>\n- ## These areas should be free of dust, any unnecessary clutter, and packaging.\n- ## Where we take our customers’ orders should be a reflection of the environment their food is made in."
+					},
+					{
+						"image": "fit_content_assets/leftyfch9y4tcokp84wx.png",
+						"caption": "## <b> Clean dining tables</b>\n- ## As a team, we aim to clear tables within 2 minutes of customers leaving.\n- ## The more available seating we have, the more customers we will get."
+					},
+					{
+						"image": "fit_content_assets/r41s80byowiblzhdug7f.png",
+						"caption": "## <b>Full stocked stations </b>\n- ## Check products, ingredients as well as cutlery, napkins, condiments, drink fridge, dressing station, etc.\n- ## Let’s show off our ingredients!\n"
+					},
+					{
+						"image": "fit_content_assets/zhung03nj3z9xq3kuplq.png",
+						"caption": "## <b>No labels & handwritten signs in view of customers</b>\n## As much as we love our checklists and guides, positioning them out of sight will keep customers focused on our menus and food production.\n"
+					},
+					{
+						"image": "fit_content_assets/kp8e7mtcmp1a3oehcc7k.png",
+						"caption": "## <b>Use only black bowls and gastronorms in FOH area.</b>\n## Avoid prolonged use of stainless steel and clear plastic tubs at the front - particularly at the rolling station."
+					},
+					{
+						"image": "fit_content_assets/msg12g48v9p9xfjybzin.png",
+						"caption": "## <b>FMG Retail Display</b>\n## All FMCG products are fully displayed and uniformed. Labels facing toward customers.\n"
+					}
+				],
+				"doneText": "Continue",
+				"title": null,
+				"titleType": null,
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "3509a429-9444-4108-af5b-978dacab4374",
+			"type": "missing-word",
+			"subtype": "missing-word",
+			"name": 3,
+			"displayIndex": 3,
+			"templateName": "Missing words",
+			"templateDescription": "",
+			"permanent": false,
+			"metadata": {
+				"questions": [
+					{
+						"question": {
+							"category": "As a team, we aim to clear tables within 2 minutes of customers leaving.",
+							"content": "2 minutes",
+							"questionId": "f82429b4-6b69-40dd-a8fc-df7ae0d7e466",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "5 minutes",
+								"correct": false,
+								"answerId": "36288f4a-95fd-4092-bd62-3cd394beeac8",
+								"type": "text"
+							},
+							{
+								"content": "10 minutes",
+								"correct": false,
+								"answerId": "b1b264cc-bfb8-488e-86f5-cb2a98eb78b6",
+								"type": "text"
+							},
+							{
+								"content": "2 minutes",
+								"correct": true,
+								"answerId": "c12b854e-92bc-4fba-8534-d80794981f27",
+								"type": "text"
+							}
+						]
+					}
+				],
+				"slideId": "3509a429-9444-4108-af5b-978dacab4374"
+			},
+			"data": {
+				"words": [
+					"2 minutes",
+					"5 minutes",
+					"10 minutes"
+				],
+				"doneText": "Continue",
+				"answer": {
+					"takeaway": "",
+					"incorrect": "Not quite...",
+					"correct": "That's correct!",
+					"text": "As a team, we aim to clear tables within <b>2 minutes</b> of customers leaving.",
+					"value": null
+				},
+				"game": {
+					"timer": {
+						"limit": -1,
+						"isDisabled": false,
+						"out-of-time-prompt": null
+					},
+					"stars": null
+				},
+				"prompt": "Drag in the missing words",
+				"title": "As a team, we aim to clear tables within 2 minutes of customers leaving.",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": {
+					"nb_stars": null,
+					"weighting": 1
+				},
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": null
+			}
+		},
+		{
+			"id": "ddcc4f52-14b3-4c4e-80a4-7469f07d20b6",
+			"type": "game-true-or-false",
+			"subtype": "true-or-false",
+			"name": 4,
+			"displayIndex": 4,
+			"templateName": "Left or right",
+			"templateDescription": "",
+			"permanent": false,
+			"metadata": {
+				"questions": [
+					{
+						"question": {
+							"content": "Use only clear plastic bowls and gastronorms in FOH area.",
+							"questionId": "4e492d83-60f7-4573-8144-0ebe2ce670bc",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "False",
+								"correct": true,
+								"answerId": "23cd8297-10c2-4cc0-a66f-74902fa81d2b",
+								"type": "text"
+							},
+							{
+								"content": "True",
+								"correct": false,
+								"answerId": "2dc6f69b-48d8-4aac-a323-ea74f7ffc375",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"question": {
+							"content": "Clean POS & Summary areas.",
+							"questionId": "9bd6a9a1-5484-48e4-b473-1f8b28c859a0",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "True",
+								"correct": true,
+								"answerId": "6ef5262e-5ea1-4601-863f-ba4d56f4f48a",
+								"type": "text"
+							},
+							{
+								"content": "False",
+								"correct": false,
+								"answerId": "4762fa63-6f64-4aa6-ba7b-4a818152d258",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"question": {
+							"content": "Clean glass & floors.",
+							"questionId": "c3923ed4-341d-464f-b53d-cb203496a943",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "True",
+								"correct": true,
+								"answerId": "a13a441f-5428-4e80-a990-4962a6db978b",
+								"type": "text"
+							},
+							{
+								"content": "False",
+								"correct": false,
+								"answerId": "28646f1c-cf79-424a-9919-3dbeaba7ba04",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"question": {
+							"content": "Clear tables within 10 minutes of customers leaving.",
+							"questionId": "a1666c72-c10e-4b15-a401-6543e5c589cd",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "False",
+								"correct": true,
+								"answerId": "f489c5dd-1af5-452a-b505-806feb0d4bcf",
+								"type": "text"
+							},
+							{
+								"content": "True",
+								"correct": false,
+								"answerId": "e326e062-2902-4513-b1e2-a0557eb51a5c",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"question": {
+							"content": "Position labels and handwritten signs out of customer's sight.",
+							"questionId": "64414d2d-b22c-4526-8256-fb7b47b8ec55",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "True",
+								"correct": true,
+								"answerId": "9a757077-0648-4e2e-9131-34ffc1f04e49",
+								"type": "text"
+							},
+							{
+								"content": "False",
+								"correct": false,
+								"answerId": "5b67ac52-7e2e-4f94-b384-2d895b41970e",
+								"type": "text"
+							}
+						]
+					}
+				],
+				"slideId": "ddcc4f52-14b3-4c4e-80a4-7469f07d20b6"
+			},
+			"data": {
+				"statements": [
+					{
+						"text": "Use only clear plastic bowls and gastronorms in FOH area.",
+						"true": false
+					},
+					{
+						"text": "Clean POS & Summary areas.",
+						"true": true
+					},
+					{
+						"text": "Clean glass & floors.",
+						"true": true
+					},
+					{
+						"text": "Clear tables within 10 minutes of customers leaving.",
+						"true": false
+					},
+					{
+						"text": "Position labels and handwritten signs out of customer's sight.",
+						"true": true
+					}
+				],
+				"falseText": "Don't",
+				"trueText": "Do",
+				"doneText": "Continue",
+				"readyText": null,
+				"game": {
+					"timer": {
+						"limit": 20000,
+						"isDisabled": true,
+						"out-of-time-prompt": null
+					},
+					"stars": {
+						"max": 10000,
+						"min": 1000
+					}
+				},
+				"prompt": "Swipe to answer",
+				"description": "Swipe to the left for statements showing poor practices. Swipe to the right for statements showing good practices.",
+				"title": "<m> <b> **Do or Don't?**",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": {
+					"nb_stars": null,
+					"weighting": 1
+				},
+				"socialLearning": null,
+				"narration": null
+			}
+		},
+		{
+			"id": "41422327-24e2-494b-ae6f-ad601af75168",
+			"type": "scrollable",
+			"subtype": "scrolling-content",
+			"name": 5,
+			"displayIndex": 5,
+			"templateName": "Scrolling text",
+			"templateDescription": "Display a long amount of content",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "41422327-24e2-494b-ae6f-ad601af75168"
+			},
+			"data": {
+				"content": "## <center> **Do**\n\n- ### Clean POS & Summary areas.\n- ### Clean glass & floors.\n- ### Position labels and handwritten signs out of customer's sight.\n\n## <center> **Don't **\n- ### Use only clear plastic bowls and gastronorms in FOH area.",
+				"prompt": "Scroll to see more",
+				"doneText": "Continue",
+				"title": "<sb> Review</sb>\n",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "c52d7557-2900-41c0-9730-7a204335f521",
+			"type": "speech-bubble",
+			"subtype": "default",
+			"name": 6,
+			"displayIndex": 6,
+			"templateName": "Quote",
+			"templateDescription": "Display a quote",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "c52d7557-2900-41c0-9730-7a204335f521"
+			},
+			"data": {
+				"author": "<img src=\"https://media.edapp.com/image/upload/v1661497040/ringo-uploads/5fd8d5a3082a9000015c215e/courseware/lessons/6114923c7b457d0a205dd5ab/wsxyrkrljgpbjdevkfed.png\"></img>\n\n",
+				"avatar": "",
+				"direction": "Left",
+				"bubbleStyle": "Dark",
+				"avatarStyle": "Circle",
+				"doneText": null,
+				"title": "# <m>Store Presentation\n\n## Let's see what an ideal store presentation looks like on the video found on the next slide.",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": null
+			}
+		},
+		{
+			"id": "7196e63d-6de7-4633-aead-d0e515a6d1e4",
+			"type": "video",
+			"subtype": "default",
+			"name": 7,
+			"displayIndex": 7,
+			"templateName": "Single video",
+			"templateDescription": "Play a video",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "7196e63d-6de7-4633-aead-d0e515a6d1e4"
+			},
+			"data": {
+				"prompt": "Watch the video to continue",
+				"url": "fit_content_assets/SCROLLING_MEDIA_ZOOM_ges0ry.mp4",
+				"streamUrl": null,
+				"showSkipButton": true,
+				"stream": true,
+				"autoplay": false,
+				"autoprogress": false,
+				"duration": 0,
+				"doneText": null,
+				"title": "Video",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": null
+			}
+		},
+		{
+			"id": "a31e1dce-45f6-4c7a-add4-c12146cb7c4d",
+			"type": "comparison",
+			"subtype": "compare-two",
+			"name": 8,
+			"displayIndex": 8,
+			"templateName": "Comparison",
+			"templateDescription": "Juxtapose two items in a slider",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "a31e1dce-45f6-4c7a-add4-c12146cb7c4d"
+			},
+			"data": {
+				"before": {
+					"contentType": "image",
+					"content": "fit_content_assets/v7uownw1huyj5ilkporz.jpg",
+					"label": "## Collateral is how we tell our story. It's about what we’re selling and what we’re promoting. "
+				},
+				"after": {
+					"contentType": "image",
+					"content": "fit_content_assets/bdmaqq2lr4nurqlppco6.jpg",
+					"label": "## It is important to ensure all TV screens are up-to-date and in order to maintain a correct flow of what we’re targeting the customer to purchase."
+				},
+				"startPosition": "Before - Start with the first section visible",
+				"prompt": "Drag to compare the content",
+				"doneText": "Learn More",
+				"title": "## <m><b> 8 Non-Negotiables</b>\n# <center> <m><sb> Correct In-Store Collateral\n",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "b11ecc69-bdf8-49a6-922c-3b4e5038f3b4",
+			"type": "scrolling-media",
+			"subtype": "scrolling-media",
+			"name": 9,
+			"displayIndex": 9,
+			"templateName": "Scrolling mix",
+			"templateDescription": "Display long form content of any type",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "b11ecc69-bdf8-49a6-922c-3b4e5038f3b4"
+			},
+			"data": {
+				"content": [
+					{
+						"content": "fit_content_assets/fmxgmhivdbp84hmbg3la.png",
+						"contentType": "image"
+					},
+					{
+						"content": "---\n\n## <center> Here's how we promote with pride:",
+						"contentType": "text"
+					},
+					{
+						"content": "fit_content_assets/q7mrctoblgk5agiyvhnl.png",
+						"contentType": "image"
+					},
+					{
+						"content": "## <center>All collateral is to be Roll’d approved. There should be no self-printed poster to be stuck up around the front counters.",
+						"contentType": "text"
+					},
+					{
+						"content": "fit_content_assets/trbobq4kr3qvgrbi84d3.png",
+						"contentType": "image"
+					},
+					{
+						"content": "<h2>All stores are required to display the average adult daily energy intake KJ sticker on their Fresh Rolls display.</h2>",
+						"contentType": "text"
+					},
+					{
+						"content": "fit_content_assets/khoesoqr5yu7ahey3esm.png",
+						"contentType": "image"
+					},
+					{
+						"content": "## <center> The only printed collateral allowed in-store includes: \n- ### National promotions (when occurring)\n- ### Roll into a Meal (RIAM)\n- ### Catering",
+						"contentType": "text"
+					}
+				],
+				"prompt": "Scroll to see more",
+				"doneText": "Let's Review",
+				"preventFocus": false,
+				"title": "## <center><m><b> 8 Non-Negotiables</b>\n# <center> <m><sb> Correct In-Store Collateral\n### <center>*Continued*",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "6366ed54-54d6-43b3-a1e0-f0fe74c85a83",
+			"type": "multiple-choice-game",
+			"subtype": "one-of-three",
+			"name": 10,
+			"displayIndex": 10,
+			"templateName": "Multiple Choice",
+			"templateDescription": "Select the correct answer(s)",
+			"permanent": false,
+			"metadata": {
+				"questions": [
+					{
+						"question": {
+							"category": "<br>\n\n*Select three answers*",
+							"content": "<m> <sb> Which of the following are the only printed collaterals allowed in-stores?",
+							"questionId": "33368151-8501-4fae-b37e-3c6bb1744f87",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "National promotions",
+								"correct": true,
+								"answerId": "2b363b98-bed2-4fea-82fa-57e669076fb8",
+								"type": "text"
+							},
+							{
+								"content": "Roll into a Meal",
+								"correct": true,
+								"answerId": "0c42e92c-5f60-4745-bf51-f3f54e957428",
+								"type": "text"
+							},
+							{
+								"content": "Catering",
+								"correct": true,
+								"answerId": "3439d811-2ff0-413a-b654-df72944ea54c",
+								"type": "text"
+							},
+							{
+								"content": "Self-printed posters",
+								"correct": false,
+								"answerId": "f0022e3d-cc00-4885-84d5-8763b622371c",
+								"type": "text"
+							}
+						]
+					}
+				],
+				"slideId": "6366ed54-54d6-43b3-a1e0-f0fe74c85a83"
+			},
+			"data": {
+				"additionalContent": null,
+				"additionalContentType": "text",
+				"selectable": 3,
+				"randomize": true,
+				"doneText": "Continue",
+				"answers": [
+					{
+						"id": "b2491fa9-cb00-48cb-85f2-488bb48f34e8",
+						"content": "National promotions",
+						"correct": true
+					},
+					{
+						"id": "90d90c98-9474-4816-98ab-51d2c031d073",
+						"content": "Roll into a Meal",
+						"correct": true
+					},
+					{
+						"id": "f1425e3a-59d6-4640-96d5-fd00424be8b4",
+						"content": "Catering",
+						"correct": true
+					},
+					{
+						"id": "f84e5063-4950-47cf-be78-10283c580e2d",
+						"content": "Self-printed posters",
+						"correct": false
+					}
+				],
+				"answer": {
+					"takeaway": "### <center>*Learn what it takes for stores to succeed on the next slide.*",
+					"incorrect": "Not quite...",
+					"correct": "That's correct!",
+					"text": "The only printed collateral allowed in-store includes: \n- ### National promotions (when occurring)\n- ### Roll into a Meal (RIAM)\n- ### Catering",
+					"value": null
+				},
+				"game": {
+					"timer": {
+						"limit": -1,
+						"isDisabled": false,
+						"out-of-time-prompt": null
+					},
+					"stars": null
+				},
+				"prompt": "",
+				"title": "<m> <sb> Which of the following are the only printed collaterals allowed in-stores?",
+				"titleType": "text",
+				"subtitle": "<br>\n\n*Select three answers*",
+				"subtitleType": "text",
+				"challenge_configuration": {
+					"nb_stars": null,
+					"weighting": 1
+				},
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": null
+			}
+		},
+		{
+			"id": "dbc1b354-03c3-4126-9eca-f6245946411a",
+			"type": "image-slider",
+			"subtype": "single",
+			"name": 11,
+			"displayIndex": 11,
+			"templateName": "Vertical series",
+			"templateDescription": "Swipe through a group of images",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "dbc1b354-03c3-4126-9eca-f6245946411a"
+			},
+			"data": {
+				"prompt": "Swipe up to see more",
+				"items": [
+					{
+						"content": "",
+						"contentType": "image",
+						"position": "Middle",
+						"color": "",
+						"caption": "## <m><b> 8 Non-Negotiables</b>\n# <m> <sb> All Food Items Available\n\n### *Here's how stocked stores succeed:*",
+						"imagePosition": "Cover",
+						"captionStyle": "Transparent Dark Text"
+					},
+					{
+						"content": "fit_content_assets/fdl2y10pmoj9d8px7uxr.jpg",
+						"contentType": "image",
+						"position": "Middle",
+						"color": "",
+						"caption": "## A successfully stocked store allows customers to order anything from the menu anytime.",
+						"imagePosition": "Cover",
+						"captionStyle": "Light"
+					},
+					{
+						"content": "fit_content_assets/xhjv0etf3zhpnqgj2gjw.jpg",
+						"contentType": "image",
+						"position": "Middle",
+						"color": "",
+						"caption": "<h2>There should always be a full stock of Fresh rolls.</h2>",
+						"imagePosition": "Cover",
+						"captionStyle": "Light"
+					},
+					{
+						"content": "fit_content_assets/sgol17k6qlx6enub2dpu.jpg",
+						"contentType": "image",
+						"position": "Middle",
+						"color": "",
+						"caption": "## All flavours should be available for customers to order.",
+						"imagePosition": "Cover",
+						"captionStyle": "Light"
+					},
+					{
+						"content": "fit_content_assets/psirls65f4wstunnbqxy.jpg",
+						"contentType": "image",
+						"position": "Middle",
+						"color": "",
+						"caption": "## Accommodate special orders and modifications requested by the customers.",
+						"imagePosition": "Cover",
+						"captionStyle": "Light"
+					}
+				],
+				"arrows": true,
+				"doneText": "Continue",
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "1d4fee93-de9f-42b3-9151-792152e7d064",
+			"type": "chat",
+			"subtype": "one-of-three",
+			"name": 12,
+			"displayIndex": 12,
+			"templateName": "Chat",
+			"templateDescription": "",
+			"permanent": false,
+			"metadata": {
+				"questions": [
+					{
+						"question": {
+							"content": "## Why is it important that we have a fully stocked store?",
+							"questionId": "6fc5fbdc-b96e-4f92-89a6-057a82546fab",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "Because we can generate more revenue this way.",
+								"correct": false,
+								"answerId": "2976b568-4849-4c5f-8365-06caea551817",
+								"type": "text"
+							},
+							{
+								"content": "Because we can keep customers focused on our menus and food production.",
+								"correct": false,
+								"answerId": "efa30a9d-65de-46d4-a2d2-5a93f18adb70",
+								"type": "text"
+							},
+							{
+								"content": "Because a successfully stocked store allows customers to order anything from the menu anytime.",
+								"correct": true,
+								"answerId": "7e69a42c-c8ae-497d-b637-a5ced7a2d940",
+								"type": "text"
+							}
+						]
+					}
+				],
+				"slideId": "1d4fee93-de9f-42b3-9151-792152e7d064"
+			},
+			"data": {
+				"message": {
+					"responder": "## <b>What's your answer?</b>",
+					"sender": "## <sb> Question </sb>",
+					"content": "## Why is it important that we have a fully stocked store?"
+				},
+				"answers": {
+					"correct": "Because a successfully stocked store allows customers to order anything from the menu anytime.",
+					"incorrect": [
+						"Because we can generate more revenue this way.",
+						"Because we can keep customers focused on our menus and food production."
+					]
+				},
+				"doneText": "Check Answer",
+				"answer": {
+					"takeaway": "",
+					"incorrect": "Not quite...",
+					"correct": "That's correct!",
+					"text": "Successfully stocked stores succeed because they allow customers to order <b>anything</b> from the menu <b>anytime</b>.",
+					"value": null
+				},
+				"game": {
+					"timer": {
+						"limit": -1,
+						"isDisabled": false,
+						"out-of-time-prompt": null
+					},
+					"stars": null
+				},
+				"prompt": "Select the correct answer",
+				"title": null,
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": {
+					"nb_stars": null,
+					"weighting": 1
+				},
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": null
+			}
+		},
+		{
+			"id": "0f89db3f-886e-4bee-80f9-337f852ec0d8",
+			"type": "exit",
+			"subtype": "default",
+			"name": 13,
+			"displayIndex": 13,
+			"templateName": "Exit Lesson",
+			"templateDescription": "",
+			"permanent": true,
+			"metadata": {
+				"questions": [],
+				"slideId": "0f89db3f-886e-4bee-80f9-337f852ec0d8"
+			},
+			"data": {
+				"content": "### You've completed this lesson.\n\n### Proceed to the next one to earn more stars.",
+				"buttonText": "Exit Lesson",
+				"title": "<B>Great job!",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": null,
+				"narration": null
+			}
+		}
+	],
+	"title": "Store Presentation, Marketing Collateral & Food Availability",
+	"index": 0,
+	"scorm": true,
+	"id": "656fec72f10d39b6251b9607"
+}
