@@ -3,43 +3,36 @@ name: Extract SCORM Zip
 on:
   push:
     paths:
-      - '_zips/*.zip'
+      - '_zips/**'
   workflow_dispatch:
-    inputs:
-      slug:
-        description: 'Course slug (optional - leave blank to extract all new zips)'
-        required: false
 
 jobs:
   extract:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 2
 
-      - name: Extract new or changed zips
+      - name: Extract new zips
         run: |
-          if [ -n "${{ github.event.inputs.slug }}" ]; then
-            ZIPS="${{ github.event.inputs.slug }}.zip"
-          else
-            ZIPS=$(git diff --name-only HEAD~1 HEAD -- '_zips/*.zip' | xargs -I{} basename {})
-          fi
-
-          for ZIP in $ZIPS; do
-            SLUG="${ZIP%.zip}"
-            ZIP_PATH="_zips/${ZIP}"
-            echo "Extracting ${ZIP_PATH} to ${SLUG}/"
-            mkdir -p "${SLUG}"
-            unzip -o "${ZIP_PATH}" -d "${SLUG}"
-            echo "Done: ${SLUG}"
+          for ZIP in _zips/*.zip; do
+            SLUG=$(basename "$ZIP" .zip)
+            if [ ! -d "$SLUG" ]; then
+              echo "Extracting $ZIP to $SLUG/"
+              mkdir -p "$SLUG"
+              unzip -o "$ZIP" -d "$SLUG"
+            else
+              echo "Skipping $SLUG (already extracted)"
+            fi
           done
 
       - name: Commit and push
         run: |
           git config user.email "actions@github.com"
           git config user.name "GitHub Actions"
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git add .
-          git commit -m "Auto-extract SCORM zips" || echo "Nothing to commit"
+          git diff --staged --quiet || git commit -m "Auto-extract SCORM zips"
           git push
