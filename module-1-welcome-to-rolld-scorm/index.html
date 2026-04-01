@@ -6,7 +6,36 @@
   <title>Module 1 - Welcome to Roll'd Family</title>
   <link rel="stylesheet" href="styles.css" />
   <script src="scormdriver.js"></script>
-</head>
+<script>
+(function() {
+  function makeAPI() {
+    var data = {};
+    return {
+      LMSInitialize: function() { return "true"; },
+      LMSFinish: function() { return "true"; },
+      LMSGetValue: function(k) { return data[k] || ""; },
+      LMSSetValue: function(k, v) { data[k] = v; return "true"; },
+      LMSCommit: function() { return "true"; },
+      LMSGetLastError: function() { return "0"; },
+      LMSGetErrorString: function() { return ""; },
+      LMSGetDiagnostic: function() { return ""; }
+    };
+  }
+  if (!window.API) { window.API = makeAPI(); }
+  if (!window.API_1484_11) {
+    window.API_1484_11 = {
+      Initialize: function() { return true; },
+      Terminate: function() { return true; },
+      GetValue: function() { return ""; },
+      SetValue: function() { return true; },
+      Commit: function() { return true; },
+      GetLastError: function() { return 0; },
+      GetErrorString: function() { return ""; },
+      GetDiagnostic: function() { return ""; }
+    };
+  }
+})();
+</script></head>
 <body>
   <div class="header">
     <h1>Module 1 - Welcome to Roll'd Family</h1>
