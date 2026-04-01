@@ -1,6 +1,6 @@
 function SetSCOComplete()
 {
- 	var SD = window.parent;
+ 	var SD = window;
 
     //This is the last page so set it complete
     SD.SetReachedEnd();

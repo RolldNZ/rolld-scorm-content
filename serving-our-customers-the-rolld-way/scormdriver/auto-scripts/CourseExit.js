@@ -1,6 +1,6 @@
 function niExit()
 {
-	var SD = window.parent;
+	var SD = window;
 	
 	var answer = confirm("Are You Sure You Wish To Exit This Course?");
 		
