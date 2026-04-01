@@ -1,5 +1,5 @@
 function SetBookmark() {
-    var SD = window.parent,
+    var SD = window,
         loc = window.location.href
     ;
 

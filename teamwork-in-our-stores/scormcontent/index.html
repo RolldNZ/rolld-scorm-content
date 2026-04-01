@@ -184,7 +184,7 @@ function hookProxy(funcName) {
   return;
 }
 
-var LMSProxyFuncs = pick(LMSProxySelections, window.parent, Function.prototype);
+var LMSProxyFuncs = pick(LMSProxySelections, window, Function.prototype);
 
 function noAPIFunction (funcName) {
   return function () {
@@ -463,8 +463,8 @@ function titleToId(quiz, question, attempts) {
 
 function normalizeResult(correct) {
   return correct
-    ? window.parent.INTERACTION_RESULT_CORRECT
-    : window.parent.INTERACTION_RESULT_WRONG;
+    ? window.INTERACTION_RESULT_CORRECT
+    : window.INTERACTION_RESULT_WRONG;
 }
 
 function reportAnswer(data) {
@@ -547,7 +547,7 @@ function isExport() {
 }
 
 function isPassed() {
-  return LMSProxy.GetStatus() === window.parent.LESSON_STATUS_PASSED;
+  return LMSProxy.GetStatus() === window.LESSON_STATUS_PASSED;
 }
 
 function pick(keys, obj, def) {

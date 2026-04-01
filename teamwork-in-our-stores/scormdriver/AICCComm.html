@@ -6,11 +6,11 @@
 
 <script language="JavaScript1.2">
     function WriteToDebug(str){
-        window.parent.WriteToDebug("AICCComm - " + str);
+        window.WriteToDebug("AICCComm - " + str);
     }
     
     function DisplayError(strMessage){
-        window.parent.DisplayError(strMessage);
+        window.DisplayError(strMessage);
     }
 </script>
 
@@ -76,8 +76,8 @@
 //---------------------------------------------------------------------
 
 //variables to check for the IFrame's load
-var intReCheckLoadedInterval = window.parent.AICC_RE_CHECK_LOADED_INTERVAL;
-var intReCheckAttemptsBeforeTimeout = window.parent.AICC_RE_CHECK_ATTEMPTS_BEFORE_TIMEOUT;
+var intReCheckLoadedInterval = window.AICC_RE_CHECK_LOADED_INTERVAL;
+var intReCheckAttemptsBeforeTimeout = window.AICC_RE_CHECK_ATTEMPTS_BEFORE_TIMEOUT;
 var intReCheckAttempts = 0;
 
 var IFrameLoaded_TimeOutID = "";
@@ -281,7 +281,7 @@ function SubmitFormUsingIFrame(strAICCURL, strAICCSID, strRequestType, strAICCDa
 
     document.frmAICC.action = strAICCURL;
 	//check to see if we should encode the session_id
-	if(window.parent.AICC_ENCODE_PARAMETER_VALUES==true || window.parent.AICC_ENCODE_PARAMETER_VALUES=='true'){
+	if(window.AICC_ENCODE_PARAMETER_VALUES==true || window.AICC_ENCODE_PARAMETER_VALUES=='true'){
     	document.frmAICC.session_id.value = strAICCSID;
 	}else{
 		document.frmAICC.session_id.value = URLEncode(strAICCSID);
@@ -290,16 +290,16 @@ function SubmitFormUsingIFrame(strAICCURL, strAICCSID, strRequestType, strAICCDa
     document.frmAICC.command.value = URLEncode(strRequestType);
     document.frmAICC.aicc_data.value = URLEncode(strAICCData);
     // added SD 3.8.6 (JBR) - check to see if we have version from LMS already
-    if(window.parent.AICC_LMS_Version!=""){
+    if(window.AICC_LMS_Version!=""){
         //check to see if we already have a version from the LMS cached
-	if(window.parent.AICC_ENCODE_PARAMETER_VALUES==true || window.parent.AICC_ENCODE_PARAMETER_VALUES=='true'){
-        document.frmAICC.version.value = URLEncode(window.parent.AICC_LMS_Version);
+	if(window.AICC_ENCODE_PARAMETER_VALUES==true || window.AICC_ENCODE_PARAMETER_VALUES=='true'){
+        document.frmAICC.version.value = URLEncode(window.AICC_LMS_Version);
 	}else{
-		document.frmAICC.version.value = window.parent.AICC_LMS_Version;
+		document.frmAICC.version.value = window.AICC_LMS_Version;
 	}
     }else{
         //default to 3.5
-		if(window.parent.AICC_ENCODE_PARAMETER_VALUES==true || window.parent.AICC_ENCODE_PARAMETER_VALUES=='true'){
+		if(window.AICC_ENCODE_PARAMETER_VALUES==true || window.AICC_ENCODE_PARAMETER_VALUES=='true'){
 	        document.frmAICC.version.value = URLEncode("3.5");
 		}else{
 			document.frmAICC.version.value = "3.5";
@@ -343,24 +343,24 @@ function SubmitFormUsingXMLHTTP(strAICCURL, strAICCSID, strRequestType, strAICCD
     WriteToDebug ("Creating Post Data");
         
 		//check to see if we should encode the session_id
-		if(window.parent.AICC_ENCODE_PARAMETER_VALUES==true || window.parent.AICC_ENCODE_PARAMETER_VALUES=='true'){
+		if(window.AICC_ENCODE_PARAMETER_VALUES==true || window.AICC_ENCODE_PARAMETER_VALUES=='true'){
 		    strPostData = "session_id=" + URLEncode(strAICCSID);
 	    }else{
 			strPostData = "session_id=" + strAICCSID;
 		}
 	    // added SD 3.8.6 (JBR) - check to see if we have version from LMS already
-	    if(window.parent.AICC_LMS_Version!=""){
+	    if(window.AICC_LMS_Version!=""){
 	        //check to see if we already have a version from the LMS cached
 			//check to see if we should encode the version
-			if(window.parent.AICC_ENCODE_PARAMETER_VALUES==true || window.parent.AICC_ENCODE_PARAMETER_VALUES=='true'){
-	        	strPostData += "&version="+URLEncode(window.parent.AICC_LMS_Version);
+			if(window.AICC_ENCODE_PARAMETER_VALUES==true || window.AICC_ENCODE_PARAMETER_VALUES=='true'){
+	        	strPostData += "&version="+URLEncode(window.AICC_LMS_Version);
 			}else{
-				strPostData += "&version="+window.parent.AICC_LMS_Version;
+				strPostData += "&version="+window.AICC_LMS_Version;
 			}
 	    }else{
 	        //default to 3.5
 			//check to see if we should encode the version
-			if(window.parent.AICC_ENCODE_PARAMETER_VALUES==true || window.parent.AICC_ENCODE_PARAMETER_VALUES=='true'){
+			if(window.AICC_ENCODE_PARAMETER_VALUES==true || window.AICC_ENCODE_PARAMETER_VALUES=='true'){
 		        strPostData += "&version="+URLEncode("3.5");
 			}else{
 		        strPostData += "&version=3.5";
@@ -396,24 +396,24 @@ function SubmitFormUsingCustomComms(strAICCURL, strAICCSID, strRequestType, strA
     WriteToDebug ("Creating Post Data");
     
 	//check to see if we should encode the session_id
-	if(window.parent.AICC_ENCODE_PARAMETER_VALUES==true || window.parent.AICC_ENCODE_PARAMETER_VALUES=='true'){
+	if(window.AICC_ENCODE_PARAMETER_VALUES==true || window.AICC_ENCODE_PARAMETER_VALUES=='true'){
 	    strPostData = "session_id=" + URLEncode(strAICCSID);
     }else{
 		strPostData = "session_id=" + strAICCSID;
 	}
     // added SD 3.8.6 (JBR) - check to see if we have version from LMS already
-    if(window.parent.AICC_LMS_Version!=""){
+    if(window.AICC_LMS_Version!=""){
         //check to see if we already have a version from the LMS cached
 		//check to see if we should encode the version
-		if(window.parent.AICC_ENCODE_PARAMETER_VALUES==true || window.parent.AICC_ENCODE_PARAMETER_VALUES=='true'){
-        	strPostData += "&version="+URLEncode(window.parent.AICC_LMS_Version);
+		if(window.AICC_ENCODE_PARAMETER_VALUES==true || window.AICC_ENCODE_PARAMETER_VALUES=='true'){
+        	strPostData += "&version="+URLEncode(window.AICC_LMS_Version);
 		}else{
-			strPostData += "&version="+window.parent.AICC_LMS_Version;
+			strPostData += "&version="+window.AICC_LMS_Version;
 		}
     }else{
         //default to 3.5
 		//check to see if we should encode the version
-		if(window.parent.AICC_ENCODE_PARAMETER_VALUES==true || window.parent.AICC_ENCODE_PARAMETER_VALUES=='true'){
+		if(window.AICC_ENCODE_PARAMETER_VALUES==true || window.AICC_ENCODE_PARAMETER_VALUES=='true'){
 	        strPostData += "&version="+URLEncode("3.5");
 		}else{
 	        strPostData += "&version=3.5";
@@ -469,7 +469,7 @@ function SubmitFormNormally(strAICCURL, strAICCSID, strRequestType, strAICCData)
     
     document.frmAICC.action = strAICCURL;
 	//check to see if we should encode the session_id
-	if(window.parent.AICC_ENCODE_PARAMETER_VALUES==true || window.parent.AICC_ENCODE_PARAMETER_VALUES=='true'){
+	if(window.AICC_ENCODE_PARAMETER_VALUES==true || window.AICC_ENCODE_PARAMETER_VALUES=='true'){
     	document.frmAICC.session_id.value = strAICCSID;
 	}else{
 		document.frmAICC.session_id.value = URLEncode(strAICCSID);
@@ -478,16 +478,16 @@ function SubmitFormNormally(strAICCURL, strAICCSID, strRequestType, strAICCData)
     document.frmAICC.command.value = URLEncode(strRequestType);
     document.frmAICC.aicc_data.value = URLEncode(strAICCData);
     // added SD 3.8.6 (JBR) - check to see if we have version from LMS already
-    if(window.parent.AICC_LMS_Version!=""){
+    if(window.AICC_LMS_Version!=""){
         //check to see if we already have a version from the LMS cached
-	if(window.parent.AICC_ENCODE_PARAMETER_VALUES==true || window.parent.AICC_ENCODE_PARAMETER_VALUES=='true'){
-        document.frmAICC.version.value = URLEncode(window.parent.AICC_LMS_Version);
+	if(window.AICC_ENCODE_PARAMETER_VALUES==true || window.AICC_ENCODE_PARAMETER_VALUES=='true'){
+        document.frmAICC.version.value = URLEncode(window.AICC_LMS_Version);
 	}else{
-		document.frmAICC.version.value = window.parent.AICC_LMS_Version;
+		document.frmAICC.version.value = window.AICC_LMS_Version;
 	}
     }else{
         //default to 3.5
-		if(window.parent.AICC_ENCODE_PARAMETER_VALUES==true || window.parent.AICC_ENCODE_PARAMETER_VALUES=='true'){
+		if(window.AICC_ENCODE_PARAMETER_VALUES==true || window.AICC_ENCODE_PARAMETER_VALUES=='true'){
 	        document.frmAICC.version.value = URLEncode("3.5");
 		}else{
 			document.frmAICC.version.value = "3.5";
@@ -778,7 +778,7 @@ function ProcessLMSResult(strRequestType, strLMSResult){
         
         //keep default values if we made a blind submit
         if (!blnMadeBlindSubmit){
-            window.parent.ParseGetParamData(strLMSResult);
+            window.ParseGetParamData(strLMSResult);
         }
         
         WriteToDebug("Calling InitializeExecuted");
@@ -796,7 +796,7 @@ function GetAICCSID(){
     
     WriteToDebug("In GetAICCSID");
     
-    strSID = window.parent.GetQueryStringValue("AICC_SID", window.parent.document.location.search)
+    strSID = window.GetQueryStringValue("AICC_SID", window.document.location.search)
     
     WriteToDebug("GetAICCSID returning: " + strSID);
     
@@ -810,15 +810,15 @@ function GetAICCURL(){
     
     WriteToDebug("In GetAICCURL");
     
-    strURL = window.parent.GetQueryStringValue("AICC_URL", window.parent.document.location.search)
+    strURL = window.GetQueryStringValue("AICC_URL", window.document.location.search)
     
     WriteToDebug("Querystring value = " + strURL);
     
     if (strURL != null && strURL.length > 0){
     
-        if (window.parent.AICC_COMM_PREPEND_HTTP_IF_MISSING === undefined || 
-            window.parent.AICC_COMM_PREPEND_HTTP_IF_MISSING === null || 
-            window.parent.AICC_COMM_PREPEND_HTTP_IF_MISSING === true){
+        if (window.AICC_COMM_PREPEND_HTTP_IF_MISSING === undefined || 
+            window.AICC_COMM_PREPEND_HTTP_IF_MISSING === null || 
+            window.AICC_COMM_PREPEND_HTTP_IF_MISSING === true){
             
             WriteToDebug("Checking for presense of 'http://'");
             
@@ -857,7 +857,7 @@ function CheckForDebugCommand(e){
         if (intQuestionCounter == 3){
             intQuestionCounter = 0;
             
-            window.parent.ShowDebugWindow();
+            window.ShowDebugWindow();
         }
     }
     else if (intKeyCode !=0){       //in FireFox, the shift key comes through as a keypress with code of 0...we want to ignore this
@@ -867,8 +867,8 @@ function CheckForDebugCommand(e){
 
 //MR 5/31/05 - added this call in addition to the frameset onunload calls to give us a better chance of getting an AICC EXITAU call in before the frames unload
 function ProcessUnload(){
-    if (window.parent){
-        window.parent.Unload();
+    if (window){
+        window.Unload();
     }
 }
 </script>
