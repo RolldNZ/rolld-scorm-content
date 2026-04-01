@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Module 1 - Welcome to Roll'd Family</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="scormdriver.js"></script>
+</head>
+<body>
+  <div class="header">
+    <h1>Module 1 - Welcome to Roll'd Family</h1>
+    <p>Read the booklet, then complete the knowledge check.</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="card">
+        <div class="badge">Step 1 - Read</div>
+        <h2 style="margin-top:0">Welcome booklet</h2>
+        <p class="small">Open and read the PDF below before starting the quiz.</p>
+        <iframe class="viewer" src="assets/module1_welcome_rolld.pdf"></iframe>
+        <div style="margin-top:14px">
+          <a class="button secondary" href="assets/module1_welcome_rolld.pdf" target="_blank">Open PDF in new tab</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="badge">Step 2 - Quiz</div>
+        <h2 style="margin-top:0">Knowledge check</h2>
+        <p class="small">Pass mark: 75%. Your completion is sent to the LMS.</p>
+        <form id="quizForm"></form>
+        <button id="submitBtn" type="button">Submit answers</button>
+        <div id="result" class="result"></div>
+        <p class="footer-note">This module includes the uploaded booklet for reading and a short multiple-choice assessment.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const questions = [{"q": "What is the main purpose of Module 1?", "choices": ["To teach payroll processing", "To welcome team members to Roll'd and introduce the brand, story and values", "To explain equipment maintenance procedures", "To review monthly financial results"], "answer": 1}, {"q": "Which topic is included in the booklet contents?", "choices": ["Food safety temperatures", "Emergency evacuation maps", "The Founders", "Supplier ordering procedures"], "answer": 2}, {"q": "According to the booklet, what sits at the heart of Roll'd culture?", "choices": ["Discounting and promotions", "Vietnamese culture and family bonds", "Strict corporate hierarchy", "Automation over people"], "answer": 1}, {"q": "What happened on the opening day of the first Roll'd store?", "choices": ["The store closed early because there were no customers", "Rice paper rolls sold out in around one and a half hours", "The founders launched an online-only business", "The menu was limited to banh mi only"], "answer": 1}, {"q": "Which statement best reflects Roll'd's mission described in the booklet?", "choices": ["To deliver fast and fresh Vietnamese inspired fare with memorable service", "To focus only on low-cost production", "To serve only in airports", "To reduce customer interaction"], "answer": 0}, {"q": "Which of the following is one of the ME VALUES shown in the booklet?", "choices": ["Love", "Compliance", "Precision", "Ownership"], "answer": 0}, {"q": "Which of the following is one of the WE VALUES?", "choices": ["Keep It Real", "Always Discount", "Silence Feedback", "Avoid Change"], "answer": 0}, {"q": "What is Roll'd's Big Hairy Audacious Goal (BHAG) in the booklet?", "choices": ["100 stores by 2030", "5000 stores globally by 2050", "One store in every NZ suburb by 2035", "To stop franchising"], "answer": 1}];
+    const form = document.getElementById('quizForm');
+    const result = document.getElementById('result');
+
+    function renderQuiz() {
+      questions.forEach((item, idx) => {
+        const block = document.createElement('div');
+        block.className = 'question';
+        const q = document.createElement('p');
+        q.innerHTML = `<strong>${idx + 1}. ${item.q}</strong>`;
+        block.appendChild(q);
+
+        item.choices.forEach((choice, cidx) => {
+          const label = document.createElement('label');
+          label.className = 'choice';
+          label.innerHTML = `<input type="radio" name="q${idx}" value="${cidx}" style="margin-right:10px"> ${choice}`;
+          block.appendChild(label);
+        });
+        form.appendChild(block);
+      });
+    }
+
+    function gradeQuiz() {
+      let correct = 0;
+      questions.forEach((item, idx) => {
+        const selected = document.querySelector(`input[name="q${idx}"]:checked`);
+        if (selected && Number(selected.value) === item.answer) correct++;
+      });
+      const total = questions.length;
+      const score = Math.round((correct / total) * 100);
+      const passed = score >= 75;
+      scorm.complete(score, passed);
+      result.style.display = 'block';
+      result.innerHTML = `
+        <h3 style="margin:0 0 8px 0">${passed ? "Passed" : "Not yet passed"}</h3>
+        <p style="margin:0 0 8px 0">You scored <strong>${score}%</strong> (${correct}/${total} correct).</p>
+        <p style="margin:0">${passed ? "Your module has been marked complete in the LMS." : "Review the PDF and try again."}</p>
+      `;
+      window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'});
+    }
+
+    document.getElementById('submitBtn').addEventListener('click', gradeQuiz);
+    renderQuiz();
+  </script>
+</body>
+</html>
