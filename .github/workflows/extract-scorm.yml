@@ -1,0 +1,51 @@
+name: Extract SCORM Zip
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: Course slug
+        required: true
+      title:
+        description: Course title
+        required: true
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Extract zip to folder
+        run: |
+          SLUG="${{ github.event.inputs.slug }}"
+          ZIP_PATH="_zips/${SLUG}.zip"
+          echo "Extracting ${ZIP_PATH} to ${SLUG}/"
+          mkdir -p "${SLUG}"
+          unzip -o "${ZIP_PATH}" -d "${SLUG}"
+          echo "Done"
+
+      - name: Patch SCORM API (fix cross-origin)
+        run: |
+          SLUG="${{ github.event.inputs.slug }}"
+          echo "Patching SCORM files in ${SLUG}/..."
+          find "${SLUG}" -name "*.html" -o -name "*.js" | while read file; do
+            if grep -q "window\.parent" "$file" 2>/dev/null; then
+              sed -i "s/window\.parent\b/window/g" "$file"
+              echo "Patched: $file"
+            fi
+          done
+          echo "Patching complete"
+
+      - name: Commit and push
+        run: |
+          git config user.email "actions@github.com"
+          git config user.name "GitHub Actions"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git add .
+          git commit -m "Extract + patch SCORM: ${{ github.event.inputs.title }}" || echo "Nothing to commit"
+          git push
