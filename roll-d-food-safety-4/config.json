@@ -25,7 +25,7 @@
 	},
 	"slides": [
 		{
-			"id": "27d7cfb9-e523-4265-beb6-aa01ed6868f4",
+			"id": "0b62f172-5be3-4a52-ae46-11ccaa0a7d81",
 			"type": "image-slider",
 			"subtype": "single",
 			"name": 0,
@@ -35,17 +35,17 @@
 			"permanent": false,
 			"metadata": {
 				"questions": [],
-				"slideId": "27d7cfb9-e523-4265-beb6-aa01ed6868f4"
+				"slideId": "0b62f172-5be3-4a52-ae46-11ccaa0a7d81"
 			},
 			"data": {
 				"prompt": "<ft>Swipe up to see more",
 				"items": [
 					{
-						"content": "fit_content_assets/hwvrtrzjw0ggpeb2s2bw.gif",
+						"content": "fit_content_assets/vqog0cjphgelk3omp7hj.gif",
 						"contentType": "image",
 						"position": "Top",
 						"color": "n",
-						"caption": "#### <b><span style=\"font-size:110%\">ROLL'D - FOOD SAFETY\n# <sb><m><span style=\"font-size:130%\">**Personal Hygiene**\n",
+						"caption": "#### <b><span style=\"font-size:110%\">ROLL'D - FOOD SAFETY\n# <sb><m><span style=\"font-size:130%\">**Work Area and Equipment**\n",
 						"imagePosition": "Cover",
 						"captionStyle": "Default"
 					},
@@ -63,7 +63,7 @@
 						"contentType": "image",
 						"position": "Middle",
 						"color": "n",
-						"caption": "## In this first lesson, you will learn about:\n- ## Importance of Personal Hygiene\n- ## Personal Hygiene Protocols",
+						"caption": "## In this lesson, you will learn about:\n- ## Cleaning and Sanitising\n- ## Procedures to Prevent Contamination",
 						"imagePosition": "Cover",
 						"captionStyle": "Default"
 					},
@@ -92,468 +92,17 @@
 			}
 		},
 		{
-			"id": "07eeb2e4-9720-47b2-ba78-671ce1f26b80",
-			"type": "expandable-list",
-			"subtype": "three",
-			"name": 1,
-			"displayIndex": 2,
-			"templateName": "Expandable list",
-			"templateDescription": "Display a list of bullet points",
-			"permanent": false,
-			"metadata": {
-				"questions": [],
-				"slideId": "07eeb2e4-9720-47b2-ba78-671ce1f26b80"
-			},
-			"data": {
-				"content": null,
-				"prompt": "Select an item to see more",
-				"focus": true,
-				"doneText": "Continue",
-				"list": [
-					{
-						"content": "## Gloves are essential to being “food safe” by adding an extra layer of protection between your hands and food. Gloves protect the food from your hands, not keep your hands clean.",
-						"title": "Purpose"
-					},
-					{
-						"content": "## <b>✔</b> Wash hands before putting on gloves\n## <b>✔</b> Change gloves when you change food (change gloves between handling meat and vegetables)\n## <b>✔</b> Use tongs instead of gloves, if possible\n<br>",
-						"title": "Do's"
-					},
-					{
-						"content": "## <sb>✘</sb> Touch anything other than food (hair, face, broom, floors)\n## <sb>✘</sb>  Handle money while wearing gloves\n## <sb>✘</sb> Wear gloves when cleaning or carrying dishes\n## <sb>✘</sb> Wear gloves when serving customers (always take them off, then wear fresh gloves when you return to food handling)",
-						"title": "Don'ts"
-					}
-				],
-				"title": "<sb>Tip #1:</sb> **Wear Gloves**",
-				"titleType": "html",
-				"subtitle": null,
-				"subtitleType": null,
-				"challenge_configuration": null,
-				"socialLearning": {
-					"enabled": false,
-					"maxResponseLength": 0
-				},
-				"narration": {
-					"progress_on_completion": false,
-					"can_not_be_skipped": false,
-					"audio_file": null
-				}
-			}
-		},
-		{
-			"id": "5a900afb-4dc4-4fe1-a11c-0ddc4c3e64f6",
-			"type": "image-waypoints",
-			"subtype": "guided",
-			"name": 2,
-			"displayIndex": 3,
-			"templateName": "Image waypoints",
-			"templateDescription": "Highlight important details in an image",
-			"permanent": false,
-			"metadata": {
-				"questions": [],
-				"slideId": "5a900afb-4dc4-4fe1-a11c-0ddc4c3e64f6"
-			},
-			"data": {
-				"guided": true,
-				"doneText": "Continue",
-				"url": "fit_content_assets/loy4mtvmeiiuei886ahf.jpg",
-				"prompt": "Click next to see more",
-				"appearance": {
-					"waypointColor": "White"
-				},
-				"lightbox": {
-					"background": "white",
-					"textColor": "Black"
-				},
-				"waypoints": [
-					{
-						"image": null,
-						"caption": "# <sb>Tip #2:</sb> **Wash your Hands**",
-						"narration": null,
-						"region": {
-							"yMax": 1,
-							"xMax": 1,
-							"yMin": 0,
-							"xMin": 0
-						}
-					},
-					{
-						"image": null,
-						"caption": "## Wash your hands for **40-60 seconds**. Here are the guidelines for washing hands:",
-						"narration": null,
-						"region": {
-							"yMax": 1,
-							"xMax": 1,
-							"yMin": 0,
-							"xMin": 0
-						}
-					},
-					{
-						"image": null,
-						"caption": "## Wash hands with water.",
-						"narration": null,
-						"region": {
-							"yMax": 0.32000010172526044,
-							"xMax": 0.39199076848538406,
-							"yMin": 0.18,
-							"xMin": 0.1708847994324749
-						}
-					},
-					{
-						"image": null,
-						"caption": "## Apply enough soap to all hand surfaces.",
-						"narration": null,
-						"region": {
-							"yMax": 0.31066650390625,
-							"xMax": 0.6243364904963189,
-							"yMin": 0.1826666259765625,
-							"xMin": 0.39929222665573666
-						}
-					},
-					{
-						"image": null,
-						"caption": "## Rub hands palm to palm.",
-						"narration": "",
-						"region": {
-							"yMax": 0.31066680908203115,
-							"xMax": 0.8488051722573439,
-							"yMin": 0.18533345540364585,
-							"xMin": 0.6237610586416164
-						}
-					},
-					{
-						"image": null,
-						"caption": "## Put right palm over left dorsum with interlaced fingers and vice-versa.",
-						"narration": "",
-						"region": {
-							"yMax": 0.45599995930989584,
-							"xMax": 0.39986720783587526,
-							"yMin": 0.33066675821940106,
-							"xMin": 0.17482294399529322
-						}
-					},
-					{
-						"image": null,
-						"caption": "## Place palm to palm with fingers interlaced.",
-						"narration": "",
-						"region": {
-							"yMax": 0.45866668701171875,
-							"xMax": 0.6203981957086458,
-							"yMin": 0.3279998779296875,
-							"xMin": 0.3953539318680638
-						}
-					},
-					{
-						"image": null,
-						"caption": "## Put the back of fingers to opposing palms with fingers interlocked.",
-						"narration": "",
-						"region": {
-							"yMax": 0.4600000000000001,
-							"xMax": 0.8488051722573439,
-							"yMin": 0.3293334452311198,
-							"xMin": 0.6198232145285072
-						}
-					},
-					{
-						"image": null,
-						"caption": "## Make a rotational rubbing of left thumb clasped in right palm and vice-versa.",
-						"narration": "",
-						"region": {
-							"yMax": 0.6146666463216146,
-							"xMax": 0.40380520217383903,
-							"yMin": 0.49199996948242186,
-							"xMin": 0.17482294399529322
-						}
-					},
-					{
-						"image": null,
-						"caption": "## Make a rotational rubbing, backwards and forwards with clasped fingers of right hand in palm and vice-versa.",
-						"narration": "",
-						"region": {
-							"yMax": 0.6146666463216146,
-							"xMax": 0.6203981957086457,
-							"yMin": 0.48933329264322917,
-							"xMin": 0.3992920764308821
-						}
-					},
-					{
-						"image": null,
-						"caption": "## Rinse hands with water.",
-						"narration": "",
-						"region": {
-							"yMax": 0.6173333740234375,
-							"xMax": 0.8409291835814163,
-							"yMin": 0.4866666158040365,
-							"xMin": 0.6198232145285072
-						}
-					},
-					{
-						"image": null,
-						"caption": "## Dry thoroughly with a single-use towel.",
-						"narration": "",
-						"region": {
-							"yMax": 0.7946666463216147,
-							"xMax": 0.4077428960620936,
-							"yMin": 0.6639999643961588,
-							"xMin": 0.1708847994324749
-						}
-					},
-					{
-						"image": null,
-						"caption": "## Use a towel to turn off the faucet.",
-						"narration": "",
-						"region": {
-							"yMax": 0.7960000610351563,
-							"xMax": 0.6203981957086457,
-							"yMin": 0.6680000305175782,
-							"xMin": 0.39929222665573666
-						}
-					},
-					{
-						"image": null,
-						"caption": "## Dry your hands using a towel.",
-						"narration": "",
-						"region": {
-							"yMax": 0.8,
-							"xMax": 0.848805472707053,
-							"yMin": 0.6666666920979818,
-							"xMin": 0.6237613590913256
-						}
-					}
-				],
-				"challenge_configuration": null,
-				"socialLearning": {
-					"enabled": false,
-					"maxResponseLength": 0
-				},
-				"narration": {
-					"progress_on_completion": false,
-					"can_not_be_skipped": false,
-					"audio_file": null
-				}
-			}
-		},
-		{
-			"id": "0d40bb0e-5406-460f-bd13-9bd023f0a4db",
-			"type": "drag-to-match",
-			"subtype": "classify-three-into-two",
-			"name": 3,
-			"displayIndex": 4,
-			"templateName": "Drag to match",
-			"templateDescription": "",
-			"permanent": false,
-			"metadata": {
-				"questions": [
-					{
-						"question": {
-							"category": "<b>DO</b> or <sb>DON'T</sb>",
-							"content": "## Wash hands before putting on gloves",
-							"questionId": "7e8b5f32-9413-4769-a865-b0678bfec88a",
-							"type": "text"
-						},
-						"answers": [
-							{
-								"content": "# <b>DO</b>",
-								"correct": false,
-								"answerId": "a9d85f69-7597-4620-9bb8-482c866ad9b1",
-								"type": "text"
-							},
-							{
-								"content": "# <sb>DON'T</sb>",
-								"correct": false,
-								"answerId": "80980602-677f-4e7e-9661-1b9d60867896",
-								"type": "text"
-							},
-							{
-								"content": "# <sb>DON'T</sb>",
-								"correct": false,
-								"answerId": "d213a55e-ac44-457c-9558-d3dad89f6105",
-								"type": "text"
-							},
-							{
-								"content": "# <b>DO</b>",
-								"correct": true,
-								"answerId": "8c6029bc-c71d-417e-b12f-b09dd17e1431",
-								"type": "text"
-							}
-						]
-					},
-					{
-						"question": {
-							"category": "<b>DO</b> or <sb>DON'T</sb>",
-							"content": "## Use tongs instead of gloves",
-							"questionId": "9ec87329-f7e7-4236-bb2a-44884d2e9fb2",
-							"type": "text"
-						},
-						"answers": [
-							{
-								"content": "# <b>DO</b>",
-								"correct": false,
-								"answerId": "d26d9f30-867f-46d2-9f4a-e8865241e78d",
-								"type": "text"
-							},
-							{
-								"content": "# <sb>DON'T</sb>",
-								"correct": false,
-								"answerId": "e653bfdb-9a41-4eab-9939-0941679f5d35",
-								"type": "text"
-							},
-							{
-								"content": "# <sb>DON'T</sb>",
-								"correct": false,
-								"answerId": "34bc6d73-0706-48ec-bea3-4586a9c9dc98",
-								"type": "text"
-							},
-							{
-								"content": "# <b>DO</b>",
-								"correct": true,
-								"answerId": "873105e5-6fb8-415c-8443-be971846449d",
-								"type": "text"
-							}
-						]
-					},
-					{
-						"question": {
-							"category": "<b>DO</b> or <sb>DON'T</sb>",
-							"content": "## Wear gloves when carrying dishes",
-							"questionId": "82efaf24-c193-4881-aa0e-070d5d1b1433",
-							"type": "text"
-						},
-						"answers": [
-							{
-								"content": "# <b>DO</b>",
-								"correct": false,
-								"answerId": "1dce5d15-7d42-40a7-bd4d-b6354941b762",
-								"type": "text"
-							},
-							{
-								"content": "# <b>DO</b>",
-								"correct": false,
-								"answerId": "45ae7b8f-47c0-42e5-868d-f0bc2d65104b",
-								"type": "text"
-							},
-							{
-								"content": "# <sb>DON'T</sb>",
-								"correct": false,
-								"answerId": "17ffb389-2587-4075-a361-80b560a2ebbb",
-								"type": "text"
-							},
-							{
-								"content": "# <sb>DON'T</sb>",
-								"correct": true,
-								"answerId": "4dd79756-85f5-4ac8-be7c-aa15dce4e41a",
-								"type": "text"
-							}
-						]
-					},
-					{
-						"question": {
-							"category": "<b>DO</b> or <sb>DON'T</sb>",
-							"content": "## Wash hands for 20 seconds only",
-							"questionId": "22b5bca2-3376-4eb2-a417-ec20a35a9de4",
-							"type": "text"
-						},
-						"answers": [
-							{
-								"content": "# <b>DO</b>",
-								"correct": false,
-								"answerId": "de192cc5-af10-4f49-80e2-a352ef1dbace",
-								"type": "text"
-							},
-							{
-								"content": "# <b>DO</b>",
-								"correct": false,
-								"answerId": "a76a0bde-efe6-48ec-88d3-27cc92538b59",
-								"type": "text"
-							},
-							{
-								"content": "# <sb>DON'T</sb>",
-								"correct": false,
-								"answerId": "f41ad962-1aaf-41c4-bf97-df7ae4768e50",
-								"type": "text"
-							},
-							{
-								"content": "# <sb>DON'T</sb>",
-								"correct": true,
-								"answerId": "d9012914-c9ec-4327-81b3-a220b1269673",
-								"type": "text"
-							}
-						]
-					}
-				],
-				"slideId": "0d40bb0e-5406-460f-bd13-9bd023f0a4db"
-			},
-			"data": {
-				"reject": true,
-				"list": [
-					{
-						"name": "# <b>DO</b>",
-						"nameType": "text",
-						"image": "## Wash hands before putting on gloves",
-						"imageType": "text"
-					},
-					{
-						"name": "# <b>DO</b>",
-						"nameType": "text",
-						"image": "## Use tongs instead of gloves",
-						"imageType": "text"
-					},
-					{
-						"name": "# <sb>DON'T</sb>",
-						"nameType": "text",
-						"image": "## Wear gloves when carrying dishes",
-						"imageType": "text"
-					},
-					{
-						"name": "# <sb>DON'T</sb>",
-						"nameType": "text",
-						"image": "## Wash hands for 20 seconds only",
-						"imageType": "text"
-					}
-				],
-				"doneText": "Continue",
-				"answer": {
-					"takeaway": "_Learn about the other protocols regarding proper hygiene in the following slides._",
-					"incorrect": "Not quite...",
-					"correct": "That's correct!",
-					"text": "## **Do's**\n* Wash hands before putting on gloves\n* Use tongs instead of gloves\n\n## **Don'ts**\n* Wear gloves when carrying dishes\n* Wash hands for 20 seconds only",
-					"value": null
-				},
-				"game": {
-					"timer": {
-						"limit": -1,
-						"isDisabled": false,
-						"out-of-time-prompt": null
-					},
-					"stars": null
-				},
-				"prompt": "Drag the statements to their labels",
-				"title": "<b>DO</b> or <sb>DON'T</sb>",
-				"titleType": "html",
-				"subtitle": null,
-				"subtitleType": null,
-				"challenge_configuration": {
-					"nb_stars": null,
-					"weighting": 1
-				},
-				"socialLearning": {
-					"enabled": false,
-					"maxResponseLength": 0
-				},
-				"narration": null
-			}
-		},
-		{
-			"id": "42265c0a-db9d-4461-b6bc-462b3a34b515",
+			"id": "c92d3ce0-120d-4680-ab5f-7c6f29839f6d",
 			"type": "image-gallery",
 			"subtype": "image-gallery",
-			"name": 4,
-			"displayIndex": 5,
+			"name": 1,
+			"displayIndex": 2,
 			"templateName": "Horizontal series",
 			"templateDescription": "Swipe through a gallery of images",
 			"permanent": false,
 			"metadata": {
 				"questions": [],
-				"slideId": "42265c0a-db9d-4461-b6bc-462b3a34b515"
+				"slideId": "c92d3ce0-120d-4680-ab5f-7c6f29839f6d"
 			},
 			"data": {
 				"prompt": "Swipe to continue",
@@ -561,20 +110,28 @@
 				"lightbox": false,
 				"images": [
 					{
-						"image": "fit_content_assets/Copy_of_Module_4_8_Non_-_Negotiables_11_y2p3cq_z8hsdv.png",
-						"caption": "# <sb>Tip #3:</sb> **Cover Sores and Open Wounds**"
+						"image": "fit_content_assets/joptysqjlx6unwiq4ico.png",
+						"caption": "<h1>➤ Cleaning and Sanitising</h1>"
 					},
 					{
-						"image": "fit_content_assets/Copy_of_Module_4_8_Non_-_Negotiables_13_ftftrz_e9gclo.png",
-						"caption": "## Food handlers must **tell **their **supervisors **about any infections or conditions that may result in discharges. They may make food unsafe for people to eat because of their conditions."
+						"image": "fit_content_assets/rzokpgkepqt6qum99xpu.png",
+						"caption": "<h2><strong>➤ Clean and sanitise</strong> equipment, vehicles, containers and cleaning cloths correctly to avoid food contamination. You must:</h2>"
 					},
 					{
-						"image": "fit_content_assets/xnl5wahb1sssyok9zyig.png",
-						"caption": "## It is possible to take precautions so conditions **do not affect food quality**. For example, cover an infected sore with a waterproof covering."
+						"image": "fit_content_assets/bgembdrvb2ssmavxjxyr.png",
+						"caption": "## <div align=left> ➤ Use appropriate **cleaning products and equipment**."
 					},
 					{
-						"image": "fit_content_assets/Copy_of_Module_4_8_Non_-_Negotiables_13_bk9xmm_dpknbz.png",
-						"caption": "## If food handlers are unwell or have injuries, **stay at work to do other tasks**. They must do everything reasonable to avoid contaminating any food."
+						"image": "fit_content_assets/ueavjy8e6op74gnt0iev.png",
+						"caption": "<h2>➤ Develop and implement <strong>effective cleaning arrangements</strong>. Team Members should know how to clean, what to clean, and when.</h2>"
+					},
+					{
+						"image": "fit_content_assets/y5msvskrco2wd2rx1tvh.png",
+						"caption": "<h2>➤ Ensure <strong>Team  </strong>have the <strong>required skills</strong>.</h2>"
+					},
+					{
+						"image": "fit_content_assets/w8or5nkjtlql8qcjgddr.png",
+						"caption": "## <div align=left> ➤ **Replace cleaning cloths and equipment** regularly."
 					}
 				],
 				"doneText": "Continue",
@@ -595,33 +152,50 @@
 			}
 		},
 		{
-			"id": "a4207615-191b-414d-9d9f-6f5c5c705299",
-			"type": "scratch-to-reveal",
-			"subtype": "scratch-to-reveal",
-			"name": 5,
-			"displayIndex": 6,
-			"templateName": "Scratch to reveal",
-			"templateDescription": "Scratch to reveal the content",
+			"id": "232f4d30-34d9-42a8-91ee-3250bd0b37a5",
+			"type": "expandable-list",
+			"subtype": "three",
+			"name": 2,
+			"displayIndex": 3,
+			"templateName": "Expandable list",
+			"templateDescription": "Display a list of bullet points",
 			"permanent": false,
 			"metadata": {
 				"questions": [],
-				"slideId": "a4207615-191b-414d-9d9f-6f5c5c705299"
+				"slideId": "232f4d30-34d9-42a8-91ee-3250bd0b37a5"
 			},
 			"data": {
-				"before": {
-					"label": "",
-					"content": "fit_content_assets/Screen_Shot_2024-09-17_at_11.56.42_am_zgjiwo.png",
-					"contentType": "image"
-				},
-				"after": {
-					"label": "",
-					"content": "## All team members and managers must wear the **Roll'd supplied bandanas**. This is to avoid hair contaminating our food and presents a neat and clean look to our customers.",
-					"contentType": "text"
-				},
-				"canvasBackground": null,
-				"prompt": "Scratch to reveal the content",
+				"content": null,
+				"prompt": "Select an item to see more",
+				"focus": true,
 				"doneText": "Continue",
-				"title": "<sb>Tip #4:</sb> **Wear Headgear**",
+				"list": [
+					{
+						"content": "## Scrape, wipe or sweep away food scraps and rinse with water.",
+						"title": "Step 1: Pre-Clean"
+					},
+					{
+						"content": "## Use hot water and detergent to remove grease and dirt and soak if needed.",
+						"title": "Step 2: Wash"
+					},
+					{
+						"content": "## Rinse off any loose dirt or detergent foam.",
+						"title": "Step 3: Rinse"
+					},
+					{
+						"content": "## Use sanitiser to kill remaining germs.",
+						"title": "Step 4: Sanitise"
+					},
+					{
+						"content": "## Wash off sanitiser. Read the instructions on the sanitiser container to see if you need to do this.",
+						"title": "Step 5: Final Rinse"
+					},
+					{
+						"content": "## Allow to air dry.",
+						"title": "Step 6: Dry"
+					}
+				],
+				"title": "<sb>Steps in Cleaning and Sanitising Food Contact Surfaces and Equipment </sb>",
 				"titleType": "html",
 				"subtitle": null,
 				"subtitleType": null,
@@ -638,86 +212,54 @@
 			}
 		},
 		{
-			"id": "4ec9e663-8d42-4404-aed0-cb9a81e234bf",
-			"type": "matrix",
-			"subtype": "matrix",
-			"name": 6,
-			"displayIndex": 7,
-			"templateName": "Multi-question",
-			"templateDescription": "",
+			"id": "784d3995-b1bc-40eb-9f70-29a5715afffa",
+			"type": "reorder",
+			"subtype": "cities",
+			"name": 3,
+			"displayIndex": 4,
+			"templateName": "Reorder",
+			"templateDescription": "Put the items in the correct order",
 			"permanent": false,
 			"metadata": {
 				"questions": [
 					{
 						"question": {
-							"category": "<b>True</b> or <sb>False</sb>",
-							"content": "### 1. Skin injuries may make food unsafe.",
-							"questionId": "9ca7ffe1-ed0d-41a8-aba4-863c4bec05fb",
+							"content": "**Arrange the steps in cleaning and sanitising equipment in order**",
+							"questionId": "0531b1a7-1877-4a88-af37-20ca891a347f",
 							"type": "text"
 						},
 						"answers": [
 							{
-								"content": "False",
-								"correct": false,
-								"answerId": "540959dd-343c-4472-877d-033aca503680",
-								"type": "text"
+								"content": "Pre-Clean|Wash|Rinse|Sanitise|Final Rinse|Dry",
+								"correct": true,
+								"answerId": "122a7ffc-3726-4f0c-ba98-b6c0f65cfedb",
+								"type": "sequence"
 							},
 							{
-								"content": "True",
-								"correct": true,
-								"answerId": "f6cfd96a-5eaa-45e3-a0e3-807d2121ceab",
-								"type": "text"
-							}
-						]
-					},
-					{
-						"question": {
-							"category": "<b>True</b> or <sb>False</sb>",
-							"content": "### 2. Bandana is noncompulsory for managers.",
-							"questionId": "486449c6-b158-4428-abf5-19a7e5c67fbc",
-							"type": "text"
-						},
-						"answers": [
-							{
-								"content": "True",
 								"correct": false,
-								"answerId": "d704e09b-27c9-4d2b-9103-8f9763abbd01",
-								"type": "text"
-							},
-							{
-								"content": "False",
-								"correct": true,
-								"answerId": "fce2c91d-9a64-4201-ae8c-3194c92cd77d",
-								"type": "text"
+								"answerId": "1e019426-7395-44a0-9ff7-f40c4c8d29e8",
+								"type": "incorrect-answer"
 							}
 						]
 					}
 				],
-				"slideId": "4ec9e663-8d42-4404-aed0-cb9a81e234bf"
+				"slideId": "784d3995-b1bc-40eb-9f70-29a5715afffa"
 			},
 			"data": {
 				"doneText": "Continue",
-				"columns": [
-					{
-						"title": "### 1. Skin injuries may make food unsafe.",
-						"correct": "True",
-						"incorrect": [
-							"False"
-						]
-					},
-					{
-						"title": "### 2. Bandana is noncompulsory for managers.",
-						"correct": "False",
-						"incorrect": [
-							"True"
-						]
-					}
+				"list": [
+					"Pre-Clean",
+					"Wash",
+					"Rinse",
+					"Sanitise",
+					"Final Rinse",
+					"Dry"
 				],
 				"answer": {
-					"takeaway": "_Learn other protocols regarding proper hygiene in the following slides._",
+					"takeaway": "_Learn more about the work area and equipment protocols in the following slides._",
 					"incorrect": "Not quite...",
 					"correct": "That's correct!",
-					"text": "Here are the correct answers:\n1. True\n2. False. Managers must also wear bandanas.",
+					"text": "Here's the recap of the steps:\n1. Pre-Clean\n2. Wash\n3. Rinse\n4. Sanitise\n5. Final Rinse\n6. Dry",
 					"value": null
 				},
 				"game": {
@@ -728,9 +270,9 @@
 					},
 					"stars": null
 				},
-				"prompt": "Select each correct answer",
-				"title": "<b>True</b> or <sb>False</sb>",
-				"titleType": "html",
+				"prompt": "Put the items in the correct order",
+				"title": "**Arrange the steps in cleaning and sanitising equipment in order**",
+				"titleType": "text",
 				"subtitle": null,
 				"subtitleType": null,
 				"challenge_configuration": {
@@ -745,74 +287,354 @@
 			}
 		},
 		{
-			"id": "90cb364b-e56d-4ea1-98ba-19f876d2b9d6",
-			"type": "image-slider",
-			"subtype": "single",
+			"id": "e44c5520-a4b0-436d-9f48-30ae42eeeb3b",
+			"type": "parallax",
+			"subtype": "multiple",
+			"name": 4,
+			"displayIndex": 5,
+			"templateName": "Image stack",
+			"templateDescription": "Create the illusion of 3-dimensions",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "e44c5520-a4b0-436d-9f48-30ae42eeeb3b"
+			},
+			"data": {
+				"images": [
+					"fit_content_assets/rfg9xlgjbiwsz3gfy0cy.png",
+					"fit_content_assets/gzwylb7ftgvqmz5dmvwk.png",
+					"fit_content_assets/jbjydkle9tl1kit6m3w6.png",
+					"fit_content_assets/mmtfblnr6ol1y3l9ujpj.png"
+				],
+				"caption": "<h1>Cleaning Schedule</h1><h3>It is important to have and follow a <strong>cleaning schedule</strong> to ensure that every part of our store is clean.</h3><h3>Please refer to the <strong>Team Member Hub </strong>to download the Cleaning Schedule documents.</h3>",
+				"background": "",
+				"doneText": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "3105c36b-d39f-4e77-b7c1-26df1e5f3a74",
+			"type": "scrolling-media",
+			"subtype": "scrolling-media",
+			"name": 5,
+			"displayIndex": 6,
+			"templateName": "Scrolling mix",
+			"templateDescription": "Display long form content of any type",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "3105c36b-d39f-4e77-b7c1-26df1e5f3a74"
+			},
+			"data": {
+				"content": [
+					{
+						"content": "## Please look and read through our <a href=\"https://media.edapp.com/image/upload/v1667452076/briefcase-documents/Soldier_Tray_Cleaning_Procedure_pxgvqt.pdf\">'**Soldier Tray Cleaning Procedures**'</a> in the briefcase to ensure that no contamination occurs to our soldiers.",
+						"contentType": "text"
+					},
+					{
+						"content": "fit_content_assets/Copy_of_Module_4_8_Non_-_Negotiables_9_c1gnd1_mwh6ta_lyythq.png",
+						"contentType": "image"
+					}
+				],
+				"prompt": "Scroll to see more",
+				"doneText": "Continue",
+				"preventFocus": true,
+				"title": "<sb>Soldier Tray Cleaning Procedure</sb>",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "cb5bd9ef-44a3-4ec7-bf96-91501d35062a",
+			"type": "scratch-to-reveal",
+			"subtype": "scratch-to-reveal",
+			"name": 6,
+			"displayIndex": 7,
+			"templateName": "Scratch to reveal",
+			"templateDescription": "Scratch to reveal the content",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "cb5bd9ef-44a3-4ec7-bf96-91501d35062a"
+			},
+			"data": {
+				"before": {
+					"label": "",
+					"content": "fit_content_assets/Screen_Shot_2024-09-17_at_10.33.51_am_cacp14.png",
+					"contentType": "image"
+				},
+				"after": {
+					"label": "",
+					"content": "<h2>To ensure that our equipment is functioning properly, we must follow a <strong>regular maintenance schedule</strong>.</h2><h2>Please refer to the Team Member Hub<strong>, Training Home</strong> to download the Maintenance Schedule documents.</h2>",
+					"contentType": "text"
+				},
+				"canvasBackground": null,
+				"prompt": "Scratch to reveal the content",
+				"doneText": "Continue",
+				"title": "<sb>Maintenance Schedule</sb>",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "5ddd6a22-6d64-4a25-a575-58e72af23532",
+			"type": "circle-the-answer",
+			"subtype": "circle-the-answer",
 			"name": 7,
 			"displayIndex": 8,
+			"templateName": "Circle the answer",
+			"templateDescription": "",
+			"permanent": false,
+			"metadata": {
+				"questions": [
+					{
+						"question": {
+							"content": "**Where can you locate the cleaning and maintenance schedule documents?**",
+							"questionId": "996d79c8-ac84-4bdb-88cc-a9a6fc172ee1",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "Area Manager Platform ",
+								"correct": false,
+								"answerId": "ee82d7bd-cde7-410c-9869-083889cde4c6",
+								"type": "text"
+							},
+							{
+								"content": "Store Manager Platform ",
+								"correct": false,
+								"answerId": "2ed0e4a4-19cb-4260-bdc2-e338d95379c7",
+								"type": "text"
+							},
+							{
+								"content": "<p>Team Member Hub</p>",
+								"correct": true,
+								"answerId": "03978e4c-513e-48cc-ba8b-08bb5395af2f",
+								"type": "text"
+							}
+						]
+					}
+				],
+				"slideId": "5ddd6a22-6d64-4a25-a575-58e72af23532"
+			},
+			"data": {
+				"answers": {
+					"correct": "<p>Team Member Hub</p>",
+					"incorrect": [
+						"Area Manager Platform ",
+						"Store Manager Platform "
+					]
+				},
+				"doneText": "Continue",
+				"answer": {
+					"takeaway": "_Learn more about the work area and equipment protocols in the following slides._",
+					"incorrect": "Not quite...",
+					"correct": "That's correct!",
+					"text": "<p>Please visit the <strong>Team Member Hub</strong> for download links to the Cleaning and Maintenance Schedule documents.</p>",
+					"value": null
+				},
+				"game": {
+					"timer": {
+						"limit": -1,
+						"isDisabled": false,
+						"out-of-time-prompt": null
+					},
+					"stars": null
+				},
+				"prompt": "Circle the correct answer",
+				"title": "**Where can you locate the cleaning and maintenance schedule documents?**",
+				"titleType": "text",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": {
+					"nb_stars": null,
+					"weighting": 1
+				},
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": null
+			}
+		},
+		{
+			"id": "b562d1e1-c19c-4d92-bc4d-722cb61f1746",
+			"type": "reveal",
+			"subtype": "reveal",
+			"name": 8,
+			"displayIndex": 9,
+			"templateName": "Reveal",
+			"templateDescription": "Flip cards to reveal more details",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "b562d1e1-c19c-4d92-bc4d-722cb61f1746"
+			},
+			"data": {
+				"content": [
+					{
+						"title": "<img src=\"https://img.icons8.com/external-flatart-icons-outline-flatarticons/50/FFFFFF/external-mincer-home-appliances-and-kitchen-flatart-icons-outline-flatarticons.png\"/>",
+						"description": "### Maintain equipment and replace it when defective. Some equipment, such as slicers and mincers, must be regularly checked to ensure they operate safely and are adequately cleaned."
+					},
+					{
+						"title": "<img src=\"https://img.icons8.com/ios-glyphs/50/FFFFFF/soccer-goal.png\"/>",
+						"description": "### Make sure pest control screens and refrigerators are working correctly to maintain the safety of the food you produce."
+					},
+					{
+						"title": "<img src=\"https://img.icons8.com/ios/50/FFFFFF/industrial-scales.png\"/>",
+						"description": "### Make sure equipment, such as weighing scales, is calibrated or adjusted to be reliable and accurate. "
+					},
+					{
+						"title": "<img src=\"https://img.icons8.com/ios/50/FFFFFF/medical-thermometer.png\"/>",
+						"description": "### Clean and sanitise probe thermometers before and after each use. When inserting a probe into food, clean and sanitise after checking each food item."
+					}
+				],
+				"prompt": "Select each item to find out more",
+				"focus": true,
+				"doneText": "Continue",
+				"title": "<br>\n<sb>Thermometers and Equipment</sb>",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "949e0428-87e0-4706-9db4-637cbc3e3026",
+			"type": "image-slider",
+			"subtype": "single",
+			"name": 9,
+			"displayIndex": 10,
 			"templateName": "Vertical series",
 			"templateDescription": "Swipe through a group of images",
 			"permanent": false,
 			"metadata": {
 				"questions": [],
-				"slideId": "90cb364b-e56d-4ea1-98ba-19f876d2b9d6"
+				"slideId": "949e0428-87e0-4706-9db4-637cbc3e3026"
 			},
 			"data": {
 				"prompt": "Swipe up to see more",
 				"items": [
 					{
-						"content": "fit_content_assets/jo7g6bqhkqrcaqhoylku.png",
+						"content": "fit_content_assets/eeuvgtz5ptyjwzz4x97z.jpg",
 						"contentType": "image",
 						"position": "Middle",
 						"color": "",
-						"caption": "# <sb>Tip #5:</sb> **Wear Clean Apron and Clothes**",
+						"caption": "# <sb>Back of House</sb>\n",
 						"imagePosition": "Cover",
 						"captionStyle": "Transparent Dark Text"
 					},
 					{
-						"content": "fit_content_assets/gekppthsrqw6ddg81ehw.png",
+						"content": "fit_content_assets/oairxjytfro2gm2gtqkw.jpg",
 						"contentType": "image",
 						"position": "Middle",
-						"color": "",
-						"caption": "## As a team member at Roll'd, your **appearance and presentation** to our customers are critically important.",
+						"color": "n",
+						"caption": "## Keeping a **clean kitchen** is everyone's responsibility. ",
 						"imagePosition": "Cover",
 						"captionStyle": "Transparent Dark Text"
 					},
 					{
-						"content": "fit_content_assets/mgdoyzz6lsdfie71oddr.png",
+						"content": "fit_content_assets/gdat5crkdjo0oepp5akj.jpg",
 						"contentType": "image",
 						"position": "Middle",
-						"color": "",
-						"caption": "## Each team member must present a neat, clean, professional, and fun Roll'd image that meets the same standards regardless of where they work.",
+						"color": "n",
+						"caption": "## **Food safety** is critical to the success of your business, so keeping the kitchen clean (including fridges and freezers) is **not negotiable**.",
 						"imagePosition": "Cover",
 						"captionStyle": "Transparent Dark Text"
 					},
 					{
-						"content": "fit_content_assets/Copy_of_Module_4_8_Non_-_Negotiables_14_whoyic_nxkpf0.png",
+						"content": "fit_content_assets/zsokrdjfgewsnef6cbo8.jpg",
 						"contentType": "image",
-						"position": "Bottom",
-						"color": "",
-						"caption": "<h2><strong>Management </strong>must wear a black collar shirt short or long sleeves.</h2>",
-						"imagePosition": "Middle",
-						"captionStyle": "Default"
+						"position": "Middle",
+						"color": "n",
+						"caption": "## Follow food safety **requirements **at all times.",
+						"imagePosition": "Cover",
+						"captionStyle": "Transparent Dark Text"
 					},
 					{
-						"content": "fit_content_assets/Copy_of_Module_4_8_Non_-_Negotiables_14_qhsxs7_mkls87.png",
+						"content": "fit_content_assets/da7yyzqcbgi0ngrwaf2r.jpg",
 						"contentType": "image",
-						"position": "Bottom",
-						"color": "",
-						"caption": "<h2><strong>Front-of-house</strong> (service) team members must wear a Fresh tee and when rolling a FOH apron.</h2>",
-						"imagePosition": "Middle",
-						"captionStyle": "Default"
+						"position": "Middle",
+						"color": "n",
+						"caption": "## Sanitise the **benches** before and after use.",
+						"imagePosition": "Cover",
+						"captionStyle": "Transparent Dark Text"
 					},
 					{
-						"content": "fit_content_assets/Copy_of_Module_4_8_Non_-_Negotiables_14_dxou7h_vo7qjn.png",
+						"content": "fit_content_assets/cnbsq508yvqva7g9ygel.jpg",
 						"contentType": "image",
-						"position": "Bottom",
-						"color": "",
-						"caption": "## **Back-of-house** (kitchen) team members must wear a black apron.",
-						"imagePosition": "Middle",
-						"captionStyle": "Default"
+						"position": "Middle",
+						"color": "n",
+						"caption": "## Sweep and mop all **floors **and underneath **all equipment**.",
+						"imagePosition": "Cover",
+						"captionStyle": "Transparent Dark Text"
+					},
+					{
+						"content": "fit_content_assets/dexf2tmfw8ndk39x60we.jpg",
+						"contentType": "image",
+						"position": "Middle",
+						"color": "n",
+						"caption": "## Change the **bins **when they are **3/4 full**.",
+						"imagePosition": "Cover",
+						"captionStyle": "Transparent Dark Text"
+					},
+					{
+						"content": "fit_content_assets/sbvtg5qurtgxijmbdbch.jpg",
+						"contentType": "image",
+						"position": "Middle",
+						"color": "n",
+						"caption": "## **Separate the food items** to avoid contamination—for example, separate meats from veggies and chillers.",
+						"imagePosition": "Cover",
+						"captionStyle": "Transparent Dark Text"
+					},
+					{
+						"content": "fit_content_assets/jufxkze3vnez1zxnsud8.jpg",
+						"contentType": "image",
+						"position": "Middle",
+						"color": "n",
+						"caption": "## **Do not store personal items** above food items or preparation areas.",
+						"imagePosition": "Cover",
+						"captionStyle": "Transparent Dark Text"
 					}
 				],
 				"arrows": true,
@@ -830,196 +652,115 @@
 			}
 		},
 		{
-			"id": "760c69b7-1b29-4f92-bd04-4efcf8865955",
-			"type": "image-collection",
-			"subtype": "image-collection",
-			"name": 8,
-			"displayIndex": 9,
-			"templateName": "Image collection",
-			"templateDescription": "Select an image to see more detail",
-			"permanent": false,
-			"metadata": {
-				"questions": [],
-				"slideId": "760c69b7-1b29-4f92-bd04-4efcf8865955"
-			},
-			"data": {
-				"prompt": "Select each image for more details",
-				"background": "",
-				"lightbox": false,
-				"images": [
-					{
-						"content": "## **Make-up** should be **subtle**.",
-						"image": "fit_content_assets/Copy_of_Module_4_8_Non_-_Negotiables_3_khwlqb_irqmn3.png",
-						"narration": null
-					},
-					{
-						"content": "## Keep your **hands clean**. Make sure the nails are short and neat and have no nail polish.",
-						"image": "fit_content_assets/pwdnmt7emzixlah2tgvh.png",
-						"narration": null
-					},
-					{
-						"content": "## **Perfumes or after-shaves** with subtle fragrances are permitted.",
-						"image": "fit_content_assets/r8s6rnmr5f7q3gfu1eag.png",
-						"narration": null
-					},
-					{
-						"content": "## We recommend a good **antiperspirant/deodorant** as it gets hot behind the counter when it gets busy.",
-						"image": "fit_content_assets/pz7xjzfgodc4xgytjbse.png",
-						"narration": null
-					},
-					{
-						"content": "## **Hair** should be **clean and tied back** into a tight bun (for females) and under a cap (for males).",
-						"image": "fit_content_assets/Copy_of_Module_4_8_Non_-_Negotiables_15_sr2evv_wxtsxq.png",
-						"narration": null
-					},
-					{
-						"content": "## All men must present a **clean-shaven appearance** with any sideburns, goatees or other facial hair neatly trimmed.",
-						"image": "fit_content_assets/Copy_of_Module_4_8_Non_-_Negotiables_15_xkyvvc_g0pdde.png",
-						"narration": null
-					}
-				],
-				"doneText": "Continue",
-				"title": "<br>\n<sb>Other Personal Hygiene Rules</sb>",
-				"titleType": "html",
-				"subtitle": null,
-				"subtitleType": null,
-				"challenge_configuration": null,
-				"socialLearning": {
-					"enabled": false,
-					"maxResponseLength": 0
-				},
-				"narration": {
-					"progress_on_completion": false,
-					"can_not_be_skipped": false,
-					"audio_file": null
-				}
-			}
-		},
-		{
-			"id": "ce345906-c2dc-474b-a5a9-4cb335270806",
-			"type": "connect",
-			"subtype": "connect-three",
-			"name": 9,
-			"displayIndex": 10,
-			"templateName": "Connect",
-			"templateDescription": "Draw a line between each pair",
+			"id": "8ca142cd-b40f-43bf-9aac-4994867982bc",
+			"type": "matrix",
+			"subtype": "matrix",
+			"name": 10,
+			"displayIndex": 11,
+			"templateName": "Multi-question",
+			"templateDescription": "",
 			"permanent": false,
 			"metadata": {
 				"questions": [
 					{
 						"question": {
-							"category": "<b>Match the appropriate <sb>uniform</sb> for each staff</b>",
-							"content": "fit_content_assets/Screenshot_2024-10-22_at_4.10.31_pm_pkhwxo.png",
-							"questionId": "c096af72-3aa6-4b92-86a2-4ea3113eb494",
-							"type": "image"
+							"category": "<b>DO</b> or <sb>DON'T</sb>",
+							"content": "### 1. In between each usage, clean and sanitise the probe thermometers.",
+							"questionId": "c9144df7-9228-4999-8071-45a060ce0ddc",
+							"type": "text"
 						},
 						"answers": [
 							{
-								"content": "<h2>FOH Staff</h2>",
+								"content": "DON'T",
 								"correct": false,
-								"answerId": "e043d480-0aae-4254-baa1-9c9e5b5549b1",
+								"answerId": "96d5eb4b-b734-45b0-b558-0c763101ef1b",
 								"type": "text"
 							},
 							{
-								"content": "<h2>BOH Kitchen Staff</h2>",
-								"correct": false,
-								"answerId": "992c3bf2-5174-4062-af2c-28adbb303958",
-								"type": "text"
-							},
-							{
-								"content": "<h2>Supervisor/ Manager Staff</h2>",
+								"content": "DO",
 								"correct": true,
-								"answerId": "945df27b-910c-4584-9db5-cce2100fa75b",
+								"answerId": "234e48a5-4045-4312-af13-26a4f7405bcc",
 								"type": "text"
 							}
 						]
 					},
 					{
 						"question": {
-							"category": "<b>Match the appropriate <sb>uniform</sb> for each staff</b>",
-							"content": "fit_content_assets/Screenshot_2024-10-22_at_4.10.03_pm_foev4l.png",
-							"questionId": "ddec214b-275c-4b95-b6a3-8c121b55f77d",
-							"type": "image"
+							"category": "<b>DO</b> or <sb>DON'T</sb>",
+							"content": "### 2. Only change bins once they are full.",
+							"questionId": "7a9da443-f0d1-40c2-bf1f-69cab3d6bea9",
+							"type": "text"
 						},
 						"answers": [
 							{
-								"content": "<h2>Supervisor/ Manager Staff</h2>",
+								"content": "DO",
 								"correct": false,
-								"answerId": "73cf19dd-4b72-4a1f-8189-6c356ffdb52b",
+								"answerId": "56855f5a-0bdc-4938-b49d-39e3c67e0eac",
 								"type": "text"
 							},
 							{
-								"content": "<h2>BOH Kitchen Staff</h2>",
-								"correct": false,
-								"answerId": "466290db-89ba-4a2b-82bc-1cc54be30095",
-								"type": "text"
-							},
-							{
-								"content": "<h2>FOH Staff</h2>",
+								"content": "DON'T",
 								"correct": true,
-								"answerId": "def9b317-c0c0-4c5f-977e-5ef7d0df0093",
+								"answerId": "fc67eccd-fb3d-4485-b7ae-8eaffc138462",
 								"type": "text"
 							}
 						]
 					},
 					{
 						"question": {
-							"category": "<b>Match the appropriate <sb>uniform</sb> for each staff</b>",
-							"content": "fit_content_assets/Screenshot_2024-10-22_at_4.10.14_pm_pjhc6k.png",
-							"questionId": "27dc46e9-6d87-4131-82d5-2f5dabc62b5a",
-							"type": "image"
+							"category": "<b>DO</b> or <sb>DON'T</sb>",
+							"content": "### 3. Store personal belongings above food items.",
+							"questionId": "8ce316bd-cc70-421f-80cd-0c0a5096658f",
+							"type": "text"
 						},
 						"answers": [
 							{
-								"content": "<h2>Supervisor/ Manager Staff</h2>",
+								"content": "DO",
 								"correct": false,
-								"answerId": "368af34c-2ae9-43b2-ad51-11698ede7300",
+								"answerId": "d2b083a5-0b9d-45c2-b556-3d44a9348e44",
 								"type": "text"
 							},
 							{
-								"content": "<h2>FOH Staff</h2>",
-								"correct": false,
-								"answerId": "69263304-3a25-4b7d-a63c-691e57481c63",
-								"type": "text"
-							},
-							{
-								"content": "<h2>BOH Kitchen Staff</h2>",
+								"content": "DON'T",
 								"correct": true,
-								"answerId": "256cbe38-93c6-4da5-b54c-f89589a21e7e",
+								"answerId": "9e9fa086-0b87-48e0-b248-66aaf6f00a02",
 								"type": "text"
 							}
 						]
 					}
 				],
-				"slideId": "ce345906-c2dc-474b-a5a9-4cb335270806"
+				"slideId": "8ca142cd-b40f-43bf-9aac-4994867982bc"
 			},
 			"data": {
-				"pairs": [
+				"doneText": "Continue",
+				"columns": [
 					{
-						"right": "<h2>Supervisor/ Manager Staff</h2>",
-						"rightType": "text",
-						"left": "fit_content_assets/Screenshot_2024-10-22_at_4.10.31_pm_pkhwxo.png",
-						"leftType": "image"
+						"title": "### 1. In between each usage, clean and sanitise the probe thermometers.",
+						"correct": "DO",
+						"incorrect": [
+							"DON'T"
+						]
 					},
 					{
-						"right": "<h2>FOH Staff</h2>",
-						"rightType": "text",
-						"left": "fit_content_assets/Screenshot_2024-10-22_at_4.10.03_pm_foev4l.png",
-						"leftType": "image"
+						"title": "### 2. Only change bins once they are full.",
+						"correct": "DON'T",
+						"incorrect": [
+							"DO"
+						]
 					},
 					{
-						"right": "<h2>BOH Kitchen Staff</h2>",
-						"rightType": "text",
-						"left": "fit_content_assets/Screenshot_2024-10-22_at_4.10.14_pm_pjhc6k.png",
-						"leftType": "image"
+						"title": "### 3. Store personal belongings above food items.",
+						"correct": "DON'T",
+						"incorrect": [
+							"DO"
+						]
 					}
 				],
-				"doneText": "Continue",
 				"answer": {
 					"takeaway": "",
 					"incorrect": "Not quite...",
 					"correct": "That's correct!",
-					"text": "Here are the correct answers:\n* Management - no apron\n* Service - plain black apron\n* Kitchen - striped apron ",
+					"text": "Here are the correct answers:\n1. Do\n2. Don't\n3. Don't",
 					"value": null
 				},
 				"game": {
@@ -1030,9 +771,9 @@
 					},
 					"stars": null
 				},
-				"prompt": "Draw a line between each pair",
-				"title": "<b>Match the appropriate <sb>uniform</sb> for each staff</b>",
-				"titleType": "text",
+				"prompt": "Select each correct answer",
+				"title": "<b>DO</b> or <sb>DON'T</sb>",
+				"titleType": "html",
 				"subtitle": null,
 				"subtitleType": null,
 				"challenge_configuration": {
@@ -1047,20 +788,20 @@
 			}
 		},
 		{
-			"id": "ab2ac5f7-342e-4e6b-b406-80943a70220c",
+			"id": "a714b044-ebc8-4ce5-a902-72f56cefb0bd",
 			"type": "exit",
 			"subtype": "default",
-			"name": 10,
-			"displayIndex": 11,
+			"name": 11,
+			"displayIndex": 12,
 			"templateName": "Exit Lesson",
 			"templateDescription": "",
 			"permanent": true,
 			"metadata": {
 				"questions": [],
-				"slideId": "ab2ac5f7-342e-4e6b-b406-80943a70220c"
+				"slideId": "a714b044-ebc8-4ce5-a902-72f56cefb0bd"
 			},
 			"data": {
-				"content": "<h3>You've completed this <strong>Personal Hygiene</strong> lesson.</h3><h3>Proceed to the next one to earn more stars.</h3>",
+				"content": "<h3>You've completed this <strong>Work Area and Equipment</strong> lesson.</h3><h3>Almost there!</h3>",
 				"buttonText": "Exit Lesson",
 				"title": "<B>Great job!",
 				"titleType": "html",
@@ -1072,8 +813,8 @@
 			}
 		}
 	],
-	"title": "Personal Hygiene",
+	"title": "Work Area and Equipment",
 	"index": 0,
 	"scorm": true,
-	"id": "66e77ee8687f1f539e89630a"
+	"id": "66e77ee8687f1f539e89630e"
 }

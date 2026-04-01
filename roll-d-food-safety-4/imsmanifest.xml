@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<manifest xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd" identifier="com.safetyculture.66e77ee8687f1f539e89630a">
+<manifest xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd" identifier="com.safetyculture.66e77ee8687f1f539e89630e">
   <metadata>
     <schema>ADL SCORM</schema>
     <schemaversion>1.2</schemaversion>
   </metadata>
   <organizations default="safetyculture">
     <organization identifier="safetyculture">
-      <title>Personal Hygiene</title>
+      <title>Work Area and Equipment</title>
       <item identifier="item_1" identifierref="resource_1" isvisible="true">
-        <title>Personal Hygiene</title>
+        <title>Work Area and Equipment</title>
       </item>
     </organization>
   </organizations>
@@ -16,31 +16,31 @@
     <resource identifier="resource_1" type="webcontent" adlcp:scormtype="sco" href="index.html">
       <file href="fit_content_assets/mgisopgav5vfc0bc4jcs.png"/>
       <file href="fit_content_assets/rowps1bij5pfjdyenenm.png"/>
-      <file href="fit_content_assets/hwvrtrzjw0ggpeb2s2bw.gif"/>
+      <file href="fit_content_assets/vqog0cjphgelk3omp7hj.gif"/>
       <file href="fit_content_assets/e4mhb10qihyo17s8wtfw.jpg"/>
       <file href="fit_content_assets/wtkildshniuxtxkzhysx.jpg"/>
       <file href="fit_content_assets/tkmoc6qqzoenawphtinb.jpg"/>
-      <file href="fit_content_assets/loy4mtvmeiiuei886ahf.jpg"/>
-      <file href="fit_content_assets/Copy_of_Module_4_8_Non_-_Negotiables_11_y2p3cq_z8hsdv.png"/>
-      <file href="fit_content_assets/Copy_of_Module_4_8_Non_-_Negotiables_13_ftftrz_e9gclo.png"/>
-      <file href="fit_content_assets/xnl5wahb1sssyok9zyig.png"/>
-      <file href="fit_content_assets/Copy_of_Module_4_8_Non_-_Negotiables_13_bk9xmm_dpknbz.png"/>
-      <file href="fit_content_assets/Screen_Shot_2024-09-17_at_11.56.42_am_zgjiwo.png"/>
-      <file href="fit_content_assets/jo7g6bqhkqrcaqhoylku.png"/>
-      <file href="fit_content_assets/gekppthsrqw6ddg81ehw.png"/>
-      <file href="fit_content_assets/mgdoyzz6lsdfie71oddr.png"/>
-      <file href="fit_content_assets/Copy_of_Module_4_8_Non_-_Negotiables_14_whoyic_nxkpf0.png"/>
-      <file href="fit_content_assets/Copy_of_Module_4_8_Non_-_Negotiables_14_qhsxs7_mkls87.png"/>
-      <file href="fit_content_assets/Copy_of_Module_4_8_Non_-_Negotiables_14_dxou7h_vo7qjn.png"/>
-      <file href="fit_content_assets/Copy_of_Module_4_8_Non_-_Negotiables_3_khwlqb_irqmn3.png"/>
-      <file href="fit_content_assets/pwdnmt7emzixlah2tgvh.png"/>
-      <file href="fit_content_assets/r8s6rnmr5f7q3gfu1eag.png"/>
-      <file href="fit_content_assets/pz7xjzfgodc4xgytjbse.png"/>
-      <file href="fit_content_assets/Copy_of_Module_4_8_Non_-_Negotiables_15_sr2evv_wxtsxq.png"/>
-      <file href="fit_content_assets/Copy_of_Module_4_8_Non_-_Negotiables_15_xkyvvc_g0pdde.png"/>
-      <file href="fit_content_assets/Screenshot_2024-10-22_at_4.10.31_pm_pkhwxo.png"/>
-      <file href="fit_content_assets/Screenshot_2024-10-22_at_4.10.03_pm_foev4l.png"/>
-      <file href="fit_content_assets/Screenshot_2024-10-22_at_4.10.14_pm_pjhc6k.png"/>
+      <file href="fit_content_assets/joptysqjlx6unwiq4ico.png"/>
+      <file href="fit_content_assets/rzokpgkepqt6qum99xpu.png"/>
+      <file href="fit_content_assets/bgembdrvb2ssmavxjxyr.png"/>
+      <file href="fit_content_assets/ueavjy8e6op74gnt0iev.png"/>
+      <file href="fit_content_assets/y5msvskrco2wd2rx1tvh.png"/>
+      <file href="fit_content_assets/w8or5nkjtlql8qcjgddr.png"/>
+      <file href="fit_content_assets/rfg9xlgjbiwsz3gfy0cy.png"/>
+      <file href="fit_content_assets/gzwylb7ftgvqmz5dmvwk.png"/>
+      <file href="fit_content_assets/jbjydkle9tl1kit6m3w6.png"/>
+      <file href="fit_content_assets/mmtfblnr6ol1y3l9ujpj.png"/>
+      <file href="fit_content_assets/Copy_of_Module_4_8_Non_-_Negotiables_9_c1gnd1_mwh6ta_lyythq.png"/>
+      <file href="fit_content_assets/Screen_Shot_2024-09-17_at_10.33.51_am_cacp14.png"/>
+      <file href="fit_content_assets/eeuvgtz5ptyjwzz4x97z.jpg"/>
+      <file href="fit_content_assets/oairxjytfro2gm2gtqkw.jpg"/>
+      <file href="fit_content_assets/gdat5crkdjo0oepp5akj.jpg"/>
+      <file href="fit_content_assets/zsokrdjfgewsnef6cbo8.jpg"/>
+      <file href="fit_content_assets/da7yyzqcbgi0ngrwaf2r.jpg"/>
+      <file href="fit_content_assets/cnbsq508yvqva7g9ygel.jpg"/>
+      <file href="fit_content_assets/dexf2tmfw8ndk39x60we.jpg"/>
+      <file href="fit_content_assets/sbvtg5qurtgxijmbdbch.jpg"/>
+      <file href="fit_content_assets/jufxkze3vnez1zxnsud8.jpg"/>
       <file href="adlcp_rootv1p2.xsd"/>
       <file href="ims_xml.xsd"/>
       <file href="imscp_rootv1p1p2.xsd"/>
