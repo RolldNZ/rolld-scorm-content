@@ -146,7 +146,7 @@ function hookProxy(funcName) {
   return;
 }
 
-var LMSProxyFuncs = pick(LMSProxySelections, window.parent, Function.prototype);
+var LMSProxyFuncs = pick(LMSProxySelections, window, Function.prototype);
 
 function noAPIFunction (funcName) {
   return function () {
@@ -206,12 +206,12 @@ var initProxy = function() {
     var cache = getLMSData();
 
     function updateParentTitle() {
-  if (window.parent && window.parent.document) {
-    if (window.parent.getCourseTitle) {
-      document.title = window.parent.getCourseTitle();
+  if (window && window.document) {
+    if (window.getCourseTitle) {
+      document.title = window.getCourseTitle();
     }
 
-    const parentFrame = window.parent;
+    const parentFrame = window;
 
     function updateParent() {
       try {
@@ -475,8 +475,8 @@ function titleToId(quiz, question, attempts) {
 
 function normalizeResult(correct) {
   return correct
-    ? window.parent.INTERACTION_RESULT_CORRECT
-    : window.parent.INTERACTION_RESULT_WRONG;
+    ? window.INTERACTION_RESULT_CORRECT
+    : window.INTERACTION_RESULT_WRONG;
 }
 
 function reportAnswer(data) {
@@ -559,7 +559,7 @@ function isExport() {
 }
 
 function isPassed() {
-  return LMSProxy.GetStatus() === window.parent.LESSON_STATUS_PASSED;
+  return LMSProxy.GetStatus() === window.LESSON_STATUS_PASSED;
 }
 
 function pick(keys, obj, def) {
