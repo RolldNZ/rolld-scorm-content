@@ -1,0 +1,1126 @@
+{
+	"config": {
+		"background": "fit_content_assets/mgisopgav5vfc0bc4jcs.png",
+		"colors": {
+			"background": "#fff",
+			"experimental": false,
+			"text": "#161616",
+			"theme": "light"
+		},
+		"enableCustomCSS": true,
+		"customCSS": "@import url(\"https://use.typekit.net/aiw8vtw.css\");\n\n\n/*/ Font - you can change this by finding a font to import on Google Fonts /*/\n\n@import url(\"https://use.typekit.net/aiw8vtw.css\");\n\nm {\nfont-family: anton, sans-serif;\n  letter-spacing: 0.03em;\n  font-size: 1em;\n}\n\nbody {\n  font-family: acumin-pro, sans-serif;\n}\n\nb {\n  color:var(--main-color);\n}\nsb {\n  color:var(--accent-color); \n  font-weight:bold;\n}\n\n\nh4 {\n  font-size: 0.9em;\n}\n\nft {\n  background: var(--accent-color);\n  padding-left: 0.4em;\n    padding-right: 0.4em;\n  padding-top: 0.2em;\n    padding-bottom: 0.2em;\n\n  color: var(--text-color)\n}\n\nfti {\n    background: var(--text-color);\n  padding-left: 0.4em;\n    padding-right: 0.4em;\n  padding-top: 0.2em;\n    padding-bottom: 0.2em;\n}\n\n/* Main Colors - Add your primary, accent and text colors. You can also use hex color codes i.e #FF0000 */\n\n:root{\n  --main-color:#085748;\n  --accent-color:#FF0619;\n  --text-color:#FFFFFF;\n}\n\n/* The complicated stuff you don’t need to touch. */\n.btn.btn-muted.btn-done.text-ellipsis {\nbackground: url(https://media.edapp.com/image/upload/v1654666896/ringo-uploads/6124efd5975dff6d62262342/courseware/lessons/62a0367a1646103e1a10e85b/j1nvuxth6xyvth6uymvw.png) no-repeat;\n background-size: contain;\n color: var(--accent-color);\n box-shadow:none;\n line-height: .7em;\n transition: none;\n padding-right: 1em;\n}\n.btn.btn-muted.btn-done.text-ellipsis:hover, .btn.btn-muted.btn-done.text-ellipsis.__active {\n box-shadow:none;\n transform:none;\n background-image: url(https://media.edapp.com/image/upload/v1644305426/ringo-uploads/5f92779cffb6c20001de934f/courseware/lessons/615d7ed4d75fa3a3804ca390/up5s0oait5hxkvvfuajj.png);\n  background-size: contain;\n  background-repeat: no-repeat;\n  color: var(--text-color);\n  padding-right: 1em;\n}\n.btn.btn-muted, .btn.btn-solid {\n  background:var(--main-color);\n  color:var(--text-color); \n  border-radius:3px;\n  transition: all ease-in-out 300ms;\n  box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4);\n}\n.btn.btn-muted.__active, .btn.btn-muted:hover, .btn.btn-solid.__active, .btn.btn-solid:hover {\n  background: var(--accent-color); \n  color:var(--text-color);\n  transition-delay:0.25s;\n  transition:all ease-in-out 300ms;\n  box-shadow:0px 17px 10px -10px rgba(0,0,0,0.4);\n  transform: translate(0px, -3px);\n}\n\n\n/*/ Header & Slides /*/\n#lesson-header {\n  background:white;\nbox-shadow: 0px 3px 8px 0px rgba(0,0,0,0.3);\n}\n\n#lesson-header-nav, .scroll-middle #lesson-header-nav, .scroll-bottom #lesson-header-nav {\n  background: url(https://media.edapp.com/image/upload/v1644305426/ringo-uploads/5f92779cffb6c20001de934f/courseware/lessons/615d7ed4d75fa3a3804ca390/up5s0oait5hxkvvfuajj.png);\n    background-size: contain;\n    background-repeat: no-repeat;\n    background-position: center;\n    width: 8em;\n  \n}\n#lesson-header-nav-menu-btn {\n  border-left: 1.5px solid var(--text-color);\n}\n#lesson-header-title-content {\n  border-bottom:0px solid var(--main-color);\n  color:var(--main-color); \n}\n#indicator { \n  background-color:var(--main-color); \n  color:var(--accent-color);\n}\n#slides {\n  border-bottom: 0px solid var(--main-color);\n}\n#text-input-view #text-input-dismiss-btn {\n  color:var(--main-color);\n} \n#text-input-view #text-input-container-top {\n  color:var(--main-color);\n}\nli::marker {\n  color:var(--accent-color); \n}\nhr {\n  color:var(--accent-color);\n}\n.pswp__item {\n    background:var(--main-color);\n}\n.selectable.active .btn { \nbackground-color: var(--accent-color);\n}\n\n\n/*/Templates/*/\n.slide-image-slider .style-dark .caption-content {\n  background:var(--main-color);\n  color:var(--text-color);\n  border-radius:3px;\n}\n.slide-image-slider .style-light .caption-content {  \n  background:var(--accent-color);\n  color:var(--text-color);\n  border-radius:3px;\n}\n.slide-image-slider .btn-down, .slide-image-slider .btn-up {\n  background:var(--main-color);\n  color: var(--text-color);\n  border-radius:50%;\n}\n.slide-image-slider .btn-down:hover,.slide-image-slider .btn-down:active, .slide-image-slider .btn-up:hover, .slide-image-slider .btn-up:active {\n  background:var(--accent-color);  \n  color: var(--text-color); \n  border-radius:50%;\n}\n.slide-image-gallery .pagination .dot {\n background-image: url(https://media.edapp.com/image/upload/v1644223193/ringo-uploads/5f92779cffb6c20001de934f/courseware/lessons/615d7ed4d75fa3a3804ca390/jhopbmvtu4dayxb8qj9a.png);\n background-size:cover;\n width:20px;\n height:20px;\n border: 0px solid;\n}\n.slide-image-gallery .pagination .dot.active {\n background-image: url(https://media.edapp.com/image/upload/v1644223190/ringo-uploads/5f92779cffb6c20001de934f/courseware/lessons/615d7ed4d75fa3a3804ca390/imstvtgvd3bkebaccvld.png);\n background-size:cover;\n width:20px;\n height:20px;\n border: 0px solid;\n}\n.slide-image-collection .tappy{ \n  transition: transform .5s ease;\n}\n.slide-image-collection .tappy:hover {\n transform: scale(1.1);\n}\n.slide-text-sequence .btn-down, .slide-text-sequence .btn-up {\n  background:var(--main-color);\n  color: var(--text-color);\n  border-radius:50%;\n}\n.slide-text-sequence .btn-down:hover,.slide-text-sequence .btn-down:active, .slide-text-sequence .btn-up:hover, .slide-text-sequence .btn-up:active {\n  background:var(--accent-color);  \n  color: var(--text-color); \n  border-radius:50%;\n}\n.slide-reveal .btn-reveal-title.flippable {\n  background:var(--accent-color);\n  color: var(--text-color); \n} \n.slide-reveal .btn-reveal.active .btn-reveal-desc.flippable {\n  background:var(--main-color);\n  color: var(--text-color); \n}\n.slide-reveal .btn-reveal-desc, .slide-reveal .btn-reveal-title {\n  pointer-events:none;\n}\n.slide-expandable-list .item.active .item-button {\n  background:var(--accent-color);  \n  color: var(--text-color); \n}\n.slide-image-waypoints .prev-wp, .slide-image-waypoints .next-wp{ \n  background:var(--main-color);\n  color: var(--text-color);\n}\n.slide-list ::marker {\n  color:var(--accent-color); \n}\n.slide-speech-bubble .quote.quote-dk .quote-bg, .quote.quote-dk {\n   background:var(--main-color);  \n   color: var(--text-color); \n   opacity: 1;\n}\n.slide-speech-bubble .quote.pull-left.quote-dk:after {\n    border-color: var(--main-color) transparent transparent;\n}\n.slide-comparison .slider-knob {\n    background-color:var(--main-color);\n}\n.slide-comparison .slider-knob:before, .slide-comparison .slider-knob:after {\n   background-color:var(--main-color);\n}\n.slide-table .table-row:nth-child(odd) {\n    border-radius:3px;\n    background: var(--accent-color);\n    color: var(--text-color);\n}\n.slide-table .table-row:nth-child(even) {\n    border-radius:3px;\n    background:var(--accent-color);\n    color: var(--text-color); \n}\n\n/*/Interactions/*/\n.slide-chat .message--question {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-chat.show-msg-true .selectable {\n  background:var(--accent-color);\n  color:var(--text-color);\n}\n.slide-chat.show-msg-true .selectable.active {\n  background: var(--main-color);\n  color:var(--text-color);\n}\n.slide-chat.state-complete .chat-msg.incorrect {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-chat.state-complete .chat-msg.correct {\n  background:var(--accent-color);\n  color:var(--text-color);\n}\n.slide-chat .message--question:after {\n  border-color:var(--main-color) transparent transparent;\n}\n.slide-chat .message--answer:after {\n  border-color:var(--accent-color) transparent transparent;\n}\n.slide-categorise .direction-ltr .selectable .btn-long, .direction-ltr .draggy .btn-long {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-circle-the-answer .circle-box.active .circle-box-text, .text-dark .slide-circle-the-answer .circle-box.active .circle-box-text {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-multiple-choice-game .btn.btn-solid {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-multiple-choice-game .selectable.active .btn {\n  background:var(--accent-color);\n  color:var(--text-color);\n}\n.slide-multiple-choice-game.state-complete .selectable.incorrect .btn {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-multiple-choice-game.state-complete .selectable.correct .btn {\n  background:var(--accent-color);\n  color:var(--text-color);\n}\n.slide-connect .connect-box {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-connect .connect-box.complete {\n  background:var(--accent-color);\n  color:var(--text-color);\n}\n.slide-game-true-or-false .game-statement {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-game-image-word-match .btn-word {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-game-image-word-match .btn-word.__active {\n  background:var(--accent-color);\n  color:var(--text-color);\n}\n.slide-carousel .btn.btn-solid {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-slider .slider-bar, .slide-slider-survey .slider-bar {\n  background:var(--main-color);\n}\n.slide-slider.active .slider-knob-input, .active.slide-slider-survey .slider-knob-input {\n  background:var(--accent-color);\n}\n.slide-free-text-survey .btn-prompt, .slide-free-text-contribution .btn-prompt {\n  border-radius:50% !important;\n}",
+		"direction": "ltr",
+		"disableInteractionSummary": true,
+		"disableLessonScore": false,
+		"hasAnswerFeedback": true,
+		"hasScormExitButton": false,
+		"preventLogoutOnExit": false,
+		"indicator": true,
+		"logo": "fit_content_assets/rowps1bij5pfjdyenenm.png",
+		"minimumScore": 50,
+		"pageNumbers": true,
+		"pagination": false,
+		"soundDisabled": false,
+		"language": "en"
+	},
+	"slides": [
+		{
+			"id": "65f9a4d4-8b82-4e25-bbf0-7dba6a6e08ad",
+			"type": "image-slider",
+			"subtype": "single",
+			"name": 0,
+			"displayIndex": 1,
+			"templateName": "Vertical series",
+			"templateDescription": "Swipe through a group of images",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "65f9a4d4-8b82-4e25-bbf0-7dba6a6e08ad"
+			},
+			"data": {
+				"prompt": "<ft>Swipe up to see more",
+				"items": [
+					{
+						"content": "fit_content_assets/owbrfolw3z9jt0uw99ss.jpg",
+						"contentType": "image",
+						"position": "Top",
+						"color": "n",
+						"caption": "#### <b><span style=\"font-size:110%\">ROLL'D 8 NON-NEGOTIABLES\n# <sb><m><span style=\"font-size:130%\">**LEADERSHIP PRESENT, GREET & FAREWELL**\n",
+						"imagePosition": "Cover",
+						"captionStyle": "Default"
+					},
+					{
+						"content": "fit_content_assets/mqlqctlswbpcytvtprvo.jpg",
+						"contentType": "image",
+						"position": "Middle",
+						"color": "n",
+						"caption": "# <sb><m>WELCOME TO YOUR FOURTH LESSON!\n## <b> Here's what you'll learn about: \n\n- ## The role of leaders\n- ## Leadership present\n- ## Our uniform\n- ## Greeting customers\n- ## Upselling to customers",
+						"imagePosition": "Cover",
+						"captionStyle": "Default"
+					},
+					{
+						"content": "fit_content_assets/reu1a1zaq8wsx7z3d9fa.jpg",
+						"contentType": "image",
+						"position": "Top",
+						"color": "n",
+						"caption": "# <b>ARE YOU READY TO <sb>_ROLL'D_</sb>?",
+						"imagePosition": "Cover",
+						"captionStyle": "Default"
+					}
+				],
+				"arrows": true,
+				"doneText": "Ready!",
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "a6ace2ce-1e23-4d76-95a4-9430d66ff4ad",
+			"type": "scratch-to-reveal",
+			"subtype": "scratch-to-reveal",
+			"name": 1,
+			"displayIndex": 2,
+			"templateName": "Scratch to reveal",
+			"templateDescription": "Scratch to reveal the content",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "a6ace2ce-1e23-4d76-95a4-9430d66ff4ad"
+			},
+			"data": {
+				"before": {
+					"label": "*Scratch the image to reveal.*",
+					"content": "fit_content_assets/z8kqw8oslvqp19rs1vhi.png",
+					"contentType": "image"
+				},
+				"after": {
+					"label": "<h2><strong>Shift Supervisors</strong> and <strong>Managers </strong>are essential for a smooth in-store experience. </h2><h2>They lead the way in creating a positive and efficient environment.</h2>",
+					"content": "fit_content_assets/t6rszmevwqilvkzuh0rm.jpg",
+					"contentType": "image"
+				},
+				"canvasBackground": null,
+				"prompt": "",
+				"doneText": "Learn More",
+				"title": "<p><strong>The Role of Shift Supervisor and Manager</strong></p>",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "c1b0ebb7-e7b5-4b89-8a37-4dcba89426fa",
+			"type": "text-sequence",
+			"subtype": "text-sequence",
+			"name": 2,
+			"displayIndex": 3,
+			"templateName": "Sequence",
+			"templateDescription": "Display a sequence of text",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "c1b0ebb7-e7b5-4b89-8a37-4dcba89426fa"
+			},
+			"data": {
+				"prompt": "Read more",
+				"label": "Line",
+				"canGoBack": true,
+				"doneText": "Continue",
+				"content": [
+					"### A leader is usually the first point of contact for many things, including but not limited to:",
+					"## Customer issues",
+					"<p>Work Health &amp; Safety (WHS)</p>",
+					"<h2>Human resources</h2>",
+					"<h2>Quality Assurance</h2>",
+					"## Structure"
+				],
+				"title": " <m><b> 8 Non-Negotiables</b>\n###  <m> <sb> Leadership Present",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "0b590e2b-651e-4dbd-9c6d-50165ba27d3f",
+			"type": "multiple-choice-survey",
+			"subtype": "yes-no",
+			"name": 3,
+			"displayIndex": 4,
+			"templateName": "Survey",
+			"templateDescription": "Ask a multiple choice question",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "0b590e2b-651e-4dbd-9c6d-50165ba27d3f"
+			},
+			"data": {
+				"additionalContent": null,
+				"additionalContentType": "text",
+				"selectable": 5,
+				"randomize": true,
+				"answers": [
+					{
+						"id": "ee4c2b8b-3dd5-9f11-a303-b5721e7239c4",
+						"content": "Perseverance"
+					},
+					{
+						"id": "27bd4795-7fc9-ce57-334a-9cd0389feff8",
+						"content": "Honesty"
+					},
+					{
+						"id": "eaeed052-abac-b15d-fa3e-cbcc5474542b",
+						"content": "Selflessness"
+					},
+					{
+						"id": "07345f82-4dfd-248c-2f1e-820d581a95ae",
+						"content": "Trust"
+					},
+					{
+						"id": "77ca41db-2704-09f6-0257-6aa259361838",
+						"content": "Integrity"
+					}
+				],
+				"prompt": "Select the best response",
+				"question": {
+					"min": null,
+					"content": "<sb>Which of the following are important qualities in a leader?</bs>",
+					"contentType": "text",
+					"id": "e0469c08-082f-111e-d3c0-55c6be1e56e5"
+				},
+				"doneText": "Continue",
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": null
+			}
+		},
+		{
+			"id": "23baefe3-24e2-4a29-8d09-c6f6b0816abd",
+			"type": "multiple-choice-game",
+			"subtype": "one-of-three",
+			"name": 4,
+			"displayIndex": 5,
+			"templateName": "Multiple Choice",
+			"templateDescription": "Select the correct answer(s)",
+			"permanent": false,
+			"metadata": {
+				"questions": [
+					{
+						"question": {
+							"category": "<br>\n\n*Select two answers.*",
+							"content": "<sb> Which of the following are true about leaders?",
+							"questionId": "3ade486c-c5dd-4dbc-bd3b-e51235a8de7a",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "Leaders are critical for a smooth in-store experience.",
+								"correct": true,
+								"answerId": "4341a4ba-7c7d-4c35-9094-45791d9ff6b2",
+								"type": "text"
+							},
+							{
+								"content": "They are usually the first point of contact for many things, including customer issues.",
+								"correct": true,
+								"answerId": "19e304b1-e548-41d5-b8ac-b938daac056e",
+								"type": "text"
+							},
+							{
+								"content": "Leaders are in charge of dictating what needs to be done in the store.",
+								"correct": false,
+								"answerId": "e7de96cb-f6ad-4d42-99b7-ed09b85dfedb",
+								"type": "text"
+							}
+						]
+					}
+				],
+				"slideId": "23baefe3-24e2-4a29-8d09-c6f6b0816abd"
+			},
+			"data": {
+				"additionalContent": null,
+				"additionalContentType": "text",
+				"selectable": 2,
+				"randomize": true,
+				"doneText": "Continue",
+				"answers": [
+					{
+						"id": "f79faa49-17cd-484b-9031-b384bb0194a2",
+						"content": "Leaders are critical for a smooth in-store experience.",
+						"correct": true
+					},
+					{
+						"id": "19fea748-0e2d-46e5-bb5c-0241b0edcee9",
+						"content": "They are usually the first point of contact for many things, including customer issues.",
+						"correct": true
+					},
+					{
+						"id": "f06b44f3-8357-455d-a5fd-05e20a8dde4f",
+						"content": "Leaders are in charge of dictating what needs to be done in the store.",
+						"correct": false
+					}
+				],
+				"answer": {
+					"takeaway": "### <center> *Learn about our required uniform for leaders on the next slide.*",
+					"incorrect": "Not quite...",
+					"correct": "That's correct!",
+					"text": "Here are the answers: \n\n- Leaders are critical for a smooth in-store experience.\n\n- Leaders are usually the first point of contact for many things, including customer issues.",
+					"value": null
+				},
+				"game": {
+					"timer": {
+						"limit": -1,
+						"isDisabled": false,
+						"out-of-time-prompt": null
+					},
+					"stars": null
+				},
+				"prompt": "",
+				"title": "<sb> Which of the following are true about leaders?",
+				"titleType": "text",
+				"subtitle": "<br>\n\n*Select two answers.*",
+				"subtitleType": "text",
+				"challenge_configuration": {
+					"nb_stars": null,
+					"weighting": 1
+				},
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": null
+			}
+		},
+		{
+			"id": "38edf078-47b5-488c-a677-786a9ddc14a1",
+			"type": "image-gallery",
+			"subtype": "image-gallery",
+			"name": 5,
+			"displayIndex": 6,
+			"templateName": "Horizontal series",
+			"templateDescription": "Swipe through a gallery of images",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "38edf078-47b5-488c-a677-786a9ddc14a1"
+			},
+			"data": {
+				"prompt": "Swipe to continue",
+				"background": "",
+				"lightbox": false,
+				"images": [
+					{
+						"image": "fit_content_assets/njkaa1igvcgg6tq76lyc.png",
+						"caption": " # <center> <m><b> Our Uniform\n\n### *Just like employees, leaders are expected to follow proper uniform.*"
+					},
+					{
+						"image": "fit_content_assets/innfxpz5lpdrr1ghab4r.png",
+						"caption": "## Wear our Roll'd collared shirt (short or long-sleeved)."
+					},
+					{
+						"image": "fit_content_assets/ftf9ifffxqfeysskvd3t.png",
+						"caption": "## Wear black pants."
+					},
+					{
+						"image": "fit_content_assets/htbtgxtjudquajiusuqk.png",
+						"caption": "## Wear black leather closed shoes."
+					},
+					{
+						"image": "fit_content_assets/Screen_Shot_2024-09-24_at_11.57.03_am_umfyjj.png",
+						"caption": "## Always wear your name tag."
+					}
+				],
+				"doneText": "Continue",
+				"title": null,
+				"titleType": null,
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "83295894-c61e-4b58-808b-6f841fd51c65",
+			"type": "multiple-choice-game",
+			"subtype": "one-of-three",
+			"name": 6,
+			"displayIndex": 7,
+			"templateName": "Multiple Choice",
+			"templateDescription": "Select the correct answer(s)",
+			"permanent": false,
+			"metadata": {
+				"questions": [
+					{
+						"question": {
+							"category": "<br>\n\n*Select four answers.*",
+							"content": "<sb> Which items are part of the required uniform for leaders?",
+							"questionId": "f10f90da-5088-4712-8671-6dcdfc68cfa0",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "Roll’d Collared shirt",
+								"correct": true,
+								"answerId": "e35ae3a5-e76f-4ef0-bf13-3fd653533c6e",
+								"type": "text"
+							},
+							{
+								"content": "Black pants",
+								"correct": true,
+								"answerId": "05d08340-3423-465e-9ac3-bda1d3725c97",
+								"type": "text"
+							},
+							{
+								"content": "Black leather closed shoes\n",
+								"correct": true,
+								"answerId": "7fb52931-b610-4f3c-9df8-0f0bf1cc8898",
+								"type": "text"
+							},
+							{
+								"content": "White slacks",
+								"correct": false,
+								"answerId": "06b4b774-8063-4159-b438-bfdd61097432",
+								"type": "text"
+							},
+							{
+								"content": "Black sandals",
+								"correct": false,
+								"answerId": "4f907e53-8285-40dd-baeb-88f426f207f8",
+								"type": "text"
+							},
+							{
+								"content": "Name tag",
+								"correct": true,
+								"answerId": "be7adc48-eab2-496c-8f7e-308235738123",
+								"type": "text"
+							}
+						]
+					}
+				],
+				"slideId": "83295894-c61e-4b58-808b-6f841fd51c65"
+			},
+			"data": {
+				"additionalContent": null,
+				"additionalContentType": "text",
+				"selectable": 4,
+				"randomize": true,
+				"doneText": "Continue",
+				"answers": [
+					{
+						"id": "eef54d78-3481-4acc-a55e-ef8bf0d1f53f",
+						"content": "Roll’d Collared shirt",
+						"correct": true
+					},
+					{
+						"id": "6bd58870-c721-4c9f-8476-4b7811153836",
+						"content": "Black pants",
+						"correct": true
+					},
+					{
+						"id": "ed426587-fe14-4329-aa4b-b7a7a633756a",
+						"content": "Black leather closed shoes\n",
+						"correct": true
+					},
+					{
+						"id": "e47831df-48e1-4788-8a5d-d8c990d9ea81",
+						"content": "White slacks",
+						"correct": false
+					},
+					{
+						"id": "3b4efc26-da5a-4b1d-bc01-3eeaf9d61b27",
+						"content": "Black sandals",
+						"correct": false
+					},
+					{
+						"id": "7fac40df-42fe-4b31-9d85-50f2c814c254",
+						"content": "Name tag",
+						"correct": true
+					}
+				],
+				"answer": {
+					"takeaway": "### <center> *Discover how to keep customers happy when visiting our store on the next slide.*\n",
+					"incorrect": "Not quite...",
+					"correct": "That's correct!",
+					"text": "Leaders are expected to follow proper uniform: \n\n- Roll’d Collared shirt\n- Black pants\n- Black leather closed shoes\n- Name tag",
+					"value": null
+				},
+				"game": {
+					"timer": {
+						"limit": -1,
+						"isDisabled": false,
+						"out-of-time-prompt": null
+					},
+					"stars": null
+				},
+				"prompt": "",
+				"title": "<sb> Which items are part of the required uniform for leaders?",
+				"titleType": "text",
+				"subtitle": "<br>\n\n*Select four answers.*",
+				"subtitleType": "text",
+				"challenge_configuration": {
+					"nb_stars": null,
+					"weighting": 1
+				},
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": null
+			}
+		},
+		{
+			"id": "40594514-3519-4cc5-817e-8d5c4243c58f",
+			"type": "image-slider",
+			"subtype": "single",
+			"name": 7,
+			"displayIndex": 8,
+			"templateName": "Vertical series",
+			"templateDescription": "Swipe through a group of images",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "40594514-3519-4cc5-817e-8d5c4243c58f"
+			},
+			"data": {
+				"prompt": "Swipe up to see more",
+				"items": [
+					{
+						"content": "",
+						"contentType": "image",
+						"position": "Middle",
+						"color": "",
+						"caption": "## <m><b> 8 Non-Negotiables</b>\n# <m> <sb> Greet & Farewell\n\n### *Happy staff, happy customers.*",
+						"imagePosition": "Cover",
+						"captionStyle": "Transparent Dark Text"
+					},
+					{
+						"content": "fit_content_assets/y480zusz2o8ymawzjcvb.jpg",
+						"contentType": "image",
+						"position": "Middle",
+						"color": "",
+						"caption": "## It's important to keep customers happy by engaging them. To do this, greet all customers that walk past or make eye contact with you and/or with the store.",
+						"imagePosition": "Cover",
+						"captionStyle": "Light"
+					},
+					{
+						"content": "fit_content_assets/lcvz5xqp5urhlfwfioyq.jpg",
+						"contentType": "image",
+						"position": "Middle",
+						"color": "",
+						"caption": "## Team members are expected to be friendly, inviting, smiling, engaging, and well presented.",
+						"imagePosition": "Cover",
+						"captionStyle": "Light"
+					},
+					{
+						"content": "fit_content_assets/z1mfq0lqkt0guibtw2d4.jpg",
+						"contentType": "image",
+						"position": "Middle",
+						"color": "",
+						"caption": "## There should be a minimum of 1 team member to be present at POS at all times.",
+						"imagePosition": "Cover",
+						"captionStyle": "Light"
+					},
+					{
+						"content": "fit_content_assets/amwzw7gieu7ljp0yrc5i.jpg",
+						"contentType": "image",
+						"position": "Middle",
+						"color": "",
+						"caption": "## Thank all leaving customers.",
+						"imagePosition": "Cover",
+						"captionStyle": "Light"
+					}
+				],
+				"arrows": true,
+				"doneText": "Continue",
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "8615c726-5034-4b02-9cfb-bdfde9ba1ecd",
+			"type": "game-true-or-false",
+			"subtype": "true-or-false",
+			"name": 8,
+			"displayIndex": 9,
+			"templateName": "Left or right",
+			"templateDescription": "",
+			"permanent": false,
+			"metadata": {
+				"questions": [
+					{
+						"question": {
+							"content": "Assign 1 team member to be present at POS only during peak hours.",
+							"questionId": "83478cf1-e133-4af8-a32c-ed0dc71587a9",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "False",
+								"correct": true,
+								"answerId": "076906c3-e6f5-4a52-acae-8c62504092f5",
+								"type": "text"
+							},
+							{
+								"content": "True",
+								"correct": false,
+								"answerId": "c2b0a210-647c-47db-ad00-02d8050460fb",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"question": {
+							"content": "Greet all customers that walk past or make eye contact with you and/or with the store.",
+							"questionId": "470bbfe3-c189-435a-878a-a02aca13dc70",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "True",
+								"correct": true,
+								"answerId": "6b877988-6533-44a9-b7f1-8aa68d734789",
+								"type": "text"
+							},
+							{
+								"content": "False",
+								"correct": false,
+								"answerId": "0cee1d2c-9d9b-41ab-9664-bd20972be46b",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"question": {
+							"content": "Thank all leaving customers.",
+							"questionId": "07abc529-50b9-46c0-a930-dec0a9bd1456",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "True",
+								"correct": true,
+								"answerId": "dca5ab7d-10f2-47c0-9390-c6b5227a8469",
+								"type": "text"
+							},
+							{
+								"content": "False",
+								"correct": false,
+								"answerId": "c6586688-2f1f-4da1-9c22-1f6e69ec31f5",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"question": {
+							"content": "Always be friendly, engaging, and well presented.",
+							"questionId": "fd63ee11-ef67-4e77-b463-d914855ceff6",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "True",
+								"correct": true,
+								"answerId": "5b5eeda4-e881-4fdc-9083-d51fd9e09855",
+								"type": "text"
+							},
+							{
+								"content": "False",
+								"correct": false,
+								"answerId": "16220427-4121-4117-b642-723310bfcb84",
+								"type": "text"
+							}
+						]
+					}
+				],
+				"slideId": "8615c726-5034-4b02-9cfb-bdfde9ba1ecd"
+			},
+			"data": {
+				"statements": [
+					{
+						"text": "Assign 1 team member to be present at POS only during peak hours.",
+						"true": false
+					},
+					{
+						"text": "Greet all customers that walk past or make eye contact with you and/or with the store.",
+						"true": true
+					},
+					{
+						"text": "Thank all leaving customers.",
+						"true": true
+					},
+					{
+						"text": "Always be friendly, engaging, and well presented.",
+						"true": true
+					}
+				],
+				"falseText": "Don't",
+				"trueText": "Do",
+				"doneText": "Continue",
+				"readyText": null,
+				"game": {
+					"timer": {
+						"limit": 20000,
+						"isDisabled": true,
+						"out-of-time-prompt": null
+					},
+					"stars": {
+						"max": 10000,
+						"min": 1000
+					}
+				},
+				"prompt": "Swipe to answer",
+				"description": "Swipe to the left for statements showing poor practices. Swipe to the right for statements showing good practices.",
+				"title": "<m> <b> **Do or Don't?**",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": {
+					"nb_stars": null,
+					"weighting": 1
+				},
+				"socialLearning": null,
+				"narration": null
+			}
+		},
+		{
+			"id": "5fbfcf44-c166-4413-abc4-5f599cb8c900",
+			"type": "scrollable",
+			"subtype": "scrolling-content",
+			"name": 9,
+			"displayIndex": 10,
+			"templateName": "Scrolling text",
+			"templateDescription": "Display a long amount of content",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "5fbfcf44-c166-4413-abc4-5f599cb8c900"
+			},
+			"data": {
+				"content": "<h2><strong>Do</strong></h2><ul><li><p>Greet all customers within 3 seconds that walk past or make eye contact with you and/or with the store.</p></li><li><p>Thank all leaving customers.</p></li><li><p>Always be friendly, engaging, and well-presented.</p></li></ul><h2><strong>Don't</strong></h2><ul><li><p>Assign 1 team member to be present at POS only during peak hours.</p></li></ul>",
+				"prompt": "Scroll to see more",
+				"doneText": "Continue",
+				"title": "<sb> Review</sb>",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "1f1fa0da-310f-41c8-85e9-ba7a591286e0",
+			"type": "speech-bubble",
+			"subtype": "default",
+			"name": 10,
+			"displayIndex": 11,
+			"templateName": "Quote",
+			"templateDescription": "Display a quote",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "1f1fa0da-310f-41c8-85e9-ba7a591286e0"
+			},
+			"data": {
+				"author": "<img src=\"https://media.edapp.com/image/upload/v1661497040/ringo-uploads/5fd8d5a3082a9000015c215e/courseware/lessons/6114923c7b457d0a205dd5ab/wsxyrkrljgpbjdevkfed.png\"></img>\n\n",
+				"avatar": "",
+				"direction": "Left",
+				"bubbleStyle": "Dark",
+				"avatarStyle": "Circle",
+				"doneText": null,
+				"title": "# <m> Keep them engaged and more!\n\n## Team members should maintain customer engagement while driving the conversation to upsell and Roll into a Meal (RIAM). \n\n*Watch the videos on the next slide to learn more.*\n",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": null
+			}
+		},
+		{
+			"id": "44db1034-1cfa-4ba4-bb17-62979880b949",
+			"type": "video-collection",
+			"subtype": "video-collection",
+			"name": 11,
+			"displayIndex": 12,
+			"templateName": "Video collection",
+			"templateDescription": "Tap to view video",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "44db1034-1cfa-4ba4-bb17-62979880b949"
+			},
+			"data": {
+				"prompt": "Tap to view each video",
+				"stream": true,
+				"doneText": "Continue",
+				"videos": [
+					{
+						"url": "fit_content_assets/1.1_znmmnr.mp4",
+						"thumbnail": "fit_content_assets/ug31ykewajx1ppyimpae.jpg",
+						"title": "Upselling Roll into a Meal for customers who order 2 Soldiers",
+						"duration": 30
+					},
+					{
+						"url": "fit_content_assets/1.2.2_luflbu.mp4",
+						"thumbnail": "fit_content_assets/iedny9ser7xcpizlgxbi.jpg",
+						"title": "Upselling Roll into a Meal by driving the conversion with customers",
+						"duration": 30
+					},
+					{
+						"url": "fit_content_assets/1.3_zwkb2g.mp4",
+						"thumbnail": "fit_content_assets/lfj3zv5oezmypdwryoeg.jpg",
+						"title": "Upselling Roll into a Meal when customer has purchased a drink",
+						"duration": 30
+					}
+				],
+				"duration": 90,
+				"title": "<m><b> How To Upsell",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": null
+			}
+		},
+		{
+			"id": "0eb53c03-d582-4f65-8723-d0ad85948538",
+			"type": "chat",
+			"subtype": "one-of-three",
+			"name": 12,
+			"displayIndex": 13,
+			"templateName": "Chat",
+			"templateDescription": "",
+			"permanent": false,
+			"metadata": {
+				"questions": [
+					{
+						"question": {
+							"content": "## I'd like to order one Rare Beef Pho.",
+							"questionId": "c1b90e96-5bcd-42f3-b1d9-0b76cbab4f27",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "<p>\"$7 for sweet potato fries, would you like to add?\"</p>",
+								"correct": false,
+								"answerId": "f2ed5fa8-7f0f-4631-afff-d3cd56c89484",
+								"type": "text"
+							},
+							{
+								"content": "<p>\"May I recommend our sweet potato fries? It'll go really well with our Rare Beef Pho. You can roll into a meal with a drink for only $7 extra!\"</p>",
+								"correct": true,
+								"answerId": "b6fbff01-6aae-4bc3-b40e-2186255917c2",
+								"type": "text"
+							}
+						]
+					}
+				],
+				"slideId": "0eb53c03-d582-4f65-8723-d0ad85948538"
+			},
+			"data": {
+				"message": {
+					"responder": "## <b>How would you upsell to the customer?</b>",
+					"sender": "## <sb> The customer says...</sb>",
+					"content": "## I'd like to order one Rare Beef Pho."
+				},
+				"answers": {
+					"correct": "<p>\"May I recommend our sweet potato fries? It'll go really well with our Rare Beef Pho. You can roll into a meal with a drink for only $7 extra!\"</p>",
+					"incorrect": [
+						"<p>\"$7 for sweet potato fries, would you like to add?\"</p>"
+					]
+				},
+				"doneText": "Check Answer",
+				"answer": {
+					"takeaway": "### <center> *Discover more ways to upsell on the next slide.*",
+					"incorrect": "Not quite...",
+					"correct": "That's correct!",
+					"text": "<p>The best response would be:</p><h2>\"May I recommend our sweet potato fries? It'll go really well with our Rare Beef Pho. You can roll into a meal with a drink for only $7 extra!\"</h2>",
+					"value": null
+				},
+				"game": {
+					"timer": {
+						"limit": -1,
+						"isDisabled": false,
+						"out-of-time-prompt": null
+					},
+					"stars": null
+				},
+				"prompt": "Select the correct answer",
+				"title": null,
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": {
+					"nb_stars": null,
+					"weighting": 1
+				},
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": null
+			}
+		},
+		{
+			"id": "43cd9e53-53db-4fca-aebf-abd1024b24fd",
+			"type": "video-collection",
+			"subtype": "video-collection",
+			"name": 13,
+			"displayIndex": 14,
+			"templateName": "Video collection",
+			"templateDescription": "Tap to view video",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "43cd9e53-53db-4fca-aebf-abd1024b24fd"
+			},
+			"data": {
+				"prompt": "Tap to view each video",
+				"stream": true,
+				"doneText": "Continue",
+				"videos": [
+					{
+						"url": "fit_content_assets/2.1.1_xeyman.mp4",
+						"thumbnail": "fit_content_assets/ug31ykewajx1ppyimpae.jpg",
+						"title": "Upselling Roll into a Meal for customers who order 3 Soldiers",
+						"duration": 30
+					},
+					{
+						"url": "fit_content_assets/2.2.2_z8zsqr.mp4",
+						"thumbnail": "fit_content_assets/iedny9ser7xcpizlgxbi.jpg",
+						"title": "Upselling to customers who order extra meat",
+						"duration": 30
+					},
+					{
+						"url": "fit_content_assets/My_Video_koyl9c.mp4",
+						"thumbnail": "fit_content_assets/lfj3zv5oezmypdwryoeg.jpg",
+						"title": "Upselling to customers who order as a group",
+						"duration": 30
+					}
+				],
+				"duration": 90,
+				"title": "<m><b> How To Upsell",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": null
+			}
+		},
+		{
+			"id": "997479e6-cb27-4ce9-8375-1d1def6c8d05",
+			"type": "chat",
+			"subtype": "one-of-three",
+			"name": 14,
+			"displayIndex": 15,
+			"templateName": "Chat",
+			"templateDescription": "",
+			"permanent": false,
+			"metadata": {
+				"questions": [
+					{
+						"question": {
+							"content": "## I'd like to order for my family.",
+							"questionId": "a1582ea5-17d7-4e52-905a-fd705ade1128",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "\"Because you ordered for your family, get a couple of sides to share and a drink as well!\"",
+								"correct": false,
+								"answerId": "d844429e-d2fe-47bc-a6a6-4cc6a68ca717",
+								"type": "text"
+							},
+							{
+								"content": "\"Because you ordered for your family, I recommend you roll into a meal so you'd have a couple of sides to share and a drink as well!\"",
+								"correct": true,
+								"answerId": "8bce8733-bc60-47e6-9b14-8dd04ae2d0e9",
+								"type": "text"
+							}
+						]
+					}
+				],
+				"slideId": "997479e6-cb27-4ce9-8375-1d1def6c8d05"
+			},
+			"data": {
+				"message": {
+					"responder": "## <b>How would you upsell to the customer?</b>",
+					"sender": "## <sb> The customer says...</sb>",
+					"content": "## I'd like to order for my family."
+				},
+				"answers": {
+					"correct": "\"Because you ordered for your family, I recommend you roll into a meal so you'd have a couple of sides to share and a drink as well!\"",
+					"incorrect": [
+						"\"Because you ordered for your family, get a couple of sides to share and a drink as well!\""
+					]
+				},
+				"doneText": "Check Answer",
+				"answer": {
+					"takeaway": "",
+					"incorrect": "Not quite...",
+					"correct": "That's correct!",
+					"text": "The better response would be:\n## \"Because you ordered for your family, I recommend you roll into a meal so you'd have a couple of sides to share and a drink as well!\"",
+					"value": null
+				},
+				"game": {
+					"timer": {
+						"limit": -1,
+						"isDisabled": false,
+						"out-of-time-prompt": null
+					},
+					"stars": null
+				},
+				"prompt": "Select the correct answer",
+				"title": null,
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": {
+					"nb_stars": null,
+					"weighting": 1
+				},
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": null
+			}
+		},
+		{
+			"id": "086929fc-62c3-4ffa-8509-0157b03237bb",
+			"type": "video-collection",
+			"subtype": "video-collection",
+			"name": 15,
+			"displayIndex": 16,
+			"templateName": "Video collection",
+			"templateDescription": "Tap to view video",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "086929fc-62c3-4ffa-8509-0157b03237bb"
+			},
+			"data": {
+				"prompt": "Tap to view each video",
+				"stream": true,
+				"doneText": "Continue",
+				"videos": [
+					{
+						"url": "fit_content_assets/3.1_z1p9s1.mp4",
+						"thumbnail": "fit_content_assets/vy3ivilofjbsuwggzmrv.jpg",
+						"title": "Not all customers will say 'Yes' to upselling",
+						"duration": 30
+					},
+					{
+						"url": "fit_content_assets/3.2_hh2jq2.mp4",
+						"thumbnail": "fit_content_assets/vqbbghcrccpvtzldq2v5.jpg",
+						"title": "Continue driving the conversation with your customer",
+						"duration": 30
+					}
+				],
+				"duration": 60,
+				"title": "<m> <b> Reminders",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": null
+			}
+		},
+		{
+			"id": "3d31de32-06c1-4f8e-ab59-ad4cff482bde",
+			"type": "exit",
+			"subtype": "default",
+			"name": 16,
+			"displayIndex": 17,
+			"templateName": "Exit Lesson",
+			"templateDescription": "",
+			"permanent": true,
+			"metadata": {
+				"questions": [],
+				"slideId": "3d31de32-06c1-4f8e-ab59-ad4cff482bde"
+			},
+			"data": {
+				"content": "<h3>You've completed Roll'd 8 Non-Negotiables module</h3>",
+				"buttonText": "Exit Lesson",
+				"title": "<B>Great job!",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": null,
+				"narration": null
+			}
+		}
+	],
+	"title": "Leadership Present, Greet & Farewell",
+	"index": 0,
+	"scorm": true,
+	"id": "656fec72f10d39b6251b9608"
+}
