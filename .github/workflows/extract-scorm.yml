@@ -47,5 +47,7 @@ jobs:
           git config user.name "GitHub Actions"
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git add .
-          git commit -m "Extract + patch SCORM: ${{ github.event.inputs.title }}" || echo "Nothing to commit"
+          git diff --staged --quiet && echo "Nothing to commit" && exit 0
+          git commit -m "Extract + patch SCORM: ${{ github.event.inputs.title }}"
+          git pull --rebase origin main
           git push
