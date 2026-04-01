@@ -33,13 +33,94 @@ jobs:
         run: |
           SLUG="${{ github.event.inputs.slug }}"
           echo "Patching SCORM files in ${SLUG}/..."
-          find "${SLUG}" -name "*.html" -o -name "*.js" | while read file; do
+
+          # Patch HTML files - replace window.parent with window
+          find "${SLUG}" -name "*.html" | while read file; do
             if grep -q "window\.parent" "$file" 2>/dev/null; then
-              sed -i "s/window\.parent\b/window/g" "$file"
-              echo "Patched: $file"
+              sed -i "s/window\.parent/window/g" "$file"
+              echo "Patched HTML: $file"
             fi
           done
+
+          # Patch JS files - but be surgical: only patch the API.find traversal loop
+          # Replace the parent-walking loop with a direct window lookup
+          find "${SLUG}" -name "*.js" | while read file; do
+            # Replace: !e.API&&!e.API_1484_11&&e.parent&&e.parent!=e&&i<=500
+            # With a version that also checks window directly
+            if grep -q "e\.parent&&e\.parent!=e" "$file" 2>/dev/null; then
+              # Inject window API before the traversal - add window.API = window.API check
+              sed -i "s/e\.parent&&e\.parent!=e&&i<=500/e.parent\&\&e.parent!=e\&\&i<=1/g" "$file"
+              echo "Patched JS traversal: $file"
+            fi
+            # Also patch any direct window.parent.API references
+            if grep -q "window\.parent" "$file" 2>/dev/null; then
+              sed -i "s/window\.parent/window/g" "$file"
+              echo "Patched JS window.parent: $file"
+            fi
+          done
+
           echo "Patching complete"
+
+      - name: Inject SCORM API shim into entry HTML
+        run: |
+          SLUG="${{ github.event.inputs.slug }}"
+
+          # Find the entry HTML (either scormcontent/index.html or root index.html)
+          if [ -f "${SLUG}/scormcontent/index.html" ]; then
+            ENTRY="${SLUG}/scormcontent/index.html"
+          elif [ -f "${SLUG}/index.html" ]; then
+            ENTRY="${SLUG}/index.html"
+          else
+            echo "No entry HTML found, skipping shim injection"
+            exit 0
+          fi
+
+          echo "Injecting SCORM API shim into: $ENTRY"
+
+          # Inject shim before </head> - exposes API on window so the SCORM engine finds it
+          SHIM='<script>
+          (function() {
+            function makeAPI() {
+              var data = {};
+              return {
+                LMSInitialize: function() { return "true"; },
+                LMSFinish: function() { return "true"; },
+                LMSGetValue: function(k) { return data[k] || ""; },
+                LMSSetValue: function(k, v) { data[k] = v; return "true"; },
+                LMSCommit: function() { return "true"; },
+                LMSGetLastError: function() { return "0"; },
+                LMSGetErrorString: function() { return ""; },
+                LMSGetDiagnostic: function() { return ""; }
+              };
+            }
+            if (!window.API) { window.API = makeAPI(); }
+            if (!window.API_1484_11) {
+              window.API_1484_11 = {
+                Initialize: function() { return true; },
+                Terminate: function() { return true; },
+                GetValue: function() { return ""; },
+                SetValue: function() { return true; },
+                Commit: function() { return true; },
+                GetLastError: function() { return 0; },
+                GetErrorString: function() { return ""; },
+                GetDiagnostic: function() { return ""; }
+              };
+            }
+          })();
+          </script>'
+
+          # Use python to safely inject before </head>
+          python3 -c "
+          import sys
+          with open('$ENTRY', 'r', encoding='utf-8', errors='ignore') as f:
+              content = f.read()
+          shim = '''$SHIM'''
+          if 'LMSInitialize' not in content:
+              content = content.replace('</head>', shim + '</head>', 1)
+          with open('$ENTRY', 'w', encoding='utf-8') as f:
+              f.write(content)
+          print('Shim injected')
+          "
 
       - name: Commit and push
         run: |
