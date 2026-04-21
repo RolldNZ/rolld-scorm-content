@@ -1,0 +1,672 @@
+{
+	"config": {
+		"background": "fit_content_assets/mgisopgav5vfc0bc4jcs.png",
+		"colors": {
+			"background": "#fff",
+			"experimental": false,
+			"text": "#161616",
+			"theme": "light"
+		},
+		"enableCustomCSS": true,
+		"customCSS": "@import url(\"https://use.typekit.net/aiw8vtw.css\");\n\n\n/*/ Font - you can change this by finding a font to import on Google Fonts /*/\n\n@import url(\"https://use.typekit.net/aiw8vtw.css\");\n\nm {\nfont-family: anton, sans-serif;\n  letter-spacing: 0.03em;\n  font-size: 1em;\n}\n\nbody {\n  font-family: acumin-pro, sans-serif;\n}\n\nb {\n  color:var(--main-color);\n}\nsb {\n  color:var(--accent-color); \n  font-weight:bold;\n}\n\n\nh4 {\n  font-size: 0.9em;\n}\n\nft {\n  background: var(--accent-color);\n  padding-left: 0.4em;\n    padding-right: 0.4em;\n  padding-top: 0.2em;\n    padding-bottom: 0.2em;\n\n  color: var(--text-color)\n}\n\nfti {\n    background: var(--text-color);\n  padding-left: 0.4em;\n    padding-right: 0.4em;\n  padding-top: 0.2em;\n    padding-bottom: 0.2em;\n}\n\n/* Main Colors - Add your primary, accent and text colors. You can also use hex color codes i.e #FF0000 */\n\n:root{\n  --main-color:#085748;\n  --accent-color:#FF0619;\n  --text-color:#FFFFFF;\n}\n\n/* The complicated stuff you don’t need to touch. */\n.btn.btn-muted.btn-done.text-ellipsis,  {\nbackground: url(https://media.edapp.com/image/upload/v1654666896/ringo-uploads/6124efd5975dff6d62262342/courseware/lessons/62a0367a1646103e1a10e85b/j1nvuxth6xyvth6uymvw.png) no-repeat;\n background-size: contain;\n color: var(--accent-color);\n box-shadow:none;\n line-height: .7em;\n transition: none;\n padding-right: 1em;\n}\n.btn.btn-muted.btn-done.text-ellipsis:hover, .btn.btn-muted.btn-done.text-ellipsis.__active {\n box-shadow:none;\n transform:none;\n background-image: url(https://media.edapp.com/image/upload/v1644305426/ringo-uploads/5f92779cffb6c20001de934f/courseware/lessons/615d7ed4d75fa3a3804ca390/up5s0oait5hxkvvfuajj.png);\n  background-size: contain;\n  background-repeat: no-repeat;\n  color: var(--text-color);\n  padding-right: 1em;\n}\n.btn.btn-muted, .btn.btn-solid, #lesson-menu-cancel.btn.btn-block {\n  background:var(--main-color);\n  color:var(--text-color); \n  border-radius:3px;\n  transition: all ease-in-out 300ms;\n  box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4);\n}\n.btn.btn-muted.__active, .btn.btn-muted:hover, .btn.btn-solid.__active, .btn.btn-solid:hover, #lesson-menu-cancel.btn.btn-block:active, #lesson-menu-cancel.btn.btn-block:hover {\n  background: var(--accent-color); \n  color:var(--text-color);\n  transition-delay:0.25s;\n  transition:all ease-in-out 300ms;\n  box-shadow:0px 17px 10px -10px rgba(0,0,0,0.4);\n  transform: translate(0px, -3px);\n}\n\n\n/*/ Header & Slides /*/\n#lesson-header {\n  background:white;\nbox-shadow: 0px 3px 8px 0px rgba(0,0,0,0.3);\n}\n\n#lesson-header-nav, .scroll-middle #lesson-header-nav, .scroll-bottom #lesson-header-nav {\n  background: url(https://media.edapp.com/image/upload/v1644305426/ringo-uploads/5f92779cffb6c20001de934f/courseware/lessons/615d7ed4d75fa3a3804ca390/up5s0oait5hxkvvfuajj.png);\n    background-size: contain;\n    background-repeat: no-repeat;\n    background-position: center;\n    width: 8em;\n  \n}\n#lesson-header-nav-menu-btn {\n  border-left: 1.5px solid var(--text-color);\n}\n#lesson-header-title-content {\n  border-bottom:0px solid var(--main-color);\n  color:var(--main-color); \n}\n#indicator { \n  background-color:var(--main-color); \n  color:var(--accent-color);\n}\n#slides {\n  border-bottom: 0px solid var(--main-color);\n}\n#text-input-view #text-input-dismiss-btn {\n  color:var(--main-color);\n} \n#text-input-view #text-input-container-top {\n  color:var(--main-color);\n}\nli::marker {\n  color:var(--accent-color); \n}\nhr {\n  color:var(--accent-color);\n}\n.pswp__item {\n    background:var(--main-color);\n}\n.selectable.active .btn { \nbackground-color: var(--accent-color);\n}\n\n\n/*/Templates/*/\n.slide-image-slider .style-dark .caption-content {\n  background:var(--main-color);\n  color:var(--text-color);\n  border-radius:3px;\n}\n.slide-image-slider .style-light .caption-content {  \n  background:var(--accent-color);\n  color:var(--text-color);\n  border-radius:3px;\n}\n.slide-image-slider .btn-down, .slide-image-slider .btn-up {\n  background:var(--main-color);\n  color: var(--text-color);\n  border-radius:50%;\n}\n.slide-image-slider .btn-down:hover,.slide-image-slider .btn-down:active, .slide-image-slider .btn-up:hover, .slide-image-slider .btn-up:active {\n  background:var(--accent-color);  \n  color: var(--text-color); \n  border-radius:50%;\n}\n.slide-image-gallery .pagination .dot {\n background-image: url(https://media.edapp.com/image/upload/v1644223193/ringo-uploads/5f92779cffb6c20001de934f/courseware/lessons/615d7ed4d75fa3a3804ca390/jhopbmvtu4dayxb8qj9a.png);\n background-size:cover;\n width:20px;\n height:20px;\n border: 0px solid;\n}\n.slide-image-gallery .pagination .dot.active {\n background-image: url(https://media.edapp.com/image/upload/v1644223190/ringo-uploads/5f92779cffb6c20001de934f/courseware/lessons/615d7ed4d75fa3a3804ca390/imstvtgvd3bkebaccvld.png);\n background-size:cover;\n width:20px;\n height:20px;\n border: 0px solid;\n}\n.slide-image-collection .tappy{ \n  transition: transform .5s ease;\n}\n.slide-image-collection .tappy:hover {\n transform: scale(1.1);\n}\n.slide-text-sequence .btn-down, .slide-text-sequence .btn-up {\n  background:var(--main-color);\n  color: var(--text-color);\n  border-radius:50%;\n}\n.slide-text-sequence .btn-down:hover,.slide-text-sequence .btn-down:active, .slide-text-sequence .btn-up:hover, .slide-text-sequence .btn-up:active {\n  background:var(--accent-color);  \n  color: var(--text-color); \n  border-radius:50%;\n}\n.slide-reveal .btn-reveal-title.flippable {\n  background:var(--accent-color);\n  color: var(--text-color); \n} \n.slide-reveal .btn-reveal.active .btn-reveal-desc.flippable {\n  background:var(--main-color);\n  color: var(--text-color); \n}\n.slide-reveal .btn-reveal-desc, .slide-reveal .btn-reveal-title {\n  pointer-events:none;\n}\n.slide-expandable-list .item.active .item-button {\n  background:var(--accent-color);  \n  color: var(--text-color); \n}\n.slide-image-waypoints .prev-wp, .slide-image-waypoints .next-wp{ \n  background:var(--main-color);\n  color: var(--text-color);\n}\n.slide-list ::marker {\n  color:var(--accent-color); \n}\n.slide-speech-bubble .quote.quote-dk .quote-bg, .quote.quote-dk {\n   background:var(--main-color);  \n   color: var(--text-color); \n   opacity: 1;\n}\n.slide-speech-bubble .quote.pull-left.quote-dk:after {\n    border-color: var(--main-color) transparent transparent;\n}\n.slide-comparison .slider-knob {\n    background-color:var(--main-color);\n}\n.slide-comparison .slider-knob:before, .slide-comparison .slider-knob:after {\n   background-color:var(--main-color);\n}\n.slide-table .table-row:nth-child(odd) {\n    border-radius:3px;\n    background: var(--accent-color);\n    color: var(--text-color);\n}\n.slide-table .table-row:nth-child(even) {\n    border-radius:3px;\n    background:var(--accent-color);\n    color: var(--text-color); \n}\n\n/*/Interactions/*/\n.slide-chat .message--question {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-chat.show-msg-true .selectable {\n  background:var(--accent-color);\n  color:var(--text-color);\n}\n.slide-chat.show-msg-true .selectable.active {\n  background: var(--main-color);\n  color:var(--text-color);\n}\n.slide-chat.state-complete .chat-msg.incorrect {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-chat.state-complete .chat-msg.correct {\n  background:var(--accent-color);\n  color:var(--text-color);\n}\n.slide-chat .message--question:after {\n  border-color:var(--main-color) transparent transparent;\n}\n.slide-chat .message--answer:after {\n  border-color:var(--accent-color) transparent transparent;\n}\n.slide-categorise .direction-ltr .selectable .btn-long, .direction-ltr .draggy .btn-long {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-circle-the-answer .circle-box.active .circle-box-text, .text-dark .slide-circle-the-answer .circle-box.active .circle-box-text {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-multiple-choice-game .btn.btn-solid {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-multiple-choice-game .selectable.active .btn {\n  background:var(--accent-color);\n  color:var(--text-color);\n}\n.slide-multiple-choice-game.state-complete .selectable.incorrect .btn {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-multiple-choice-game.state-complete .selectable.correct .btn {\n  background:var(--accent-color);\n  color:var(--text-color);\n}\n.slide-connect .connect-box {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-connect .connect-box.complete {\n  background:var(--accent-color);\n  color:var(--text-color);\n}\n.slide-game-true-or-false .game-statement {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-game-image-word-match .btn-word {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-game-image-word-match .btn-word.__active {\n  background:var(--accent-color);\n  color:var(--text-color);\n}\n.slide-carousel .btn.btn-solid {\n  background:var(--main-color);\n  color:var(--text-color);\n}\n.slide-slider .slider-bar, .slide-slider-survey .slider-bar {\n  background:var(--main-color);\n}\n.slide-slider.active .slider-knob-input, .active.slide-slider-survey .slider-knob-input {\n  background:var(--accent-color);\n}\n.slide-free-text-survey .btn-prompt, .slide-free-text-contribution .btn-prompt {\n  border-radius:50% !important;\n}",
+		"direction": "ltr",
+		"disableInteractionSummary": true,
+		"disableLessonScore": false,
+		"hasAnswerFeedback": true,
+		"hasScormExitButton": false,
+		"preventLogoutOnExit": false,
+		"indicator": true,
+		"logo": "fit_content_assets/rowps1bij5pfjdyenenm.png",
+		"minimumScore": 0,
+		"pageNumbers": true,
+		"pagination": false,
+		"soundDisabled": false,
+		"language": "en"
+	},
+	"slides": [
+		{
+			"id": "249fa0bc-50d6-437c-a607-012b80ecc521",
+			"type": "image-slider",
+			"subtype": "single",
+			"name": 0,
+			"displayIndex": 1,
+			"templateName": "Vertical series",
+			"templateDescription": "Swipe through a group of images",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "249fa0bc-50d6-437c-a607-012b80ecc521"
+			},
+			"data": {
+				"prompt": "<ft>Swipe up to see more",
+				"items": [
+					{
+						"content": "fit_content_assets/s2olltigxqpvvkmkk8ct.gif",
+						"contentType": "image",
+						"position": "Top",
+						"color": "n",
+						"caption": "#### <b><span style=\"font-size:110%\">ROLL'D - FOOD SAFETY\n# <sb><m><span style=\"font-size:130%\">**Time**\n",
+						"imagePosition": "Cover",
+						"captionStyle": "Default"
+					},
+					{
+						"content": "fit_content_assets/e4mhb10qihyo17s8wtfw.jpg",
+						"contentType": "image",
+						"position": "Middle",
+						"color": "n",
+						"caption": "# <sb><m>WELCOME TO YOUR COURSE!\n### <b> In this course, we'll be focusing on the Food Safety Protocols on:\n\n- Personal Hygiene\n- Temperature\n- Time\n- Food Separation\n- Storage\n- Work Area and Equipment",
+						"imagePosition": "Cover",
+						"captionStyle": "Default"
+					},
+					{
+						"content": "fit_content_assets/wtkildshniuxtxkzhysx.jpg",
+						"contentType": "image",
+						"position": "Middle",
+						"color": "n",
+						"caption": "## In this lesson, you will learn about:\n- ## Time Guidelines on Food\n- ## Types of Holding Times",
+						"imagePosition": "Cover",
+						"captionStyle": "Default"
+					},
+					{
+						"content": "fit_content_assets/tkmoc6qqzoenawphtinb.jpg",
+						"contentType": "image",
+						"position": "Top",
+						"color": "n",
+						"caption": "# <b>ARE YOU READY TO <sb>_ROLL'D_</sb>?",
+						"imagePosition": "Cover",
+						"captionStyle": "Default"
+					}
+				],
+				"arrows": true,
+				"doneText": "Ready!",
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "78abc0a4-d42e-41f0-8a8f-b577cacd155f",
+			"type": "comparison",
+			"subtype": "compare-two",
+			"name": 1,
+			"displayIndex": 2,
+			"templateName": "Comparison",
+			"templateDescription": "Juxtapose two items in a slider",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "78abc0a4-d42e-41f0-8a8f-b577cacd155f"
+			},
+			"data": {
+				"before": {
+					"contentType": "image",
+					"content": "fit_content_assets/nzilvws0jq6bf3ysnkrz.png",
+					"label": "## Food safety processes for ready-to-eat food must follow this **2-hour/4-hour guide**."
+				},
+				"after": {
+					"contentType": "image",
+					"content": "fit_content_assets/hl10gjp0nauk8zspfq0q.png",
+					"label": "## Time guidelines also apply to the** cooling and reheating** cooked food."
+				},
+				"startPosition": "Middle - Show the content equally divided",
+				"prompt": "Drag to compare the content",
+				"doneText": "Continue",
+				"title": "<sb>Time Guidelines</sb>",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "2258fcf3-d0b8-4530-a326-1ca667e347c8",
+			"type": "connect",
+			"subtype": "connect-three",
+			"name": 2,
+			"displayIndex": 3,
+			"templateName": "Connect",
+			"templateDescription": "Draw a line between each pair",
+			"permanent": false,
+			"metadata": {
+				"questions": [
+					{
+						"question": {
+							"category": "**What should you do during the following time frames?**",
+							"content": "0 - 2 hours",
+							"questionId": "685e0622-43e0-4a34-8cfe-39c14fbda412",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "Use immediately or do not refrigerate",
+								"correct": false,
+								"answerId": "d4695956-884c-4469-9846-8eb334331ced",
+								"type": "text"
+							},
+							{
+								"content": "Do not use or discard",
+								"correct": false,
+								"answerId": "d7c89a15-fc98-4325-9ab4-9cb73ff8bd2a",
+								"type": "text"
+							},
+							{
+								"content": "Use immediately or refrigerate",
+								"correct": true,
+								"answerId": "6c8d0517-753a-41dc-bea0-42d322852183",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"question": {
+							"category": "**What should you do during the following time frames?**",
+							"content": "2 - 4 hours",
+							"questionId": "4813c8d4-5a04-4902-ac41-15c3276b783e",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "Use immediately or refrigerate",
+								"correct": false,
+								"answerId": "a8c29d66-7e49-4496-8bea-3f686d6c3ca3",
+								"type": "text"
+							},
+							{
+								"content": "Do not use or discard",
+								"correct": false,
+								"answerId": "7eed4885-45aa-48c5-8071-617eebd2f40b",
+								"type": "text"
+							},
+							{
+								"content": "Use immediately or do not refrigerate",
+								"correct": true,
+								"answerId": "32e03bba-2409-4671-a1c4-0ff38375829c",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"question": {
+							"category": "**What should you do during the following time frames?**",
+							"content": "after 4 hours",
+							"questionId": "6ae737ef-c25b-409a-8134-a33ff52efd14",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "Use immediately or refrigerate",
+								"correct": false,
+								"answerId": "927f3d1b-c9f5-4474-815c-70a7b5d65d09",
+								"type": "text"
+							},
+							{
+								"content": "Use immediately or do not refrigerate",
+								"correct": false,
+								"answerId": "784a7974-6f40-408e-9c43-645dbfbb888a",
+								"type": "text"
+							},
+							{
+								"content": "Do not use or discard",
+								"correct": true,
+								"answerId": "c42b20a8-9ce3-4e41-9773-c3b86bd636a2",
+								"type": "text"
+							}
+						]
+					}
+				],
+				"slideId": "2258fcf3-d0b8-4530-a326-1ca667e347c8"
+			},
+			"data": {
+				"pairs": [
+					{
+						"right": "Use immediately or refrigerate",
+						"rightType": "text",
+						"left": "0 - 2 hours",
+						"leftType": "text"
+					},
+					{
+						"right": "Use immediately or do not refrigerate",
+						"rightType": "text",
+						"left": "2 - 4 hours",
+						"leftType": "text"
+					},
+					{
+						"right": "Do not use or discard",
+						"rightType": "text",
+						"left": "after 4 hours",
+						"leftType": "text"
+					}
+				],
+				"doneText": "Continue",
+				"answer": {
+					"takeaway": "_Learn soldier holding times in the following slides._",
+					"incorrect": "Not quite...",
+					"correct": "That's correct!",
+					"text": "Here are the correct answers:\n* **0 - 2 hours** - use immediately or refrigerate\n* **2 - 4 hours** - use immediately or do not refrigerate\n* **after 4 hours** - do not use or discard",
+					"value": null
+				},
+				"game": {
+					"timer": {
+						"limit": -1,
+						"isDisabled": false,
+						"out-of-time-prompt": null
+					},
+					"stars": null
+				},
+				"prompt": "Draw a line between each pair",
+				"title": "**What should you do during the following time frames?**",
+				"titleType": "text",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": {
+					"nb_stars": null,
+					"weighting": 1
+				},
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": null
+			}
+		},
+		{
+			"id": "a4ee885c-6485-4fbe-9d5e-447fedcfdc4c",
+			"type": "text-sequence",
+			"subtype": "text-sequence",
+			"name": 3,
+			"displayIndex": 4,
+			"templateName": "Sequence",
+			"templateDescription": "Display a sequence of text",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "a4ee885c-6485-4fbe-9d5e-447fedcfdc4c"
+			},
+			"data": {
+				"prompt": "Read more",
+				"label": "",
+				"canGoBack": true,
+				"doneText": "Continue",
+				"content": [
+					"Soldiers must be **monitored strictly** as it is our main product and mainly stays within the Danger Zone temperatures of between 5°C to 60°C.",
+					"The **2/4-hour rule** is applied as soon as the Soldier ingredients are in the Danger Zone. ",
+					"This includes the **time **that it takes to **roll** the Soldiers.",
+					"The **maximum **holding time of soldiers is **8 hours** (including 4 hours in a refrigeration unit and 4 hours exposed to the Danger Zone temperatures)."
+				],
+				"title": "<sb>Soldiers Holding Times</sb>",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "7935112d-2105-40b1-8f76-65c604e77b9f",
+			"type": "scrolling-media",
+			"subtype": "scrolling-media",
+			"name": 4,
+			"displayIndex": 5,
+			"templateName": "Scrolling mix",
+			"templateDescription": "Display long form content of any type",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "7935112d-2105-40b1-8f76-65c604e77b9f"
+			},
+			"data": {
+				"content": [
+					{
+						"content": "## <b>Example 1: BBQ Chicken Soldier</b>",
+						"contentType": "text"
+					},
+					{
+						"content": "fit_content_assets/xbzmayhyzzzyusgotbzu.png",
+						"contentType": "image"
+					},
+					{
+						"content": "fit_content_assets/by5rc2yw0sudlev2bg51.png",
+						"contentType": "image"
+					},
+					{
+						"content": "## **Note**: The total holding time of BBQ Chicken is 8 hours (including both displays and refrigerate time). It will ensure the high quality of Soldiers is maintained.  \n\n## For night trading stores, the second round of rolling must be organised between 2:00 pm – 5:00 pm to prepare for dinner service instead of rolling all Soldiers in the morning only.\n\n----\n## <b>Example 2: Prawn</b>",
+						"contentType": "text"
+					},
+					{
+						"content": "fit_content_assets/fyo6todikh8e6za3id6y.png",
+						"contentType": "image"
+					},
+					{
+						"content": "## **Note**: After rolling, total time in Danger Zone is under 2 hours, hence why the Prawn itself and Pork & Prawn Soldiers are allowed to refrigerate. It is also applied to products on display.  \n\n\n## If the product is in Danger Zone for over 2 hours, it must be used immediately (DO NOT refrigerate).",
+						"contentType": "text"
+					}
+				],
+				"prompt": "Scroll to see more",
+				"doneText": "Continue",
+				"preventFocus": false,
+				"title": "<sb>Examples:</sb>",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "0a9617e1-5aee-4e0e-94e4-742ee2aadaf0",
+			"type": "construct",
+			"subtype": "construct-two-words",
+			"name": 5,
+			"displayIndex": 6,
+			"templateName": "Missing letters",
+			"templateDescription": "",
+			"permanent": false,
+			"metadata": {
+				"questions": [
+					{
+						"question": {
+							"category": "Soldiers are only permitted to be held for 8 hours, including 4 hours in a refrigerator and 4 hours exposure in the Danger Zone.",
+							"content": "8",
+							"questionId": "d4a360e5-d540-4a36-b19c-8f2ff1982bfc",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "8",
+								"correct": true,
+								"answerId": "b0e88400-81e9-4d18-8878-6678632faeeb",
+								"type": "text"
+							},
+							{
+								"correct": false,
+								"answerId": "74f5affe-565f-4e8a-b8b9-fc0bb23365a5",
+								"type": "incorrect-answer"
+							}
+						]
+					},
+					{
+						"question": {
+							"category": "Soldiers are only permitted to be held for 8 hours, including 4 hours in a refrigerator and 4 hours exposure in the Danger Zone.",
+							"content": "4",
+							"questionId": "c3808200-fc70-4228-acfe-4106df6c1afc",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "4",
+								"correct": true,
+								"answerId": "aa263c3e-cf36-4f3c-861c-06f4f78066e5",
+								"type": "text"
+							},
+							{
+								"correct": false,
+								"answerId": "eeac4743-9d54-4bd5-a8fd-2244a4828f98",
+								"type": "incorrect-answer"
+							}
+						]
+					}
+				],
+				"slideId": "0a9617e1-5aee-4e0e-94e4-742ee2aadaf0"
+			},
+			"data": {
+				"words": [
+					"8",
+					"4"
+				],
+				"doneText": "Continue",
+				"answer": {
+					"takeaway": "_Now, let's discuss Bain Marie holding times in the next slide._",
+					"incorrect": "Not quite...",
+					"correct": "That's correct!",
+					"text": "Soldiers are only permitted to be held for **8** hours, including **4** hours in a refrigerator and 4 hours exposure in the Danger Zone.",
+					"value": null
+				},
+				"game": {
+					"timer": {
+						"limit": -1,
+						"isDisabled": false,
+						"out-of-time-prompt": ""
+					},
+					"stars": null
+				},
+				"prompt": "Fill in the missing words",
+				"title": "Soldiers are only permitted to be held for 8 hours, including 4 hours in a refrigerator and 4 hours exposure in the Danger Zone.",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": {
+					"nb_stars": null,
+					"weighting": 1
+				},
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": null
+			}
+		},
+		{
+			"id": "4813e6b4-629a-481c-8841-027725ed9444",
+			"type": "scratch-to-reveal",
+			"subtype": "scratch-to-reveal",
+			"name": 6,
+			"displayIndex": 7,
+			"templateName": "Scratch to reveal",
+			"templateDescription": "Scratch to reveal the content",
+			"permanent": false,
+			"metadata": {
+				"questions": [],
+				"slideId": "4813e6b4-629a-481c-8841-027725ed9444"
+			},
+			"data": {
+				"before": {
+					"label": "",
+					"content": "fit_content_assets/Copy_of_Module_4_8_Non_-_Negotiables_6_dsbazi_lnomfo.png",
+					"contentType": "image"
+				},
+				"after": {
+					"label": "",
+					"content": "## To maintain our standard for **high-quality products**, items such as BBQ Chicken, Lemongrass Beef and Roast Pork are only allowed to be kept in the** Food Warmer/Bain Marie for 30 minutes**.",
+					"contentType": "text"
+				},
+				"canvasBackground": null,
+				"prompt": "Scratch to reveal the content",
+				"doneText": "Continue",
+				"title": "<sb>Bain Marie Holding Times</sb>",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": {
+					"progress_on_completion": false,
+					"can_not_be_skipped": false,
+					"audio_file": null
+				}
+			}
+		},
+		{
+			"id": "55a95a38-0b46-4572-bf68-8ea44bd41b79",
+			"type": "number-sentence",
+			"subtype": "integer",
+			"name": 7,
+			"displayIndex": 8,
+			"templateName": "Number sentence",
+			"templateDescription": "",
+			"permanent": false,
+			"metadata": {
+				"questions": [
+					{
+						"question": {
+							"content": "<p>The Food Warmer/Bain Marie may only be used for ## minutes to uphold our standard for high-quality food.</p>",
+							"questionId": "5c3e4e3f-53fc-415f-aa98-bf9a44073a5f",
+							"type": "text"
+						},
+						"answers": [
+							{
+								"content": "10",
+								"correct": false,
+								"answerId": "4a96cdd7-be6d-448f-838e-e1f2cc65efd3",
+								"type": "number"
+							},
+							{
+								"content": "20",
+								"correct": false,
+								"answerId": "adc6fcaa-df50-4e76-81e6-e6d1cd490089",
+								"type": "number"
+							},
+							{
+								"content": "30",
+								"correct": true,
+								"answerId": "530767be-be96-4c69-8930-e13e92c2b0ff",
+								"type": "number"
+							},
+							{
+								"content": "40",
+								"correct": false,
+								"answerId": "3b4505da-c89d-4460-9e1e-c86953e878c5",
+								"type": "number"
+							},
+							{
+								"content": "50",
+								"correct": false,
+								"answerId": "cc17d4be-4a4a-49d0-adbb-3d4b001480f1",
+								"type": "number"
+							},
+							{
+								"content": "60",
+								"correct": false,
+								"answerId": "cbbfa824-d015-4041-abfe-b50066119d95",
+								"type": "number"
+							}
+						]
+					}
+				],
+				"slideId": "55a95a38-0b46-4572-bf68-8ea44bd41b79"
+			},
+			"data": {
+				"doneText": "Continue",
+				"decimals": 0,
+				"numbers": [
+					{
+						"number": 10,
+						"correct": false
+					},
+					{
+						"number": 20,
+						"correct": false
+					},
+					{
+						"number": 30,
+						"correct": true
+					},
+					{
+						"number": 40,
+						"correct": false
+					},
+					{
+						"number": 50,
+						"correct": false
+					},
+					{
+						"number": 60,
+						"correct": false
+					}
+				],
+				"answer": {
+					"takeaway": "",
+					"incorrect": "Not quite...",
+					"correct": "That's correct!",
+					"text": "The Food Warmer/Bain Marie may only be used for **30** minutes to uphold our standard for high-quality food.",
+					"value": null
+				},
+				"game": {
+					"timer": {
+						"limit": -1,
+						"isDisabled": false,
+						"out-of-time-prompt": null
+					},
+					"stars": null
+				},
+				"prompt": "Select the correct number",
+				"title": "<p>The Food Warmer/Bain Marie may only be used for ## minutes to uphold our standard for high-quality food.</p>",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": {
+					"nb_stars": null,
+					"weighting": 1
+				},
+				"socialLearning": {
+					"enabled": false,
+					"maxResponseLength": 0
+				},
+				"narration": null
+			}
+		},
+		{
+			"id": "e6ff9e01-fa1f-47e3-8773-78daaafd652c",
+			"type": "exit",
+			"subtype": "default",
+			"name": 8,
+			"displayIndex": 9,
+			"templateName": "Exit Lesson",
+			"templateDescription": "",
+			"permanent": true,
+			"metadata": {
+				"questions": [],
+				"slideId": "e6ff9e01-fa1f-47e3-8773-78daaafd652c"
+			},
+			"data": {
+				"content": "<h3>You've completed this <strong>Time</strong> lesson.</h3><h3>Proceed to the next one to earn more stars.</h3>",
+				"buttonText": "Exit Lesson",
+				"title": "<B>Great job!",
+				"titleType": "html",
+				"subtitle": null,
+				"subtitleType": null,
+				"challenge_configuration": null,
+				"socialLearning": null,
+				"narration": null
+			}
+		}
+	],
+	"title": "Time",
+	"index": 0,
+	"scorm": true,
+	"id": "66e77ee8687f1f539e89630b"
+}
